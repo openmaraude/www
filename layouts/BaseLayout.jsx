@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import ButtonLink from '../components/ButtonLink';
 import styles from '../styles/LayoutBase.module.css';
 
 export default function BaseLayout({ children }) {
@@ -24,11 +25,8 @@ export default function BaseLayout({ children }) {
                 <Image src="/images/icons/logo.svg" alt="Logo le.taxi" layout="fill" />
               </div>
             </div>
-            <div className={styles.headerTopCTA}>
-              <Link href="https://le.taxi" passHref>
-                <a>S'inscrire</a>
-              </Link>
-            </div>
+
+            <ButtonLink href="https://le.taxi">S'inscrire</ButtonLink>
           </div>
 
           <menu className={styles.menu}>
