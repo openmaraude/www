@@ -1,0 +1,48 @@
+.container {
+  background: linear-gradient(180deg, #fff 50%, #ECECFF);
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.topSection {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 500px;
+}
+
+.topSection h4 {
+  color: #00006D;
+}
+
+.topSectionGoals {
+  display: flex;
+}
+
+.topSection ul {
+  list-style: none;
+  max-width: 300px;
+  margin: 0;
+  padding: 0;
+}
+
+.topSection ul li {
+  background: url('/images/icons/list-check.svg') no-repeat left center;
+  padding-left: 30px;
+  margin: 10px;
+}
+
+.topSection ul li:not(:first-child):not(:last-child) {
+  min-height: 50px;
+  background: none;
+  margin-left: 20px;
+  border-left: 1px dashed #7f7fc8;
+}
+
+.topSectionContent {
+}
+
+.topSectionIllustrationContainer {
+  position: relative;
+  width: 100px;
+  height: 100%;
+}

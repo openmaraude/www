@@ -28,3 +28,17 @@ a:hover {
 * {
   box-sizing: border-box;
 }
+
+h1 .highlight,
+h2 .highlight,
+h3 .highlight,
+h4 .highlight,
+h5 .highlight,
+h6 .highlight
+{
+  color: #000074;
+}
+
+.highlight {
+  font-weight: bold;
+}

@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import ButtonLink from '../components/ButtonLink';
-import styles from '../styles/LayoutBase.module.css';
+import styles from '../styles/layouts/Base.module.css';
 
 export default function BaseLayout({ children }) {
   return (
@@ -37,7 +37,7 @@ export default function BaseLayout({ children }) {
           </menu>
         </header>
 
-        <main className={styles.main}>{children}</main>
+        <main>{children}</main>
 
         <footer className={styles.footer}>
           <div className={styles.footerTop}>
