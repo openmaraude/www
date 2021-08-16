@@ -22,7 +22,9 @@ export default function BaseLayout({ children }) {
                 <Image src="/images/icons/republique_francaise.svg" alt="Logo République Française" layout="fill" />
               </div>
               <div className={styles.headerTopIcon}>
-                <Image src="/images/icons/logo.svg" alt="Logo le.taxi" layout="fill" />
+                <Link href="/" passHref>
+                  <a><Image src="/images/icons/logo.svg" alt="Logo le.taxi" layout="fill" /></a>
+                </Link>
               </div>
             </div>
 
