@@ -1,0 +1,22 @@
+.container {
+  border-top: 1px solid #00006D;
+  background-color: #F9F9FF;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+.container h5 {
+  margin-right: 20px;
+}

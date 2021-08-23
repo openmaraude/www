@@ -58,8 +58,6 @@
 .footer {
   border-top: 2px solid #000091;
   padding-top: 30px;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 
 .footerTop {
@@ -68,6 +66,8 @@
   align-items: center;
   justify-content: space-between;
   padding-bottom: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .footerTopImages {
@@ -114,6 +114,8 @@
 
 .footerNav {
   border-top: 1px solid #cecece;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .footerNav ul {
