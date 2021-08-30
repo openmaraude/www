@@ -32,7 +32,7 @@ export default function BaseLayout({ children }) {
           </div>
 
           <menu className={styles.menu}>
-            <li><Link href="#" passHref><a>Groupement de taxis</a></Link></li>
+            <li><Link href="/groups" passHref><a>Groupement de taxis</a></Link></li>
             <li><Link href="#" passHref><a>Artisan taxi</a></Link></li>
             <li><Link href="#" passHref><a>Mobilité publique</a></Link></li>
             <li><Link href="#" passHref><a>Application de mobilité</a></Link></li>

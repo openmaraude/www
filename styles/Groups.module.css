@@ -1,0 +1,74 @@
+/*
+ * Goals
+ */
+.goalsSection {
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.goalsSectionLeft {
+  padding-bottom: 50px;
+}
+
+.goalsPresentationBox {
+  background-color: #5770BE;
+  color: #fff;
+  padding: 50px;
+  max-width: 450px;
+  box-shadow: -15px 15px #484D7A;
+}
+
+.goalsSectionRight {
+  padding-bottom: 50px;
+  padding-left: 30px;
+}
+
+.goalsIllustration {
+  position: relative;
+  height: 250px;
+}
+
+.goalsSectionRight .titleBorder {
+  margin-top: 10px;
+  border-bottom: 3px solid #000091;
+  display: block;
+  width: 150px;
+  height: 3px;
+}
+
+.goalsSectionRight ul {
+  list-style-type: none;
+}
+
+.goalsSectionRight ul li:before {
+  content: '→';
+  color: #000091;
+  margin-right: 15px;
+}
+
+.goalsSectionRight ul li {
+  margin-bottom: 10px;
+}
+
+.goalsCTA {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .goalsSection {
+    flex-direction: row;
+    padding-top: 50px;
+  }
+
+  .goalsSectionLeft {
+    padding-bottom: 300px;
+    background: url('/images/groupspage/illustration-road.svg') no-repeat left bottom;
+  }
+
+  .goalsSectionLeft h2 {
+    margin-bottom: 100px;
+  }
+}
