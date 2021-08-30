@@ -134,9 +134,7 @@ ul.goalsSectionGoals li:before {
   margin-bottom: 10px;
   flex: 1;
   padding: 20px;
-}
-
-.challengeCardIllustration {
+  position: relative;
 }
 
 .challengeCardIllustrationContainer {
@@ -156,6 +154,10 @@ ul.goalsSectionGoals li:before {
 .challengeCard .challengeCardCTA {
   text-align: right;
   font-size: 1.5em;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
 }
 
 @media (min-width: 1024px) {
