@@ -8,6 +8,7 @@ import PresentationLayout, {
   BoxSection,
   TwoSidesSection,
 } from '../layouts/PresentationLayout';
+import QuestionSection from '../components/QuestionSection';
 
 import stylesTwoSides from '../styles/Groups.two_sides.module.css';
 
@@ -69,6 +70,7 @@ export default function GroupsPage() {
             "Votre clientèle trouve un taxi partout en France, via votre application",
           ]}
       />
+
       <CardsSection
         title="Les avantages de la maraude électronique"
         cards={[
@@ -86,6 +88,7 @@ export default function GroupsPage() {
           },
         ]}
       />
+
       <BoxSection
         content={[
           <>
@@ -98,10 +101,13 @@ export default function GroupsPage() {
           <>Tous les taxis de France, dans 1 service</>,
         ]}
       />
+
       <TwoSidesSection title="Comment utiliser le.taxi ?">
         <TwoSidesLeft />
         <TwoSidesRight />
       </TwoSidesSection>
+
+      <QuestionSection />
     </PresentationLayout>
   );
 }
