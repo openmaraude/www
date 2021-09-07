@@ -5,6 +5,7 @@ import ButtonLink from '../components/ButtonLink';
 import PresentationLayout, {
   LandingSection,
   CardsSection,
+  BoxSection,
 } from '../layouts/PresentationLayout';
 
 export default function GroupsPage() {
@@ -51,6 +52,18 @@ export default function GroupsPage() {
             backgroundImage: "/images/groupspage/illustration-map.svg",
             content: <><span className="highlight">Un meilleur accès aux taxis</span> dans toute la France</>,
           },
+        ]}
+      />
+      <BoxSection
+        content={[
+          <>
+            75 % de Français utilisent un smartphone*
+            <br />
+            <br />
+            <small>*Source : FranceNum.gouv.fr</small>
+          </>,
+          <>Les taxis disponibles dans les applications clients</>,
+          <>Tous les taxis de France, dans 1 service</>,
         ]}
       />
     </PresentationLayout>

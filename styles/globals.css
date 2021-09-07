@@ -1,8 +1,16 @@
 @font-face {
-  font-family: 'Marianne-Regular';
+  font-family: 'marianne-regular';
   src:
-    url('/fonts/marianne/Marianne-Regular.woff2') format('woff2'),
-    url('/fonts/marianne/Marianne-Regular.woff') format('woff')
+    url('/fonts/marianne/marianne-Regular.woff2') format('woff2'),
+    url('/fonts/marianne/marianne-Regular.woff') format('woff')
+  ;
+}
+
+@font-face {
+  font-family: 'marianne-light';
+  src:
+    url('/fonts/marianne/marianne-Light.woff2') format('woff2'),
+    url('/fonts/marianne/marianne-Light.woff') format('woff')
   ;
 }
 

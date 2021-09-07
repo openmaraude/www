@@ -11,6 +11,7 @@ import ButtonLink from '../components/ButtonLink';
 import styles from '../styles/layouts/Presentation.module.css';
 import stylesLanding from '../styles/layouts/Presentation.landing.module.css';
 import stylesCards from '../styles/layouts/Presentation.cards.module.css';
+import stylesBox from '../styles/layouts/Presentation.box.module.css';
 
 export function LandingSection({
   title,
@@ -72,6 +73,18 @@ export function CardsSection({
           </div>
         ))}
       </div>
+    </section>
+  );
+}
+
+export function BoxSection({ content }) {
+  return (
+    <section className={stylesBox.section}>
+      <ul>
+        {content.map((elem, idx) => (
+          <li key={idx}>{elem}</li>
+        ))}
+      </ul>
     </section>
   );
 }
