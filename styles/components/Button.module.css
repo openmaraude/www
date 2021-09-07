@@ -8,3 +8,15 @@
 .button:hover {
   background-color: #fff;
 }
+
+.buttonLight {
+  background-color: #fff;
+  border: 1px solid #000091;
+  padding: 8px 24px;
+  color: #000091;
+}
+
+.buttonLight:hover {
+  background-color: #000091;
+  color: #fff;
+}

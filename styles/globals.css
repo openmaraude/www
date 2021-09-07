@@ -74,3 +74,7 @@ h6 {
 .highlight {
   font-weight: bold;
 }
+
+.underline {
+  text-decoration: underline;
+}

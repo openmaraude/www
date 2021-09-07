@@ -12,6 +12,7 @@ import styles from '../styles/layouts/Presentation.module.css';
 import stylesLanding from '../styles/layouts/Presentation.landing.module.css';
 import stylesCards from '../styles/layouts/Presentation.cards.module.css';
 import stylesBox from '../styles/layouts/Presentation.box.module.css';
+import stylesTwoSides from '../styles/layouts/Presentation.two_sides.module.css';
 
 export function LandingSection({
   title,
@@ -85,6 +86,17 @@ export function BoxSection({ content }) {
           <li key={idx}>{elem}</li>
         ))}
       </ul>
+    </section>
+  );
+}
+
+export function TwoSidesSection({ title, children }) {
+  return (
+    <section className={stylesTwoSides.section}>
+      <h4>{title}</h4>
+      <div className={stylesTwoSides.content}>
+        {children}
+      </div>
     </section>
   );
 }

@@ -6,7 +6,39 @@ import PresentationLayout, {
   LandingSection,
   CardsSection,
   BoxSection,
+  TwoSidesSection,
 } from '../layouts/PresentationLayout';
+
+import stylesTwoSides from '../styles/Groups.two_sides.module.css';
+
+function TwoSidesLeft() {
+  return (
+    <div className={stylesTwoSides.left}>
+      <h6>Vous avez <span className="underline">déjà</span> une application</h6>
+
+      <ul className={stylesTwoSides.leftList}>
+        <li><strong>Inscrivez-vous</strong> au programme le.taxi</li>
+        <li><strong>Intégrez l'API</strong> à votre application</li>
+        <li><strong>Vos chauffeurs</strong> reçoivent des courses</li>
+      </ul>
+
+      <ButtonLink href="https://le.taxi">Inscrivez-vous</ButtonLink>
+    </div>
+  );
+}
+
+function TwoSidesRight() {
+  return (
+    <div className={stylesTwoSides.right}>
+      <h6>Vous n’avez <span className="underline">pas</span> d’application</h6>
+      <p>Ou, ne souhaitez pas intégrer le.taxi à votre service.</p>
+
+      <p>Vos chauffeurs peuvent <strong>rejoindre l’un de nos partenaires.</strong></p>
+
+      <ButtonLink href="https://le.taxi" variant="light">Voir la liste des partenaires</ButtonLink>
+    </div>
+  );
+}
 
 export default function GroupsPage() {
   const pageTitle = (
@@ -66,6 +98,10 @@ export default function GroupsPage() {
           <>Tous les taxis de France, dans 1 service</>,
         ]}
       />
+      <TwoSidesSection title="Comment utiliser le.taxi ?">
+        <TwoSidesLeft />
+        <TwoSidesRight />
+      </TwoSidesSection>
     </PresentationLayout>
   );
 }
