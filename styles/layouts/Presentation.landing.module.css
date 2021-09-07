@@ -1,0 +1,63 @@
+.section {
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionLeft {
+  padding-bottom: 50px;
+}
+
+.box {
+  background-color: #5770BE;
+  color: #fff;
+  padding: 50px;
+  max-width: 450px;
+  box-shadow: -15px 15px #484D7A;
+}
+
+.sectionRight {
+  padding-bottom: 50px;
+  padding-left: 30px;
+}
+
+.illustration {
+  position: relative;
+  height: 250px;
+}
+
+.sectionRight ul {
+  list-style-type: none;
+}
+
+.sectionRight ul li:before {
+  content: '→';
+  color: #000091;
+  margin-right: 15px;
+}
+
+.sectionRight ul li {
+  margin-bottom: 10px;
+}
+
+.CTA {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .section {
+    flex-direction: row;
+    padding-top: 50px;
+    background: url('/images/groupspage/illustration-road.svg') no-repeat left bottom;
+  }
+
+  .sectionLeft {
+    padding-bottom: 300px;
+  }
+
+  .sectionLeft h2 {
+    margin-bottom: 100px;
+  }
+}

@@ -1,0 +1,15 @@
+.section {
+  background-color: #E5E5F4;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+.section h4 {
+  text-align: center;
+}
+
+.illustrationContainer {
+  position: relative;
+  height: 250px;
+  width: 100%;
+}

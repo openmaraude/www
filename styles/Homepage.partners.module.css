@@ -1,0 +1,36 @@
+.section {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 50px;
+}
+
+.section h4 {
+  color: #000074;
+}
+
+.section h4 {
+  text-align: center;
+  background-color: #fff;
+}
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoContainer {
+  margin: 20px;
+}
+
+@media (min-width: 1024px) {
+  .logos {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .logoContainer {
+    margin: 30px;
+  }
+}

@@ -1,0 +1,36 @@
+.section {
+  background-color: #F2F2F9;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  flex: 1;
+  margin-bottom: 50px;
+}
+
+.illustration {
+  position: relative;
+}
+
+.illustrationContainer {
+  height: 200px;
+}
+
+.text {
+  margin-top: 30px;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .cards {
+    flex-direction: row;
+  }
+}
