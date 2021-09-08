@@ -133,7 +133,7 @@ export default function FAQPage() {
         <nav className={styles.nav}>
           <h6>Sommaire</h6>
           <ul>
-            {SECTIONS.map((section) => <li key={section.title}>{section.title}</li>)}
+            {SECTIONS.map((section) => <li key={section.title}><a href={`#${section.title}`}>{section.title}</a></li>)}
           </ul>
         </nav>
 
@@ -142,7 +142,7 @@ export default function FAQPage() {
 
           {SECTIONS.map((section) =>
             <section key={section.title} className={styles.section}>
-              <h5>{section.title}</h5>
+              <h5 id={section.title}>{section.title}</h5>
               <dl>
               {section.questions.map((question, idx) =>
                 <React.Fragment key={idx}>
