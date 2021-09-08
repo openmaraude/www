@@ -46,7 +46,7 @@ function TwoSidesRight() {
   );
 }
 
-export default function GroupsPage() {
+export default function TaxisGroupPage() {
   const pageTitle = (
       <>
         <span className="highlight">Connectez vos taxis</span> à la maraude électronique

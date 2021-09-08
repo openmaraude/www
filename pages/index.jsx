@@ -146,7 +146,7 @@ function PartnersSection() {
   );
 }
 
-export default function Home() {
+export default function HomePage() {
   return (
     <BaseLayout>
       <GoalsSection />

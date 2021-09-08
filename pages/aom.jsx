@@ -22,7 +22,7 @@ function HowToSection() {
   );
 }
 
-export default function GroupsPage() {
+export default function AOMPage() {
   const pageTitle = (
       <>
         Complétez <span className="highlight">votre application Maas</span> avec le service public du taxi
