@@ -39,6 +39,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  text-align: center;
 }
 
 .leftList li:before {
@@ -68,12 +69,12 @@
 @media (min-width: 1024px) {
   .leftList li:not(:last-child):after {
     border-top: 5px solid #000091;
-    z-index: 0;
+    z-index: 1;
     position: absolute;
     top: 25px;
-    left: calc(50% + 25px);
+    left: calc(50% + 25px - 2px);
     content: "";
-    width: calc(100%);
+    width: calc(100% - 25px + 2px);
     display: block;
   }
 }
