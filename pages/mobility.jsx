@@ -4,6 +4,23 @@ import PresentationLayout, {
   BoxSection,
 } from '../layouts/PresentationLayout';
 import QuestionSection from '../components/QuestionSection';
+import StyledNumberedList from '../components/StyledNumberedList';
+
+import styles from '../styles/Mobility.howto.module.css';
+
+function HowToSection() {
+  return (
+    <section className={styles.section}>
+      <h4>Comment connecter votre application à le.taxi ?</h4>
+      <StyledNumberedList elements={[
+        <>Inscrivez-vous au programme</>,
+        <><strong>Intégrez l'API</strong> à partir des docs transmis</>,
+        <strong>Testons le service ensemble</strong>,
+        <>Les taxis disponibles dans votre application</>,
+      ]} />
+    </section>
+  );
+}
 
 export default function GroupsPage() {
   const pageTitle = (
@@ -56,6 +73,8 @@ export default function GroupsPage() {
           <>&nbsp;</>
         ]}
       />
+
+      <HowToSection />
 
       <QuestionSection />
     </PresentationLayout>
