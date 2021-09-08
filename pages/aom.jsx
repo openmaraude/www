@@ -6,7 +6,7 @@ import PresentationLayout, {
 import QuestionSection from '../components/QuestionSection';
 import StyledNumberedList from '../components/StyledNumberedList';
 
-import styles from '../styles/Mobility.howto.module.css';
+import styles from '../styles/AOM.howto.module.css';
 
 function HowToSection() {
   return (
@@ -41,7 +41,7 @@ export default function GroupsPage() {
           title={pageTitle}
           boxContent={presentationBoxContent}
 
-          backgroundImage="/images/page_mobility/illustration-city.svg"
+          backgroundImage="/images/page_aom/illustration-city.svg"
           subtitle="Les avantages pour les acteurs publics"
           bulletPoints={[
             "Un accès facilité au service public du taxi pour vos usagers",
@@ -54,15 +54,15 @@ export default function GroupsPage() {
         title="L’intérêt de le.taxi pour vos usagers"
         cards={[
           {
-            backgroundImage: "/images/page_mobility/illustration-client-app.svg",
+            backgroundImage: "/images/page_aom/illustration-client-app.svg",
             content: <><span className="highlight">Les taxis disponibles à moins de 500m</span> dans votre service</>,
           },
           {
-            backgroundImage: "/images/page_mobility/illustration-client-waiting.svg",
+            backgroundImage: "/images/page_aom/illustration-client-waiting.svg",
             content: <><span className="highlight">Complémentarité</span> des offres de transports</>,
           },
           {
-            backgroundImage: "/images/page_mobility/illustration-map.svg",
+            backgroundImage: "/images/page_aom/illustration-map.svg",
             content: <>Un meilleur accès aux taxis <span className="highlight">dans votre territoire</span></>,
           },
         ]}
