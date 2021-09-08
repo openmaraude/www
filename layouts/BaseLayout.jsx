@@ -28,7 +28,7 @@ function Header() {
       <menu className={stylesHeader.menu}>
         <li><Link href="/taxis_group" passHref><a>Groupement de taxis</a></Link></li>
         <li><Link href="/taxi" passHref><a>Artisan taxi</a></Link></li>
-        <li><Link href="#" passHref><a>Mobilité publique</a></Link></li>
+        <li><Link href="/mobility" passHref><a>Mobilité publique</a></Link></li>
         <li><Link href="#" passHref><a>Application de mobilité</a></Link></li>
       </menu>
     </header>
