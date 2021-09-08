@@ -68,7 +68,7 @@ export default function GroupsPage() {
           title={pageTitle}
           boxContent={presentationBoxContent}
 
-          backgroundImage="/images/groupspage/illustration-customers.svg"
+          backgroundImage="/images/page_taxis_group/illustration-customers.svg"
           subtitle="Nos ambitions pour les groupements de taxis"
           bulletPoints={[
             "Accompagner la modernisation de l’offre de taxis",
@@ -81,15 +81,15 @@ export default function GroupsPage() {
         title="Les avantages de la maraude électronique"
         cards={[
           {
-            backgroundImage: "/images/groupspage/illustration-client-app.svg",
+            backgroundImage: "/images/page_taxis_group/illustration-client-app.svg",
             content: <><span className="highlight">Un taxi à moins de 500m</span> sans frais d’approche</>,
           },
           {
-            backgroundImage: "/images/groupspage/illustration-clock.svg",
+            backgroundImage: "/images/page_taxis_group/illustration-clock.svg",
             content: <><span className="highlight">Optimiser le temps</span> entre 2 réservations</>,
           },
           {
-            backgroundImage: "/images/groupspage/illustration-map.svg",
+            backgroundImage: "/images/page_taxis_group/illustration-map.svg",
             content: <><span className="highlight">Un meilleur accès aux taxis</span> dans toute la France</>,
           },
         ]}

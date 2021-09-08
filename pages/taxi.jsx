@@ -60,7 +60,7 @@ export default function GroupsPage() {
           title={pageTitle}
           boxContent={presentationBoxContent}
 
-          backgroundImage="/images/taxispage/illustration-customer.svg"
+          backgroundImage="/images/page_taxi/illustration-customer.svg"
           subtitle="Notre ambition pour les artisans taxis"
           bulletPoints={[
             "Accompagner la modernisation de l’offre de taxis",
@@ -73,15 +73,15 @@ export default function GroupsPage() {
         title="Les avantages de la maraude électronique"
         cards={[
           {
-            backgroundImage: "/images/taxispage/illustration-clock.svg",
+            backgroundImage: "/images/page_taxi/illustration-clock.svg",
             content: <><span className="highlight">Optimiser le temps</span> entre 2 courses</>,
           },
           {
-            backgroundImage: "/images/taxispage/illustration-taxi-on-map.svg",
+            backgroundImage: "/images/page_taxi/illustration-taxi-on-map.svg",
             content: <><span className="highlight">Les clients vous localisent</span> à moins de 500m</>,
           },
           {
-            backgroundImage: "/images/taxispage/illustration-client-waiting.svg",
+            backgroundImage: "/images/page_taxi/illustration-client-waiting.svg",
             content: <>Paiement en voiture, <span className="highlight">sans frais d’approche</span></>,
           },
         ]}
