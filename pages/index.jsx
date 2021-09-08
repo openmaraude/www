@@ -22,15 +22,15 @@ function GoalsSection() {
   return (
     <section className={stylesGoals.section}>
       <div className={stylesGoals.content}>
-        <h1>le.taxi accélère <span class="highlight">la rencontre</span> entre usagers et taxis</h1>
+        <h1>le.taxi accélère <span className="highlight">la rencontre</span> entre usagers et taxis</h1>
 
         <h4>Nos objectifs</h4>
 
         <ul className={stylesGoals.goals}>
-          <li>Accompagner <span class="highlight">la modernisation</span> de l’offre de taxis</li>
-          <li>Mieux <span class="highlight">accéder aux taxis dans toute la France</span></li>
-          <li>Permettre <span class="highlight">aux usagers</span> et <span class="highlight">aux taxis</span> de se trouver facilement</li>
-          <li>Trouver les taxis dans toutes les <span class="highlight">applications clients</span></li>
+          <li>Accompagner <span className="highlight">la modernisation</span> de l’offre de taxis</li>
+          <li>Mieux <span className="highlight">accéder aux taxis dans toute la France</span></li>
+          <li>Permettre <span className="highlight">aux usagers</span> et <span className="highlight">aux taxis</span> de se trouver facilement</li>
+          <li>Trouver les taxis dans toutes les <span className="highlight">applications clients</span></li>
         </ul>
       </div>
 
