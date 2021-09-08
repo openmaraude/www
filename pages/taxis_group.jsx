@@ -5,7 +5,9 @@ import PresentationLayout, {
   BoxSection,
   TwoSidesSection,
 } from '../layouts/PresentationLayout';
+
 import QuestionSection from '../components/QuestionSection';
+import StyledNumberedList from '../components/StyledNumberedList';
 
 import stylesTwoSides from '../styles/Groups.two_sides.module.css';
 
@@ -16,11 +18,11 @@ function TwoSidesLeft() {
         Vous avez <span className="underline">déjà</span> une application
       </h6>
 
-      <ul className={stylesTwoSides.leftList}>
-        <li><strong>Inscrivez-vous</strong> au programme le.taxi</li>
-        <li><strong>Intégrez l'API</strong> à votre application</li>
-        <li><strong>Vos chauffeurs</strong> reçoivent des courses</li>
-      </ul>
+      <StyledNumberedList elements={[
+        <><strong>Inscrivez-vous</strong> au programme le.taxi</>,
+        <><strong>Intégrez l'API</strong> à votre application</>,
+        <><strong>Vos chauffeurs</strong> reçoivent des courses</>,
+      ]} />
 
       <ButtonLink href="https://le.taxi">Inscrivez-vous</ButtonLink>
     </>
