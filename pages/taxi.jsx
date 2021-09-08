@@ -33,7 +33,7 @@ function TwoSidesRight() {
 
       <p>Choisissez votre futur partenaire parmi les services agréés.</p>
 
-      <ButtonLink href="https://le.taxi" variant="light">Voir la liste</ButtonLink>
+      <ButtonLink href="/" variant="light">Voir la liste</ButtonLink>
     </>
   );
 }

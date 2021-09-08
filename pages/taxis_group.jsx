@@ -24,7 +24,7 @@ function TwoSidesLeft() {
         <><strong>Vos chauffeurs</strong> reçoivent des courses</>,
       ]} />
 
-      <ButtonLink href="https://le.taxi">Inscrivez-vous</ButtonLink>
+      <ButtonLink href="https://api.gouv.fr/les-api/le-taxi/demande-acces">Inscrivez-vous</ButtonLink>
     </>
   );
 }
@@ -41,7 +41,7 @@ function TwoSidesRight() {
         Vos chauffeurs peuvent <strong>rejoindre l’un de nos partenaires.</strong>
       </p>
 
-      <ButtonLink href="https://le.taxi" variant="light">Voir la liste des partenaires</ButtonLink>
+      <ButtonLink href="/" variant="light">Voir la liste des partenaires</ButtonLink>
     </>
   );
 }

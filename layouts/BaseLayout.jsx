@@ -22,7 +22,7 @@ function Header() {
           </div>
         </div>
 
-        <ButtonLink href="https://le.taxi">S'inscrire</ButtonLink>
+        <ButtonLink href="https://api.gouv.fr/les-api/le-taxi/demande-acces">S'inscrire</ButtonLink>
       </div>
 
       <menu className={stylesHeader.menu}>

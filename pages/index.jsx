@@ -61,7 +61,7 @@ function ChallengesSection() {
           <p>
             Recevez de nouvelles courses lorsque vous êtes en maraude
           </p>
-          <p className={stylesChallenges.CTA}><a href="#">&#8594;</a></p>
+          <p className={stylesChallenges.CTA}><a href="/taxi">&#8594;</a></p>
         </div>
 
         <div className={stylesChallenges.card}>
@@ -76,7 +76,7 @@ function ChallengesSection() {
           <p>
             Connectez vos taxis à tous les usagers
           </p>
-          <p className={stylesChallenges.CTA}><a href="#">&#8594;</a></p>
+          <p className={stylesChallenges.CTA}><a href="/taxis_group">&#8594;</a></p>
         </div>
 
         <div className={stylesChallenges.card}>
@@ -91,7 +91,7 @@ function ChallengesSection() {
           <p>
             Proposez aussi les taxis dans votre application grand public
           </p>
-          <p className={stylesChallenges.CTA}><a href="#">&#8594;</a></p>
+          <p className={stylesChallenges.CTA}><a href="/maas">&#8594;</a></p>
         </div>
 
         <div className={stylesChallenges.card}>
@@ -106,7 +106,7 @@ function ChallengesSection() {
           <p>
             Intégrez le service public des  taxis, à votre offre locale
           </p>
-          <p className={stylesChallenges.CTA}><a href="#">&#8594;</a></p>
+          <p className={stylesChallenges.CTA}><a href="/aom">&#8594;</a></p>
         </div>
       </div>
     </section>

@@ -45,7 +45,7 @@ export function LandingSection({
         </ul>
 
         <div className={stylesLanding.CTA}>
-          <ButtonLink href="#">S'inscrire</ButtonLink>
+          <ButtonLink href="https://api.gouv.fr/les-api/le-taxi/demande-acces">S'inscrire</ButtonLink>
         </div>
       </div>
     </section>
