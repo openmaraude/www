@@ -9,7 +9,7 @@ import PresentationLayout, {
 import QuestionSection from '../components/QuestionSection';
 import StyledNumberedList from '../components/StyledNumberedList';
 
-import stylesTwoSides from '../styles/Groups.two_sides.module.css';
+import stylesTwoSides from '../styles/TaxisGroup.two_sides.module.css';
 
 function TwoSidesLeft() {
   return (

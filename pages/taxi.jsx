@@ -7,7 +7,7 @@ import PresentationLayout, {
 } from '../layouts/PresentationLayout';
 import QuestionSection from '../components/QuestionSection';
 
-import stylesTwoSides from '../styles/Taxis.two_sides.module.css';
+import stylesTwoSides from '../styles/Taxi.two_sides.module.css';
 
 function TwoSidesLeft() {
   return (
