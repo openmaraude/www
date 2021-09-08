@@ -2,6 +2,13 @@
   list-style-type: none;
   display: flex;
   width: 100%;
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .list {
+    flex-direction: row;
+  }
 }
 
 .list li:nth-child(1):before { content: "1"; }
