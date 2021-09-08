@@ -90,12 +90,20 @@ export function BoxSection({ content }) {
   );
 }
 
-export function TwoSidesSection({ title, children }) {
+export function TwoSidesSection({ title, left, right }) {
   return (
     <section className={stylesTwoSides.section}>
-      <h4>{title}</h4>
-      <div className={stylesTwoSides.content}>
-        {children}
+      <div className={stylesTwoSides.left}>
+        <h4>{title}</h4>
+        <div className={stylesTwoSides.content}>
+        {left}
+        </div>
+      </div>
+      <div className={stylesTwoSides.right}>
+        <h4></h4>
+        <div className={stylesTwoSides.content}>
+        {right}
+        </div>
       </div>
     </section>
   );

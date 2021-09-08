@@ -14,8 +14,10 @@ import stylesTwoSides from '../styles/Groups.two_sides.module.css';
 
 function TwoSidesLeft() {
   return (
-    <div className={stylesTwoSides.left}>
-      <h6>Vous avez <span className="underline">déjà</span> une application</h6>
+    <>
+      <h6 className={stylesTwoSides.subtitle}>
+        Vous avez <span className="underline">déjà</span> une application
+      </h6>
 
       <ul className={stylesTwoSides.leftList}>
         <li><strong>Inscrivez-vous</strong> au programme le.taxi</li>
@@ -24,20 +26,24 @@ function TwoSidesLeft() {
       </ul>
 
       <ButtonLink href="https://le.taxi">Inscrivez-vous</ButtonLink>
-    </div>
+    </>
   );
 }
 
 function TwoSidesRight() {
   return (
-    <div className={stylesTwoSides.right}>
-      <h6>Vous n’avez <span className="underline">pas</span> d’application</h6>
-      <p>Ou, ne souhaitez pas intégrer le.taxi à votre service.</p>
+    <>
+      <h6 className={stylesTwoSides.subtitle}>
+        Vous n’avez <span className="underline">pas</span> d’application
+        <small>Ou, ne souhaitez pas intégrer le.taxi à votre service.</small>
+      </h6>
 
-      <p>Vos chauffeurs peuvent <strong>rejoindre l’un de nos partenaires.</strong></p>
+      <p className={stylesTwoSides.textContent}>
+        Vos chauffeurs peuvent <strong>rejoindre l’un de nos partenaires.</strong>
+      </p>
 
       <ButtonLink href="https://le.taxi" variant="light">Voir la liste des partenaires</ButtonLink>
-    </div>
+    </>
   );
 }
 
@@ -102,10 +108,11 @@ export default function GroupsPage() {
         ]}
       />
 
-      <TwoSidesSection title="Comment utiliser le.taxi ?">
-        <TwoSidesLeft />
-        <TwoSidesRight />
-      </TwoSidesSection>
+      <TwoSidesSection
+        title="Comment utiliser le.taxi ?"
+        left={<TwoSidesLeft />}
+        right={<TwoSidesRight />}
+      />
 
       <QuestionSection />
     </PresentationLayout>

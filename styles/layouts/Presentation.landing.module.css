@@ -7,6 +7,7 @@
 
 .sectionLeft {
   padding-bottom: 50px;
+  flex: 1;
 }
 
 .box {
@@ -19,7 +20,7 @@
 
 .sectionRight {
   padding-bottom: 50px;
-  padding-left: 30px;
+  flex: 1;
 }
 
 .illustration {
