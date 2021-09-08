@@ -3,7 +3,7 @@ import styles from '../styles/components/StyledNumberedList.module.css';
 export default function StyledNumberedList({ elements }) {
   return (
     <ul className={styles.list}>
-      {elements.map((el) => <li>
+      {elements.map((el, idx) => <li key={idx}>
         <span className={styles.border} />
         {el}
       </li>)}
