@@ -1,6 +1,3 @@
-import Image from 'next/image';
-
-import BaseLayout from '../layouts/BaseLayout';
 import ButtonLink from '../components/ButtonLink';
 import PresentationLayout, {
   LandingSection,
