@@ -6,11 +6,11 @@ import PresentationLayout, {
 import QuestionSection from '../components/QuestionSection';
 import StyledNumberedList from '../components/StyledNumberedList';
 
-import styles from '../styles/AOM.howto.module.css';
+import stylesHowto from '../styles/AOM.howto.module.css';
 
 function HowToSection() {
   return (
-    <section className={styles.section}>
+    <section className={stylesHowto.section}>
       <h4>Comment connecter votre application à le.taxi ?</h4>
       <StyledNumberedList elements={[
         <>Inscrivez-vous au programme</>,
