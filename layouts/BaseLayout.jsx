@@ -51,10 +51,10 @@ function Footer() {
           </p>
 
           <ul>
-            <li><Link href="#" passHref><a>legifrance.gouv.fr</a></Link></li>
-            <li><Link href="#" passHref><a>gouvernement.fr</a></Link></li>
-            <li><Link href="#" passHref><a>service-public.fr</a></Link></li>
-            <li><Link href="#" passHref><a>data.gouv.fr</a></Link></li>
+            <li><Link href="https://www.legifrance.gouv.fr/" passHref><a target="_blank">legifrance.gouv.fr</a></Link></li>
+            <li><Link href="https://www.gouvernement.fr/" passHref><a target="_blank">gouvernement.fr</a></Link></li>
+            <li><Link href="https://www.service-public.fr/" passHref><a target="_blank">service-public.fr</a></Link></li>
+            <li><Link href="https://www.data.gouv.fr/fr/" passHref><a target="_blank">data.gouv.fr</a></Link></li>
           </ul>
         </div>
       </div>
