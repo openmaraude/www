@@ -13,7 +13,7 @@ function Header() {
       <div className={stylesHeader.top}>
         <div className={stylesHeader.icons}>
           <div className={stylesHeader.icon}>
-            <Image src="/images/icons/republique_francaise.svg" alt="Logo République Française" layout="fill" />
+            <Image src="/images/icons/DGITM.svg" alt="Logo République Française" layout="fill" />
           </div>
           <div className={stylesHeader.icon}>
             <Link href="/" passHref>
@@ -41,7 +41,7 @@ function Footer() {
       <div className={stylesFooter.top}>
         <div className={stylesFooter.images}>
           <div className={stylesFooter.image}>
-            <Image src="/images/icons/republique_francaise.svg" layout="fill" alt="Logo République Française" />
+            <Image src="/images/icons/DGITM.svg" layout="fill" alt="Logo République Française" />
           </div>
         </div>
 
