@@ -47,7 +47,7 @@ function Footer() {
 
         <div className={stylesFooter.content}>
           <p>
-            Texte optionnel 3 lignes maximum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur et vel quam auctor semper. Cras si amet mollis dolor.
+            Le code source est ouvert et les contributions sont bienvenues. <Link href="https://github.com/openmaraude/" passHref><a className="underline" target="_blank">Voir le code source</a></Link>.
           </p>
 
           <ul>
@@ -61,7 +61,6 @@ function Footer() {
 
       <div className={stylesFooter.nav}>
         <ul>
-          <li><Link href="#" passHref><a>Plan du site</a></Link></li>
           <li><Link href="#" passHref><a>Accessibilité</a></Link></li>
           <li><Link href="#" passHref><a>Mentions légales</a></Link></li>
           <li><Link href="#" passHref><a>Données personnelles</a></Link></li>
