@@ -1,22 +1,22 @@
 import Image from 'next/image';
 
-import BaseLayout from '../layouts/BaseLayout';
+import BaseLayout from '@/layouts/BaseLayout';
 
-import LogoAlphaTaxi from '../public/images/partners/alpha-taxi.png';
-import LogoG7 from '../public/images/partners/G7.png';
-import LogoGrenobleMobilite from '../public/images/partners/grenoble-mobilite.png';
-import LogoMoovit from '../public/images/partners/moovit.png';
-import LogoOnlyMoov from '../public/images/partners/only-moov.png';
-import LogoParisTaxis from '../public/images/partners/paris-taxis.png';
-import LogoTako from '../public/images/partners/tako.png';
-import LogoTaxisMarseille from '../public/images/partners/taxis-marseille.png';
+import LogoAlphaTaxi from '@/public/images/partners/alpha-taxi.png';
+import LogoG7 from '@/public/images/partners/G7.png';
+import LogoGrenobleMobilite from '@/public/images/partners/grenoble-mobilite.png';
+import LogoMoovit from '@/public/images/partners/moovit.png';
+import LogoOnlyMoov from '@/public/images/partners/only-moov.png';
+import LogoParisTaxis from '@/public/images/partners/paris-taxis.png';
+import LogoTako from '@/public/images/partners/tako.png';
+import LogoTaxisMarseille from '@/public/images/partners/taxis-marseille.png';
 
-import QuestionSection from '../components/QuestionSection';
+import QuestionSection from '@/components/QuestionSection';
 
-import stylesGoals from '../styles/Homepage.goals.module.css';
-import stylesChallenges from '../styles/Homepage.challenges.module.css';
-import stylesAPIDescription from '../styles/Homepage.api_description.module.css';
-import stylesPartners from '../styles/Homepage.partners.module.css';
+import stylesGoals from '@/styles/Homepage.goals.module.css';
+import stylesChallenges from '@/styles/Homepage.challenges.module.css';
+import stylesAPIDescription from '@/styles/Homepage.api_description.module.css';
+import stylesPartners from '@/styles/Homepage.partners.module.css';
 
 function GoalsSection() {
   return (
@@ -155,5 +155,5 @@ export default function HomePage() {
       <PartnersSection />
       <QuestionSection />
     </BaseLayout>
-  )
+  );
 }

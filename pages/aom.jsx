@@ -2,52 +2,55 @@ import PresentationLayout, {
   LandingSection,
   CardsSection,
   BoxSection,
-} from '../layouts/PresentationLayout';
-import QuestionSection from '../components/QuestionSection';
-import StyledNumberedList from '../components/StyledNumberedList';
+} from '@/layouts/PresentationLayout';
 
-import stylesHowto from '../styles/AOM.howto.module.css';
+import QuestionSection from '@/components/QuestionSection';
+import StyledNumberedList from '@/components/StyledNumberedList';
+
+import stylesHowto from '@/styles/AOM.howto.module.css';
 
 function HowToSection() {
   return (
     <section className={stylesHowto.section}>
       <h4>Comment connecter votre application à le.taxi ?</h4>
-      <StyledNumberedList elements={[
-        <>Inscrivez-vous au programme</>,
-        <><strong>Intégrez l'API</strong> à partir des docs transmis</>,
-        <strong>Testons le service ensemble</strong>,
-        <>Les taxis disponibles dans votre application</>,
-      ]} />
+      <StyledNumberedList
+        elements={[
+          <>Inscrivez-vous au programme</>,
+          <><strong>Intégrez l'API</strong> à partir des docs transmis</>,
+          <strong>Testons le service ensemble</strong>,
+          <>Les taxis disponibles dans votre application</>,
+        ]}
+      />
     </section>
   );
 }
 
 export default function AOMPage() {
   const pageTitle = (
-      <>
-        Complétez <span className="highlight">votre application Maas</span> avec le service public du taxi
-      </>
-    );
+    <>
+      Complétez <span className="highlight">votre application Maas</span> avec le service public du taxi
+    </>
+  );
 
   const presentationBoxContent = (
     <>
-      Le.taxi est la brique publique des taxis pour le Maas qui permet aux usagers de héler un taxi en un clic partout en France et sans frais d’approche
+      Le.taxi est la brique publique des taxis pour le Maas qui permet aux usagers de héler un taxi
+      en un clic partout en France et sans frais d’approche
     </>
   );
 
   return (
     <PresentationLayout>
       <LandingSection
-          title={pageTitle}
-          boxContent={presentationBoxContent}
-
-          backgroundImage="/images/page_aom/illustration-city.svg"
-          subtitle="Les avantages pour les acteurs publics"
-          bulletPoints={[
-            "Un accès facilité au service public du taxi pour vos usagers",
-            "Un service facile à intégrer dans le MaaS",
-            "Tous les taxis de votre territoire dans un service",
-          ]}
+        title={pageTitle}
+        boxContent={presentationBoxContent}
+        backgroundImage="/images/page_aom/illustration-city.svg"
+        subtitle="Les avantages pour les acteurs publics"
+        bulletPoints={[
+          "Un accès facilité au service public du taxi pour vos usagers",
+          "Un service facile à intégrer dans le MaaS",
+          "Tous les taxis de votre territoire dans un service",
+        ]}
       />
 
       <CardsSection
@@ -70,7 +73,7 @@ export default function AOMPage() {
 
       <BoxSection
         content={[
-          <>&nbsp;</>
+          <>&nbsp;</>,
         ]}
       />
 

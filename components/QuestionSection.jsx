@@ -1,5 +1,6 @@
-import ButtonLink from '../components/ButtonLink';
-import styles from '../styles/components/QuestionSection.module.css';
+import ButtonLink from '@/components/ButtonLink';
+
+import styles from '@/styles/components/QuestionSection.module.css';
 
 export default function QuestionSection() {
   return (

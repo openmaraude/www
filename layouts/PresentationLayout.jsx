@@ -3,16 +3,19 @@
  * partners.
  */
 
+import PropTypes from 'prop-types';
+
 import Image from 'next/image';
 
-import BaseLayout from './BaseLayout';
-import ButtonLink from '../components/ButtonLink';
+import BaseLayout from '@/layouts/BaseLayout';
 
-import styles from '../styles/layouts/Presentation.module.css';
-import stylesLanding from '../styles/layouts/Presentation.landing.module.css';
-import stylesCards from '../styles/layouts/Presentation.cards.module.css';
-import stylesBox from '../styles/layouts/Presentation.box.module.css';
-import stylesTwoSides from '../styles/layouts/Presentation.two_sides.module.css';
+import ButtonLink from '@/components/ButtonLink';
+
+import styles from '@/styles/layouts/Presentation.module.css';
+import stylesLanding from '@/styles/layouts/Presentation.landing.module.css';
+import stylesCards from '@/styles/layouts/Presentation.cards.module.css';
+import stylesBox from '@/styles/layouts/Presentation.box.module.css';
+import stylesTwoSides from '@/styles/layouts/Presentation.two_sides.module.css';
 
 export function LandingSection({
   title,
@@ -52,6 +55,14 @@ export function LandingSection({
   );
 }
 
+LandingSection.propTypes = {
+  title: PropTypes.node.isRequired,
+  boxContent: PropTypes.node.isRequired,
+  backgroundImage: PropTypes.string.isRequired,
+  subtitle: PropTypes.node.isRequired,
+  bulletPoints: PropTypes.arrayOf(PropTypes.node).isRequired,
+};
+
 export function CardsSection({
   title,
   cards,
@@ -78,17 +89,26 @@ export function CardsSection({
   );
 }
 
+CardsSection.propTypes = {
+  title: PropTypes.string.isRequired,
+  cards: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
+};
+
 export function BoxSection({ content }) {
   return (
     <section className={stylesBox.section}>
       <ul>
         {content.map((elem, idx) => (
-          <li key={idx}>{elem}</li>
+          <li key={String(idx)}>{elem}</li>
         ))}
       </ul>
     </section>
   );
 }
+
+BoxSection.propTypes = {
+  content: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
+};
 
 export function TwoSidesSection({ title, left, right }) {
   return (
@@ -96,18 +116,26 @@ export function TwoSidesSection({ title, left, right }) {
       <div className={stylesTwoSides.left}>
         <h4>{title}</h4>
         <div className={stylesTwoSides.content}>
-        {left}
+          {left}
         </div>
       </div>
       <div className={stylesTwoSides.right}>
-        <h4></h4>
+        {/* eslint-disable jsx-a11y/heading-has-content */}
+        <h4 />
+        {/* eslint-enable jsx-a11y/heading-has-content */}
         <div className={stylesTwoSides.content}>
-        {right}
+          {right}
         </div>
       </div>
     </section>
   );
 }
+
+TwoSidesSection.propTypes = {
+  title: PropTypes.string.isRequired,
+  left: PropTypes.node.isRequired,
+  right: PropTypes.node.isRequired,
+};
 
 export default function PresentationLayout({ children }) {
   return (
@@ -118,3 +146,7 @@ export default function PresentationLayout({ children }) {
     </BaseLayout>
   );
 }
+
+PresentationLayout.propTypes = {
+  children: PropTypes.node.isRequired,
+};

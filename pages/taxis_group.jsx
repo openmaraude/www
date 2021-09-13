@@ -6,10 +6,10 @@ import PresentationLayout, {
   TwoSidesSection,
 } from '../layouts/PresentationLayout';
 
-import QuestionSection from '../components/QuestionSection';
-import StyledNumberedList from '../components/StyledNumberedList';
+import QuestionSection from '@/components/QuestionSection';
+import StyledNumberedList from '@/components/StyledNumberedList';
 
-import stylesTwoSides from '../styles/TaxisGroup.two_sides.module.css';
+import stylesTwoSides from '@/styles/TaxisGroup.two_sides.module.css';
 
 function TwoSidesLeft() {
   return (
@@ -18,11 +18,13 @@ function TwoSidesLeft() {
         Vous avez <span className="underline">déjà</span> une application
       </h6>
 
-      <StyledNumberedList elements={[
-        <><strong>Inscrivez-vous</strong> au programme le.taxi</>,
-        <><strong>Intégrez l'API</strong> à votre application</>,
-        <><strong>Vos chauffeurs</strong> reçoivent des courses</>,
-      ]} />
+      <StyledNumberedList
+        elements={[
+          <><strong>Inscrivez-vous</strong> au programme le.taxi</>,
+          <><strong>Intégrez l'API</strong> à votre application</>,
+          <><strong>Vos chauffeurs</strong> reçoivent des courses</>,
+        ]}
+      />
 
       <ButtonLink href="https://api.gouv.fr/les-api/le-taxi/demande-acces">Inscrivez-vous</ButtonLink>
     </>
@@ -48,10 +50,10 @@ function TwoSidesRight() {
 
 export default function TaxisGroupPage() {
   const pageTitle = (
-      <>
-        <span className="highlight">Connectez vos taxis</span> à la maraude électronique
-      </>
-    );
+    <>
+      <span className="highlight">Connectez vos taxis</span> à la maraude électronique
+    </>
+  );
 
   const presentationBoxContent = (
     <>
@@ -64,16 +66,15 @@ export default function TaxisGroupPage() {
   return (
     <PresentationLayout>
       <LandingSection
-          title={pageTitle}
-          boxContent={presentationBoxContent}
-
-          backgroundImage="/images/page_taxis_group/illustration-customers.svg"
-          subtitle="Nos ambitions pour les groupements de taxis"
-          bulletPoints={[
-            "Accompagner la modernisation de l’offre de taxis",
-            "Encore plus de courses pour les taxis",
-            "Votre clientèle trouve un taxi partout en France, via votre application",
-          ]}
+        title={pageTitle}
+        boxContent={presentationBoxContent}
+        backgroundImage="/images/page_taxis_group/illustration-customers.svg"
+        subtitle="Nos ambitions pour les groupements de taxis"
+        bulletPoints={[
+          "Accompagner la modernisation de l’offre de taxis",
+          "Encore plus de courses pour les taxis",
+          "Votre clientèle trouve un taxi partout en France, via votre application",
+        ]}
       />
 
       <CardsSection

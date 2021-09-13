@@ -1,11 +1,16 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+
+import PropTypes from 'prop-types';
+
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import ButtonLink from '../components/ButtonLink';
-import styles from '../styles/layouts/Base.module.css';
-import stylesHeader from '../styles/layouts/Base.header.module.css';
-import stylesFooter from '../styles/layouts/Base.footer.module.css';
+import ButtonLink from '@/components/ButtonLink';
+
+import styles from '@/styles/layouts/Base.module.css';
+import stylesHeader from '@/styles/layouts/Base.header.module.css';
+import stylesFooter from '@/styles/layouts/Base.footer.module.css';
 
 function Header() {
   return (
@@ -88,3 +93,7 @@ export default function BaseLayout({ children }) {
     </div>
   );
 }
+
+BaseLayout.propTypes = {
+  children: PropTypes.node.isRequired,
+};

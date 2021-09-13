@@ -1,13 +1,12 @@
 import PresentationLayout, {
   LandingSection,
-  CardsSection,
   BoxSection,
-} from '../layouts/PresentationLayout';
+} from '@/layouts/PresentationLayout';
 
-import QuestionSection from '../components/QuestionSection';
-import StyledNumberedList from '../components/StyledNumberedList';
+import QuestionSection from '@/components/QuestionSection';
+import StyledNumberedList from '@/components/StyledNumberedList';
 
-import stylesHowto from '../styles/MaaS.howto.module.css';
+import stylesHowto from '@/styles/MaaS.howto.module.css';
 
 function HowToSection() {
   return (
@@ -18,37 +17,38 @@ function HowToSection() {
         <>Intégrez l’API à  à partir des docs transmis</>,
         <>Test et validation</>,
         <>Taxis disponibles dans votre application</>,
-      ]} />
+      ]}
+      />
     </section>
   );
 }
 
 export default function MaaSPage() {
   const pageTitle = (
-      <>
-        <span className="highlight">Élargissez votre offre</span> en proposant aussi le taxi
-      </>
-    );
+    <>
+      <span className="highlight">Élargissez votre offre</span> en proposant aussi le taxi
+    </>
+  );
 
   const presentationBoxContent = (
     <>
-      Le.taxi est la brique publique des taxis pour le Maas qui permet aux usagers de héler un taxi en un clic partout en France et sans frais d’approche
+      Le.taxi est la brique publique des taxis pour le Maas qui permet aux usagers de héler un taxi
+      en un clic partout en France et sans frais d’approche
     </>
   );
 
   return (
     <PresentationLayout>
       <LandingSection
-          title={pageTitle}
-          boxContent={presentationBoxContent}
-
-          backgroundImage="/images/page_maas/illustration-application-customer.svg"
-          subtitle="Les avantages pour les applications de mobilité"
-          bulletPoints={[
-            "Vos utilisateurs voient les taxis dans un rayon de 500m",
-            "Pas de frais d’approche",
-            "Le tout dans votre service",
-          ]}
+        title={pageTitle}
+        boxContent={presentationBoxContent}
+        backgroundImage="/images/page_maas/illustration-application-customer.svg"
+        subtitle="Les avantages pour les applications de mobilité"
+        bulletPoints={[
+          "Vos utilisateurs voient les taxis dans un rayon de 500m",
+          "Pas de frais d’approche",
+          "Le tout dans votre service",
+        ]}
       />
 
       <BoxSection

@@ -1,8 +1,10 @@
+/* eslint max-len: ["error", { "code": 9999 }] */
+
 import React from 'react';
 
-import BaseLayout from '../layouts/BaseLayout';
+import BaseLayout from '@/layouts/BaseLayout';
 
-import styles from '../styles/FAQ.module.css';
+import styles from '@/styles/FAQ.module.css';
 
 const SECTIONS = [
   {
@@ -14,7 +16,7 @@ const SECTIONS = [
       },
       {
         q: <>Peut-on choisir le rayon dans lequel on souhaite être visible en maraude électronique ?</>,
-        a: <>Oui. Conformément à l’arrêté du xx juillet 2021, il est possible de définir une distance de 150 à 500m. Vous pouvez la régler dans votre application chauffeur.</>,
+        a: <>Oui. Conformément à l'arrêté du xx juillet 2021, il est possible de définir une distance de 150 à 500m. Vous pouvez la régler dans votre application chauffeur.</>,
       },
       {
         q: <>Quel est l'intérêt pour les taxis ?</>,
@@ -24,20 +26,21 @@ const SECTIONS = [
         q: <>Comment sont distribuées les courses ?</>,
         a: <>Les applications ont pour obligation d’afficher tous les taxis connectés à le.taxi en toute impartialité. De plus, le choix du chauffeur est fait par le client final ou en fonction de la proximité avec le client.</>,
       },
-    ]
+    ],
   },
   {
     title: 'Connexion',
     questions: [
       {
         q: <>Est-il nécessaire de télécharger une nouvelle application pour se connecter à le.taxi ?</>,
-        a: <ul>
-            <li>Vous ne travaillez pas avec une application ? Choisissez un service partenaire.</li>
-            <li>Vous travaillez déjà avec une application ? Contactez le responsable de votre groupement, pour vérifier qu’il est connecté à le.taxi. Sinon, vous pouvez choisir une autre application dans la liste de nos partenaires.</li>
-        </ul>,
+        a:
+  <ul>
+    <li>Vous ne travaillez pas avec une application ? Choisissez un service partenaire.</li>
+    <li>Vous travaillez déjà avec une application ? Contactez le responsable de votre groupement, pour vérifier qu’il est connecté à le.taxi. Sinon, vous pouvez choisir une autre application dans la liste de nos partenaires.</li>
+  </ul>,
       },
       {
-        q: <>Est-ce que je peux choisir mon application de connexion à le.taxi, même si je suis dans un groupement ?</>,
+        q: <>Est-ce que je peux choisir mon application de connexion à le.taxi, même si je suis dans un groupement ?</>,
         a: <>Oui, vous n’avez aucune obligation. Les artisans taxi sont libres de choisir l’application avec laquelle ils/elles souhaitent travailler.</>,
       },
       {
@@ -64,22 +67,23 @@ const SECTIONS = [
     questions: [
       {
         q: <>Est-ce que je dois accepter les courses qui me sont attribuées par le.taxi ?</>,
-        a: <>
-          <p>Le principe est le même que pour la maraude physique. En tant qu’artisan taxi, vous devez accepter une course en maraude électronique, si vous êtes disponible dans votre zone de prise en charge (article R.3121-23 du code des transports).</p>
-          <p>Toutefois, il existe des cas de refus légitimes pour prendre en compte les spécificités de la maraude électronique :</p>
-          <ul>
-            <li>La destination du client est en dehors de votre Autorisation de stationnement (ADS)</li>
-            <li>La course est incompatible avec votre emploi du temps</li>
-            <li>Fin de service</li>
-            <li>En pause</li>
-            <li>Réservation à proximité.</li>
-            <li>Vous êtes déjà en course ou quelqu’un d’autre vous hèle dans la rue</li>
-            <li>Vous êtes en station</li>
-            <li>Le lieu de prise en charge est inaccessible</li>
-            <li>Le client ou la cliente est absente</li>
-            <li>Autre cas légitime défini localement par arrêté préfectoral.</li>
-          </ul>
-        </>,
+        a:
+  <>
+    <p>Le principe est le même que pour la maraude physique. En tant qu’artisan taxi, vous devez accepter une course en maraude électronique, si vous êtes disponible dans votre zone de prise en charge (article R.3121-23 du code des transports).</p>
+    <p>Toutefois, il existe des cas de refus légitimes pour prendre en compte les spécificités de la maraude électronique :</p>
+    <ul>
+      <li>La destination du client est en dehors de votre Autorisation de stationnement (ADS)</li>
+      <li>La course est incompatible avec votre emploi du temps</li>
+      <li>Fin de service</li>
+      <li>En pause</li>
+      <li>Réservation à proximité.</li>
+      <li>Vous êtes déjà en course ou quelqu’un d’autre vous hèle dans la rue</li>
+      <li>Vous êtes en station</li>
+      <li>Le lieu de prise en charge est inaccessible</li>
+      <li>Le client ou la cliente est absente</li>
+      <li>Autre cas légitime défini localement par arrêté préfectoral.</li>
+    </ul>
+  </>,
       },
       {
         q: <>Est-ce que je dois être visible sur le.taxi ?</>,
@@ -92,21 +96,22 @@ const SECTIONS = [
     questions: [
       {
         q: <>Est-ce que le système le.taxi respecte les zones de prise en charge définies par les ADS ?</>,
-        a: <>Oui, chaque artisan taxi enregistré sur la plateforme doit renseigner son ADS. Le taxi est visible uniquement dans la zone rattachée à son ADS (commune ou ZUPC).</>
+        a: <>Oui, chaque artisan taxi enregistré sur la plateforme doit renseigner son ADS. Le taxi est visible uniquement dans la zone rattachée à son ADS (commune ou ZUPC).</>,
       },
       {
         q: <>Quelles informations sont nécessaires pour m’inscrire ?</>,
-        a: <>
-            <p>
-              Lors de votre inscription sur le.taxi, vous devrez renseigner des informations comme vos :
-            </p>
-            <ul>
-              <li>Identité</li>
-              <li>Numéro d’ADS</li>
-              <li>Numéro de carte professionnelle</li>
-              <li>Numéro d’immatriculation.</li>
-            </ul>
-        </>
+        a:
+  <>
+    <p>
+      Lors de votre inscription sur le.taxi, vous devrez renseigner des informations comme vos :
+    </p>
+    <ul>
+      <li>Identité</li>
+      <li>Numéro d’ADS</li>
+      <li>Numéro de carte professionnelle</li>
+      <li>Numéro d’immatriculation.</li>
+    </ul>
+  </>,
       },
     ],
   },
@@ -123,8 +128,7 @@ const SECTIONS = [
       },
     ],
   },
-]
-
+];
 
 export default function FAQPage() {
   return (
@@ -140,19 +144,19 @@ export default function FAQPage() {
         <div className={styles.content}>
           <h1>Questions fréquentes</h1>
 
-          {SECTIONS.map((section) =>
+          {SECTIONS.map((section) => (
             <section key={section.title} className={styles.section}>
               <h5 id={section.title}>{section.title}</h5>
               <dl>
-              {section.questions.map((question, idx) =>
-                <React.Fragment key={idx}>
-                  <dt>{question.q}</dt>
-                  <dd>{question.a}</dd>
-                </React.Fragment>
-              )}
+                {section.questions.map((question, idx) => (
+                  <React.Fragment key={String(idx)}>
+                    <dt>{question.q}</dt>
+                    <dd>{question.a}</dd>
+                  </React.Fragment>
+                ))}
               </dl>
             </section>
-          )}
+          ))}
         </div>
       </div>
     </BaseLayout>
