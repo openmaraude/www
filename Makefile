@@ -3,7 +3,6 @@ DOCKER_PORT = 3000:80
 RELEASE ?= latest
 
 run: build
-	@echo ">>> Run $* version"
 	docker run --rm -ti -p ${DOCKER_PORT} ${DOCKER_IMAGE}
 
 build:
