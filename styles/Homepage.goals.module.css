@@ -63,6 +63,13 @@ ul.goals li:before {
 .illustration {
   flex: 1;
   margin-top: 50px;
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .illustration {
+    display: block;
+  }
 }
 
 .illustrationContainer {
