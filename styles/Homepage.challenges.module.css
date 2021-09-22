@@ -1,57 +1,11 @@
 .section {
   background-color: #484D7A;
-  padding: 20px;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-.section h4 {
+.section h2 {
   color: #fff;
   text-align: center;
-}
-
-.cards {
-  display: flex;
-  flex-direction: column;
-}
-
-.card {
-  background-color: #fff;
-  margin-bottom: 10px;
-  flex: 1;
-  padding: 20px;
-  position: relative;
-}
-
-.illustrationContainer {
-  position: relative;
-  height: 100px;
-}
-
-.card h5 {
-  text-align: center;
-  font-size: 1.2rem;
-}
-
-.card p {
-  color: #383838;
-}
-
-.CTA {
-  text-align: right;
-  font-size: 1.5em;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin: 20px;
-}
-
-@media (min-width: 1024px) {
-  .cards {
-    flex-direction: row;
-  }
-
-  .card {
-    margin-right: 10px;
-  }
+  margin-bottom: 50px;
 }

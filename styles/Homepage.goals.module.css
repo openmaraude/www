@@ -1,23 +1,20 @@
 .section {
-  display: flex;
-  padding-left: 10%;
-  padding-right: 10%;
   background: linear-gradient(180deg, #fff 50%, #ECECFF);
-  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .section h4 {
   color: #00006D;
 }
 
-ul.goals {
+.goals {
   display: flex;
   flex-direction: column;
   justify-content: center;
   list-style: none;
 }
 
-ul.goals li {
+.goals li {
   position: relative;
   background: url('/images/icons/list-check.svg') no-repeat left center;
   background-size: 22px;
@@ -26,7 +23,7 @@ ul.goals li {
   margin-bottom: 32px;
 }
 
-ul.goals li:after {
+.goals li:after {
   content: "";
   border-left: 1px dashed #7f7fc8;
 
@@ -40,7 +37,7 @@ ul.goals li:after {
   left: 10px;
 }
 
-ul.goals li:before {
+.goals li:before {
   content: "";
   border-left: 1px dashed #7f7fc8;
 
@@ -51,24 +48,41 @@ ul.goals li:before {
   top: -11px;
 }
 
-.content ul li:last-child:after,
-.content ul li:first-child:before {
+.goals li:last-child:after,
+.goals li:first-child:before {
   border-left: none;
 }
 
-.content {
-  flex: 1;
-}
-
-.illustration {
-  flex: 1;
-  margin-top: 50px;
-  display: none;
-}
-
 @media (min-width: 1024px) {
-  .illustration {
-    display: block;
+  .goals {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .goals li {
+    width: 50%;
+  }
+
+  /* reset borders */
+  .goals li:after,
+  .goals li:before {
+    border: none;
+  }
+
+  .goals li:nth-child(odd) {
+    order: 0;
+  }
+
+  .goals li:nth-child(even) {
+    order: 1;
+  }
+
+  .goals li:nth-child(odd):after {
+    border-left: 1px dashed #7f7fc8;
+  }
+
+  .goals li:nth-child(even):before {
+    border-left: 1px dashed #7f7fc8;
   }
 }
 
@@ -76,37 +90,4 @@ ul.goals li:before {
   position: relative;
   width: 100%;
   height: 100%;
-}
-
-@media (min-width: 1024px) {
-  ul.goals {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  ul.goals li {
-    width: 50%;
-  }
-
-  /* reset borders */
-  ul.goals li:after,
-  ul.goals li:before {
-    border: none;
-  }
-
-  ul.goals li:nth-child(odd) {
-    order: 0;
-  }
-
-  ul.goals li:nth-child(even) {
-    order: 1;
-  }
-
-  ul.goals li:nth-child(odd):after {
-    border-left: 1px dashed #7f7fc8;
-  }
-
-  ul.goals li:nth-child(even):before {
-    border-left: 1px dashed #7f7fc8;
-  }
 }

@@ -1,15 +1,10 @@
 .section {
   background-color: #E5E5F4;
-  padding: 10px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-.section h4 {
+.section h2 {
   text-align: center;
-}
-
-.illustrationContainer {
-  position: relative;
-  height: 250px;
-  width: 100%;
+  margin-bottom: 50px;
 }

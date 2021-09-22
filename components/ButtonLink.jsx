@@ -3,20 +3,12 @@ import PropTypes from 'prop-types';
 
 import styles from '@/styles/components/Button.module.css';
 
-export default function ButtonLink({ href, children, variant }) {
+const ButtonLink = React.forwardRef(({ onClick, children }, ref) => {
   return (
-    <a className={variant === 'light' ? styles.buttonLight : styles.button} href={href}>
-      {children}
-    </a>
+    <button onClick={onClick} className="fr-btn">
+      { children }
+    </button>
   );
-}
+})
 
-ButtonLink.defaultProps = {
-  variant: 'normal',
-};
-
-ButtonLink.propTypes = {
-  href: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired,
-  variant: PropTypes.string,
-};
+export default ButtonLink;
