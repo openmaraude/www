@@ -5,10 +5,12 @@ import PropTypes from 'prop-types';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router'
 
 import ButtonLink from '@/components/ButtonLink';
 
 function Header() {
+  const router = useRouter();
   return (
     <header role="banner" className="fr-header">
       <div className="fr-header__body">
@@ -60,16 +62,16 @@ function Header() {
           <nav className="fr-nav" role="navigation" aria-label="Menu principal" id="header-navigation">
             <ul className="fr-nav__list">
               <li className="fr-nav__item">
-                <a href="/taxis_group" className="fr-nav__link">Groupement de taxis</a>
+                <a href="/taxis_group" className="fr-nav__link" {...(router.asPath === "/taxis_group" ? {"aria-current": "page"} : {})}>Groupement de taxis</a>
               </li>
               <li className="fr-nav__item">
-                <a href="/taxi" className="fr-nav__link">Artisan taxi</a>
+                <a href="/taxi" className="fr-nav__link" {...(router.asPath === "/taxi" ? {"aria-current": "page"} : {})}>Artisan taxi</a>
               </li>
               <li className="fr-nav__item">
-                <a href="/aom" className="fr-nav__link">Mobilité publique</a>
+                <a href="/aom" className="fr-nav__link" {...(router.asPath === "/aom" ? {"aria-current": "page"} : {})}>Mobilité publique</a>
               </li>
               <li className="fr-nav__item">
-                <a href="/maas" className="fr-nav__link" >Application de mobilité</a>
+                <a href="/maas" className="fr-nav__link" {...(router.asPath === "/maas" ? {"aria-current": "page"} : {})}>Application de mobilité</a>
               </li>
             </ul>
           </nav>
