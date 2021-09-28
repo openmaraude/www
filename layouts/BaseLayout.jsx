@@ -3,9 +3,8 @@
 import PropTypes from 'prop-types';
 
 import Head from 'next/head';
-import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
 
 import ButtonLink from '@/components/ButtonLink';
 
@@ -56,22 +55,21 @@ function Header() {
       <div className="fr-header__menu fr-modal" id="modal-menu" aria-labelledby="button-825">
         <div className="fr-container">
           <button className="fr-link--close fr-link" aria-controls="modal-menu">Fermer</button>
-          <div className="fr-header__menu-links">
-          </div>
+          <div className="fr-header__menu-links" />
 
           <nav className="fr-nav" role="navigation" aria-label="Menu principal" id="header-navigation">
             <ul className="fr-nav__list">
               <li className="fr-nav__item">
-                <a href="/taxis_group" className="fr-nav__link" {...(router.asPath === "/taxis_group" ? {"aria-current": "page"} : {})}>Groupement de taxis</a>
+                <a href="/taxis_group" className="fr-nav__link" {...(router.asPath === "/taxis_group" ? { "aria-current": "page" } : {})}>Groupement de taxis</a>
               </li>
               <li className="fr-nav__item">
-                <a href="/taxi" className="fr-nav__link" {...(router.asPath === "/taxi" ? {"aria-current": "page"} : {})}>Artisan taxi</a>
+                <a href="/taxi" className="fr-nav__link" {...(router.asPath === "/taxi" ? { "aria-current": "page" } : {})}>Artisan taxi</a>
               </li>
               <li className="fr-nav__item">
-                <a href="/aom" className="fr-nav__link" {...(router.asPath === "/aom" ? {"aria-current": "page"} : {})}>Mobilité publique</a>
+                <a href="/aom" className="fr-nav__link" {...(router.asPath === "/aom" ? { "aria-current": "page" } : {})}>Mobilité publique</a>
               </li>
               <li className="fr-nav__item">
-                <a href="/maas" className="fr-nav__link" {...(router.asPath === "/maas" ? {"aria-current": "page"} : {})}>Application de mobilité</a>
+                <a href="/maas" className="fr-nav__link" {...(router.asPath === "/maas" ? { "aria-current": "page" } : {})}>Application de mobilité</a>
               </li>
             </ul>
           </nav>
@@ -97,20 +95,20 @@ function Footer() {
           </div>
           <div className="fr-footer__content">
             <p className="fr-footer__content-desc">
-              Le code source est ouvert et les contributions sont bienvenues. <a href="https://www.github.com/openmaraude/www" target="_blank">Voir le code source.</a>
+              Le code source est ouvert et les contributions sont bienvenues. <a href="https://www.github.com/openmaraude/www" rel="noreferrer" target="_blank">Voir le code source.</a>
             </p>
             <ul className="fr-footer__content-list">
               <li className="fr-footer__content-item">
-                <a className="fr-footer__content-link" href="https://legifrance.gouv.fr" target="_blank">legifrance.gouv.fr</a>
+                <a className="fr-footer__content-link" href="https://legifrance.gouv.fr" rel="noreferrer" target="_blank">legifrance.gouv.fr</a>
               </li>
               <li className="fr-footer__content-item">
-                <a className="fr-footer__content-link" href="https://gouvernement.fr" target="_blank">gouvernement.fr</a>
+                <a className="fr-footer__content-link" href="https://gouvernement.fr" rel="noreferrer" target="_blank">gouvernement.fr</a>
               </li>
               <li className="fr-footer__content-item">
-                <a className="fr-footer__content-link" href="https://service-public.fr" target="_blank">service-public.fr</a>
+                <a className="fr-footer__content-link" href="https://service-public.fr" rel="noreferrer" target="_blank">service-public.fr</a>
               </li>
               <li className="fr-footer__content-item">
-                <a className="fr-footer__content-link" href="https://data.gouv.fr" target="_blank">data.gouv.fr</a>
+                <a className="fr-footer__content-link" href="https://data.gouv.fr" rel="noreferrer" target="_blank">data.gouv.fr</a>
               </li>
             </ul>
           </div>
@@ -131,7 +129,7 @@ function Footer() {
             </li>
           </ul>
           <div className="fr-footer__bottom-copy">
-            <p>Sauf mention contraire, tous les textes de ce site sont sous <a href="https://github.com/etalab/licence-ouverte/blob/master/LO.md" target="_blank">licence etalab-2.0</a>
+            <p>Sauf mention contraire, tous les textes de ce site sont sous <a href="https://github.com/etalab/licence-ouverte/blob/master/LO.md" rel="noreferrer" target="_blank">licence etalab-2.0</a>
             </p>
           </div>
         </div>

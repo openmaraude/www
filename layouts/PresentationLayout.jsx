@@ -91,8 +91,8 @@ export function CardsSection({
               </div>
             </div>
           ))}
-          </div>
         </div>
+      </div>
     </section>
   );
 }

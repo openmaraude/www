@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 import ButtonLink from '@/components/ButtonLink';
 
 import styles from '@/styles/components/QuestionSection.module.css';

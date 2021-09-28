@@ -65,7 +65,7 @@ function ChallengesSection() {
                 <p className="fr-card__desc">Recevez de nouvelles courses lorsque vous êtes en maraude</p>
               </div>
               <div className="fr-card__img">
-                <img src="/images/homepage/taxi.svg" className="fr-responsive-img" />
+                <img src="/images/homepage/taxi.svg" className="fr-responsive-img" alt="" />
               </div>
             </div>
           </div>
@@ -79,7 +79,7 @@ function ChallengesSection() {
                 <p className="fr-card__desc">Connectez vos taxis à tous les usagers</p>
               </div>
               <div className="fr-card__img">
-                <img src="/images/homepage/taxis_group.svg" className="fr-responsive-img" />
+                <img src="/images/homepage/taxis_group.svg" className="fr-responsive-img" alt="" />
               </div>
             </div>
           </div>
@@ -93,7 +93,7 @@ function ChallengesSection() {
                 <p className="fr-card__desc">Proposez aussi les taxis dans votre application grand public</p>
               </div>
               <div className="fr-card__img">
-                <img src="/images/homepage/trip_planning_application.svg" className="fr-responsive-img" />
+                <img src="/images/homepage/trip_planning_application.svg" className="fr-responsive-img" alt="" />
               </div>
             </div>
           </div>
@@ -107,7 +107,7 @@ function ChallengesSection() {
                 <p className="fr-card__desc">Intégrez le service public des taxis à votre offre locale</p>
               </div>
               <div className="fr-card__img">
-                <img src="/images/homepage/maas.svg" className="fr-responsive-img" />
+                <img src="/images/homepage/maas.svg" className="fr-responsive-img" alt="" />
               </div>
             </div>
           </div>
@@ -138,14 +138,14 @@ function PartnersSection() {
         <h2>Nos partenaires</h2>
 
         <div className="fr-grid-row fr-grid-row--middle">
-          <div style={{textAlign: 'center'}} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoAlphaTaxi} /></div>
-          <div style={{textAlign: 'center'}} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoG7} /></div>
-          <div style={{textAlign: 'center'}} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoGrenobleMobilite} /></div>
-          <div style={{textAlign: 'center'}} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoMoovit} /></div>
-          <div style={{textAlign: 'center'}} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoOnlyMoov} /></div>
-          <div style={{textAlign: 'center'}} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoParisTaxis} /></div>
-          <div style={{textAlign: 'center'}} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoTako} /></div>
-          <div style={{textAlign: 'center'}} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoTaxisMarseille} /></div>
+          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoAlphaTaxi} /></div>
+          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoG7} /></div>
+          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoGrenobleMobilite} /></div>
+          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoMoovit} /></div>
+          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoOnlyMoov} /></div>
+          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoParisTaxis} /></div>
+          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoTako} /></div>
+          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoTaxisMarseille} /></div>
         </div>
       </div>
     </section>
