@@ -36,7 +36,7 @@ function GoalsSection() {
             </ul>
           </div>
 
-          <div className={`fr-col`}>
+          <div className="fr-col">
             <div className={stylesGoals.illustrationContainer}>
               <Image src="/images/homepage/illustration-customer.svg" alt="Illustration commande de taxi" layout="fill" />
             </div>

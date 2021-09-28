@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import ButtonLink from '../components/ButtonLink';
 import PresentationLayout, {
   LandingSection,
@@ -26,7 +28,9 @@ function TwoSidesLeft() {
         ]}
       />
 
-      <ButtonLink href="https://api.gouv.fr/les-api/le-taxi/demande-acces">Inscrivez-vous</ButtonLink>
+      <Link href="https://api.gouv.fr/les-api/le-taxi/demande-acces" passHref>
+        <ButtonLink>Inscrivez-vous</ButtonLink>
+      </Link>
     </>
   );
 }
@@ -43,7 +47,9 @@ function TwoSidesRight() {
         Vos chauffeurs peuvent <strong>rejoindre l’un de nos partenaires.</strong>
       </p>
 
-      <ButtonLink href="/" variant="light">Voir la liste des partenaires</ButtonLink>
+      <Link href="/" passHref>
+        <ButtonLink variant="secondary">Voir la liste des partenaires</ButtonLink>
+      </Link>
     </>
   );
 }

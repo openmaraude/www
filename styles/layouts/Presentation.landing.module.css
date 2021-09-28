@@ -1,13 +1,26 @@
 .section {
-  padding-left: 10%;
-  padding-right: 10%;
-  display: flex;
-  flex-direction: column;
+  padding-top: 30px;
 }
 
-.sectionLeft {
-  padding-bottom: 50px;
-  flex: 1;
+@media (min-width: 1024px) {
+  .section {
+    background: url('/images/page_taxis_group/illustration-road.svg') no-repeat left bottom;
+  }
+}
+
+.section h2 {
+  margin-bottom: 60px;
+}
+
+.illustration {
+  position: relative;
+  height: 250px;
+}
+
+.illustrationContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .box {
@@ -18,47 +31,21 @@
   box-shadow: -15px 15px #484D7A;
 }
 
-.sectionRight {
-  padding-bottom: 50px;
-  flex: 1;
-}
-
-.illustration {
-  position: relative;
-  height: 250px;
-}
-
-.sectionRight ul {
+.section ul {
   list-style-type: none;
 }
 
-.sectionRight ul li:before {
+.section ul li:before {
   content: '→';
   color: #000091;
   margin-right: 15px;
 }
 
-.sectionRight ul li {
+.section ul li {
   margin-bottom: 10px;
 }
 
 .CTA {
   display: flex;
   justify-content: center;
-}
-
-@media (min-width: 1024px) {
-  .section {
-    flex-direction: row;
-    padding-top: 50px;
-    background: url('/images/page_taxis_group/illustration-road.svg') no-repeat left bottom;
-  }
-
-  .sectionLeft {
-    padding-bottom: 300px;
-  }
-
-  .sectionLeft h2 {
-    margin-bottom: 100px;
-  }
 }

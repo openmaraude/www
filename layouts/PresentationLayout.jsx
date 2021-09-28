@@ -6,6 +6,7 @@
 import PropTypes from 'prop-types';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 import BaseLayout from '@/layouts/BaseLayout';
 
@@ -26,29 +27,34 @@ export function LandingSection({
 }) {
   return (
     <section className={stylesLanding.section}>
-      <div className={stylesLanding.sectionLeft}>
-        <h2>{title}</h2>
-
-        <div className={stylesLanding.box}>
-          {boxContent}
-        </div>
-      </div>
-
-      <div className={stylesLanding.sectionRight}>
-        <div className={stylesLanding.illustration}>
-          <div className={stylesLanding.illustrationContainer}>
-            <Image src={backgroundImage} alt="Illustration" layout="fill" />
+      <div className="fr-container">
+        <div className="fr-grid-row">
+          <div className="fr-col-12 fr-col-md-6 fr-mb-5w">
+            <h2>{title}</h2>
+            <div className={stylesLanding.box}>
+              {boxContent}
+            </div>
           </div>
-        </div>
 
-        <h4 className="highlight">{subtitle}</h4>
+          <div className="fr-col-12 fr-col-md-6 fr-pl-3w fr-mb-3w">
+            <div className={stylesLanding.illustration}>
+              <div className={stylesLanding.illustrationContainer}>
+                <Image src={backgroundImage} alt="Illustration" layout="fill" />
+              </div>
+            </div>
 
-        <ul>
-          {bulletPoints.map((elem) => <li key={elem}><strong>{elem}</strong></li>)}
-        </ul>
+            <h4 className="highlight">{subtitle}</h4>
 
-        <div className={stylesLanding.CTA}>
-          <ButtonLink href="https://api.gouv.fr/les-api/le-taxi/demande-acces">S'inscrire</ButtonLink>
+            <ul>
+              {bulletPoints.map((elem) => <li key={elem}><strong>{elem}</strong></li>)}
+            </ul>
+
+            <div className={stylesLanding.CTA}>
+              <Link href="https://api.gouv.fr/les-api/le-taxi/demande-acces" passHref>
+                <ButtonLink>S'inscrire</ButtonLink>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -69,22 +75,24 @@ export function CardsSection({
 }) {
   return (
     <section className={stylesCards.section}>
-      <h4 className="highlight">{title}</h4>
+      <div className="fr-container">
+        <h4 className="highlight">{title}</h4>
 
-      <div className={stylesCards.cards}>
-        {cards.map((card) => (
-          <div key={card.backgroundImage} className={stylesCards.card}>
-            <div className={stylesCards.illustration}>
-              <div className={stylesCards.illustrationContainer}>
-                <Image src={card.backgroundImage} layout="fill" />
+        <div className="fr-grid-row">
+          {cards.map((card) => (
+            <div key={card.backgroundImage} className="fr-col-12 fr-col-md-4 fr-mb-5w">
+              <div className={stylesCards.illustration}>
+                <div className={stylesCards.illustrationContainer}>
+                  <Image src={card.backgroundImage} layout="fill" />
+                </div>
+              </div>
+              <div className={stylesCards.text}>
+                {card.content}
               </div>
             </div>
-            <div className={stylesCards.text}>
-              {card.content}
-            </div>
+          ))}
           </div>
-        ))}
-      </div>
+        </div>
     </section>
   );
 }
@@ -97,11 +105,13 @@ CardsSection.propTypes = {
 export function BoxSection({ content }) {
   return (
     <section className={stylesBox.section}>
-      <ul>
-        {content.map((elem, idx) => (
-          <li key={String(idx)}>{elem}</li>
-        ))}
-      </ul>
+      <div className="fr-container">
+        <ul className="fr-grid-row">
+          {content.map((elem, idx) => (
+            <li className="fr-col fr-pl-2w fr-pr-2w" key={String(idx)}>{elem}</li>
+          ))}
+        </ul>
+      </div>
     </section>
   );
 }
@@ -113,18 +123,20 @@ BoxSection.propTypes = {
 export function TwoSidesSection({ title, left, right }) {
   return (
     <section className={stylesTwoSides.section}>
-      <div className={stylesTwoSides.left}>
-        <h4>{title}</h4>
-        <div className={stylesTwoSides.content}>
-          {left}
-        </div>
-      </div>
-      <div className={stylesTwoSides.right}>
-        {/* eslint-disable jsx-a11y/heading-has-content */}
-        <h4 />
-        {/* eslint-enable jsx-a11y/heading-has-content */}
-        <div className={stylesTwoSides.content}>
-          {right}
+      <div className="fr-container">
+        <div className="fr-grid-row">
+          <div className="fr-col-6">
+            <h4 className="fr-mt-3w">{title}</h4>
+            <div className={stylesTwoSides.content}>
+              {left}
+            </div>
+          </div>
+          <div className={`fr-col-6 ${stylesTwoSides.rightSide}`}>
+            <h4 className="fr-mt-3w">{title}</h4>
+            <div className={stylesTwoSides.content}>
+              {right}
+            </div>
+          </div>
         </div>
       </div>
     </section>

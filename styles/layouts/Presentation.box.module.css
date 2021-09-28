@@ -1,45 +1,15 @@
 .section {
   background-color: #484D7A;
   color: #fff;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .section ul {
-  flex-direction: column;
-  display: flex;
   list-style-type: none;
   font-family: 'marianne-light';
 }
 
 .section ul li {
-  margin-top: 30px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #fff;
   text-align: center;
-}
-
-.section ul li:last-child {
-  border-bottom: none;
-}
-
-@media (min-width: 1024px) {
-  .section {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  .section ul {
-    justify-content: space-between;
-    flex-direction: row;
-  }
-
-  .section ul li {
-    border-bottom: none;
-    margin-top: 0;
-    padding-bottom: 0;
-    margin-right: 20px;
-  }
 }
