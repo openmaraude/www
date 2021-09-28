@@ -6,19 +6,19 @@ import PresentationLayout, {
 import QuestionSection from '@/components/QuestionSection';
 import StyledNumberedList from '@/components/StyledNumberedList';
 
-import stylesHowto from '@/styles/MaaS.howto.module.css';
-
 function HowToSection() {
   return (
-    <section className={stylesHowto.section}>
-      <h4>Connectez simplement l’API le.taxi à votre application</h4>
-      <StyledNumberedList elements={[
-        <>Valider le formulaire de demande d'accès</>,
-        <>Intégrez l’API à  à partir des docs transmis</>,
-        <>Test et validation</>,
-        <>Taxis disponibles dans votre application</>,
-      ]}
-      />
+    <section>
+      <div className="fr-container">
+        <h4 className="fr-mt-3w fr-mb-5w">Connectez simplement l’API le.taxi à votre application</h4>
+        <StyledNumberedList elements={[
+          <>Valider le formulaire de demande d'accès</>,
+          <>Intégrez l’API à  à partir des docs transmis</>,
+          <>Test et validation</>,
+          <>Taxis disponibles dans votre application</>,
+        ]}
+        />
+      </div>
     </section>
   );
 }

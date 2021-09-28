@@ -125,13 +125,13 @@ export function TwoSidesSection({ title, left, right }) {
     <section className={stylesTwoSides.section}>
       <div className="fr-container">
         <div className="fr-grid-row">
-          <div className="fr-col-6">
+          <div className="fr-col-6 fr-pl-1w fr-pr-1w">
             <h4 className="fr-mt-3w">{title}</h4>
             <div className={stylesTwoSides.content}>
               {left}
             </div>
           </div>
-          <div className={`fr-col-6 ${stylesTwoSides.rightSide}`}>
+          <div className={`fr-col-6 fr-pl-1w fr-pr-1w ${stylesTwoSides.rightSide}`}>
             <h4 className="fr-mt-3w">{title}</h4>
             <div className={stylesTwoSides.content}>
               {right}
