@@ -25,9 +25,11 @@ function Header() {
                   </p>
                 </div>
                 <div className="fr-header__operator">
-                  <a href="/">
-                    <img src="/images/icons/logo.svg" className="fr-responsive-img" style={{ maxWidth: '9.0625rem' }} alt="Logo le.taxi" />
-                  </a>
+                  <Link href="/" passHref>
+                    <a>
+                      <img src="/images/icons/logo.svg" className="fr-responsive-img" style={{ maxWidth: '9.0625rem' }} alt="Logo le.taxi" />
+                    </a>
+                  </Link>
                 </div>
                 <div className="fr-header__navbar">
                   <button className="fr-btn--menu fr-btn" data-fr-opened="false" aria-controls="modal-menu" aria-haspopup="menu" title="Menu" type="button">
@@ -60,16 +62,24 @@ function Header() {
           <nav className="fr-nav" role="navigation" aria-label="Menu principal" id="header-navigation">
             <ul className="fr-nav__list">
               <li className="fr-nav__item">
-                <a href="/taxis_group" className="fr-nav__link" {...(router.asPath === "/taxis_group" ? { "aria-current": "page" } : {})}>Groupement de taxis</a>
+                <Link href="/taxis_group" passHref>
+                  <a className="fr-nav__link" {...(router.asPath === "/taxis_group" ? { "aria-current": "page" } : {})}>Groupement de taxis</a>
+                </Link>
               </li>
               <li className="fr-nav__item">
-                <a href="/taxi" className="fr-nav__link" {...(router.asPath === "/taxi" ? { "aria-current": "page" } : {})}>Artisan taxi</a>
+                <Link href="/taxi" passHref>
+                  <a className="fr-nav__link" {...(router.asPath === "/taxi" ? { "aria-current": "page" } : {})}>Artisan taxi</a>
+                </Link>
               </li>
               <li className="fr-nav__item">
-                <a href="/aom" className="fr-nav__link" {...(router.asPath === "/aom" ? { "aria-current": "page" } : {})}>Mobilité publique</a>
+                <Link href="/aom" passHref>
+                  <a className="fr-nav__link" {...(router.asPath === "/aom" ? { "aria-current": "page" } : {})}>Mobilité publique</a>
+                </Link>
               </li>
               <li className="fr-nav__item">
-                <a href="/maas" className="fr-nav__link" {...(router.asPath === "/maas" ? { "aria-current": "page" } : {})}>Application de mobilité</a>
+                <Link href="/maas" passHref>
+                  <a className="fr-nav__link" {...(router.asPath === "/maas" ? { "aria-current": "page" } : {})}>Application de mobilité</a>
+                </Link>
               </li>
             </ul>
           </nav>
@@ -85,13 +95,15 @@ function Footer() {
       <div className="fr-container">
         <div className="fr-footer__body">
           <div className="fr-footer__brand fr-enlarge-link">
-            <a href="/" title="Retour à l’accueil">
-              <p className="fr-logo" title="république française">
-                Ministère
-                <br />chargé des
-                <br />transports
-              </p>
-            </a>
+            <Link href="/" passHref>
+              <a title="Retour à l’accueil">
+                <p className="fr-logo" title="république française">
+                  Ministère
+                  <br />chargé des
+                  <br />transports
+                </p>
+              </a>
+            </Link>
           </div>
           <div className="fr-footer__content">
             <p className="fr-footer__content-desc">

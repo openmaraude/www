@@ -2,11 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const ButtonLink = React.forwardRef(
-  ({ onClick, children, variant }, ref) => (
-    <button type="button" onClick={onClick} ref={ref} className={`fr-btn ${variant === "secondary" ? "fr-btn--secondary" : ""}`}>
-      { children }
-    </button>
-  ),
+  ({ onClick, children, variant }, ref) => {
+    const classes = ['fr-btn'];
+
+    if (variant === 'secondary') {
+      classes.push('fr-btn--secondary');
+    }
+
+    return (
+      <button type="button" onClick={onClick} ref={ref} className={classes.join(' ')}>
+        { children }
+      </button>
+    );
+  }
 );
 
 ButtonLink.defaultProps = {
