@@ -30,7 +30,7 @@ function Header() {
                   </a>
                 </div>
                 <div className="fr-header__navbar">
-                  <button className="fr-btn--menu fr-btn" data-fr-opened="false" aria-controls="modal-menu" aria-haspopup="menu" title="Menu">
+                  <button className="fr-btn--menu fr-btn" data-fr-opened="false" aria-controls="modal-menu" aria-haspopup="menu" title="Menu" type="button">
                     Menu
                   </button>
                 </div>
@@ -54,7 +54,7 @@ function Header() {
 
       <div className="fr-header__menu fr-modal" id="modal-menu" aria-labelledby="button-825">
         <div className="fr-container">
-          <button className="fr-link--close fr-link" aria-controls="modal-menu">Fermer</button>
+          <button className="fr-link--close fr-link" aria-controls="modal-menu" type="button">Fermer</button>
           <div className="fr-header__menu-links" />
 
           <nav className="fr-nav" role="navigation" aria-label="Menu principal" id="header-navigation">
