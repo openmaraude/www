@@ -2,12 +2,6 @@
   padding-top: 30px;
 }
 
-@media (min-width: 1024px) {
-  .section {
-    background: url('/images/page_taxis_group/illustration-road.svg') no-repeat left bottom;
-  }
-}
-
 .section h2 {
   margin-bottom: 60px;
 }
@@ -21,6 +15,12 @@
   position: relative;
   width: 100%;
   height: 100%;
+}
+
+@media (min-width: 1024px) {
+  .boxContainer {
+    background: url('/images/page_taxis_group/illustration-road.svg') no-repeat center bottom;
+  }
 }
 
 .box {

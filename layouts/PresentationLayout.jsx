@@ -29,7 +29,7 @@ export function LandingSection({
     <section className={stylesLanding.section}>
       <div className="fr-container">
         <div className="fr-grid-row">
-          <div className="fr-col-12 fr-col-md-6 fr-mb-5w">
+          <div className={`fr-col-12 fr-col-md-6 fr-mb-5w ${stylesLanding.boxContainer}`}>
             <h2>{title}</h2>
             <div className={stylesLanding.box}>
               {boxContent}
