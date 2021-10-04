@@ -62,7 +62,7 @@ function ChallengesSection() {
               <div className="fr-card__body">
                 <h4 className="fr-card__title">
                   <Link href="/taxi" passHref>
-                    <a className="fr-card__link">Artisan taxi</a>
+                    <a href="/taxi" className="fr-card__link">Artisan taxi</a>
                   </Link>
                 </h4>
                 <p className="fr-card__desc">Recevez de nouvelles courses lorsque vous êtes en maraude</p>
@@ -78,7 +78,7 @@ function ChallengesSection() {
               <div className="fr-card__body">
                 <h4 className="fr-card__title">
                   <Link href="/taxis_group" passHref>
-                    <a className="fr-card__link">Groupement de taxis</a>
+                    <a href="/taxis_group" className="fr-card__link">Groupement de taxis</a>
                   </Link>
                 </h4>
                 <p className="fr-card__desc">Connectez vos taxis à tous les usagers</p>
@@ -94,7 +94,7 @@ function ChallengesSection() {
               <div className="fr-card__body">
                 <h4 className="fr-card__title">
                   <Link href="/maas" passHref>
-                    <a className="fr-card__link">Application de mobilité</a>
+                    <a href="/maas" className="fr-card__link">Application de mobilité</a>
                   </Link>
                 </h4>
                 <p className="fr-card__desc">Proposez aussi les taxis dans votre application grand public</p>
@@ -110,7 +110,7 @@ function ChallengesSection() {
               <div className="fr-card__body">
                 <h4 className="fr-card__title">
                   <Link href="/aom" passHref>
-                    <a className="fr-card__link">Mobilité publique</a>
+                    <a href="/aom" className="fr-card__link">Mobilité publique</a>
                   </Link>
                 </h4>
                 <p className="fr-card__desc">Intégrez le service public des taxis à votre offre locale</p>

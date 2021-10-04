@@ -14,7 +14,7 @@ const ButtonLink = React.forwardRef(
         { children }
       </button>
     );
-  }
+  },
 );
 
 ButtonLink.defaultProps = {
