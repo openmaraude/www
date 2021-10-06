@@ -12,7 +12,7 @@ export default function QuestionSection() {
           <h5>Vous avez des questions ?</h5>
           <div className="fr-ml-3w">
             <Link href="/faq" passHref>
-              <ButtonLink>Consltez la FAQ</ButtonLink>
+              <ButtonLink>Consultez la FAQ</ButtonLink>
             </Link>
           </div>
         </div>
