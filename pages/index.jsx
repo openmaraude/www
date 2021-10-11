@@ -3,15 +3,18 @@ import Link from 'next/link';
 
 import BaseLayout from '@/layouts/BaseLayout';
 
-import LogoAlphaTaxi from '@/public/images/partners/alpha-taxi.png';
+import LogoAppsolu from '@/public/images/partners/appsolu.png';
+import LogoAxygest from '@/public/images/partners/axygest.png';
 import LogoG7 from '@/public/images/partners/G7.png';
-import LogoGrenobleMobilite from '@/public/images/partners/grenoble-mobilite.png';
-import LogoMoovit from '@/public/images/partners/moovit.png';
+import LogoMob1taxi from '@/public/images/partners/mob1taxi.png';
 import LogoOnlyMoov from '@/public/images/partners/only-moov.png';
 import LogoParisTaxis from '@/public/images/partners/paris-taxis.png';
+import LogoSpotloc from '@/public/images/partners/spotloc.png';
 import LogoTako from '@/public/images/partners/tako.png';
-import LogoTaxisMarseille from '@/public/images/partners/taxis-marseille.png';
+import LogoTaxisJaunes from '@/public/images/partners/taxis-jaunes.png';
+import LogoTaxisLyonnais from '@/public/images/partners/taxis-lyonnais.png';
 
+import ButtonLink from '@/components/ButtonLink';
 import QuestionSection from '@/components/QuestionSection';
 
 import stylesGoals from '@/styles/Homepage.goals.module.css';
@@ -144,14 +147,22 @@ function PartnersSection() {
         <h2>Nos partenaires</h2>
 
         <div className="fr-grid-row fr-grid-row--middle">
-          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoAlphaTaxi} /></div>
-          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoG7} /></div>
-          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoGrenobleMobilite} /></div>
-          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoMoovit} /></div>
-          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoOnlyMoov} /></div>
-          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoParisTaxis} /></div>
           <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoTako} /></div>
-          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoTaxisMarseille} /></div>
+          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoMob1taxi} /></div>
+          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoParisTaxis} /></div>
+          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoSpotloc} /></div>
+          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoG7} /></div>
+          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoTaxisLyonnais} /></div>
+          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoTaxisJaunes} /></div>
+          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoOnlyMoov} /></div>
+          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoAppsolu} /></div>
+          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoAxygest} /></div>
+        </div>
+
+        <div className="fr-grid-row fr-grid-row--center">
+          <Link href="/partners" passHref>
+            <ButtonLink>Voir tous les partenaires</ButtonLink>
+          </Link>
         </div>
       </div>
     </section>

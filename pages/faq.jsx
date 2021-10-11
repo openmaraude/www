@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import BaseLayout from '@/layouts/BaseLayout';
+import TextContentLayout, { Content, Menu } from '@/layouts/TextContentLayout';
 
 import styles from '@/styles/FAQ.module.css';
 
@@ -132,35 +132,24 @@ const SECTIONS = [
 
 export default function FAQPage() {
   return (
-    <BaseLayout>
-      <div className="fr-container">
-        <div className="fr-grid-row fr-grid-row--gutters fr-pt-3w fr-pb-3w">
-          <nav className={`fr-col-12 fr-col-md-3 ${styles.nav}`}>
-            <h6>Sommaire</h6>
-            <ul>
-              {SECTIONS.map((section) => <li key={section.title}><a href={`#${section.title}`}>{section.title}</a></li>)}
-            </ul>
-          </nav>
-
-          <div className="fr-col">
-            <h1 className={styles.mainTitle}>Questions fréquentes</h1>
-
-            {SECTIONS.map((section) => (
-              <section key={section.title} className={styles.section}>
-                <h5 className="fr-pt-3w" id={section.title}>{section.title}</h5>
-                <dl>
-                  {section.questions.map((question, idx) => (
-                    <React.Fragment key={String(idx)}>
-                      <dt>{question.q}</dt>
-                      <dd>{question.a}</dd>
-                    </React.Fragment>
-                  ))}
-                </dl>
-              </section>
-            ))}
-          </div>
-        </div>
-      </div>
-    </BaseLayout>
+    <TextContentLayout>
+      <Menu title="Sommaire" items={SECTIONS} />
+      <Content>
+        <h1>Questions fréquentes</h1>
+        {SECTIONS.map((section) => (
+          <section key={section.title} className={styles.section}>
+            <h5 className="fr-pt-3w" id={section.title}>{section.title}</h5>
+            <dl>
+              {section.questions.map((question, idx) => (
+                <React.Fragment key={String(idx)}>
+                  <dt>{question.q}</dt>
+                  <dd>{question.a}</dd>
+                </React.Fragment>
+              ))}
+            </dl>
+          </section>
+        ))}
+      </Content>
+    </TextContentLayout>
   );
 }
