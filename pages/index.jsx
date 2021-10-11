@@ -57,7 +57,7 @@ function ChallengesSection() {
         <h2>Comment le.taxi répond à vos enjeux ?</h2>
 
         <div className="fr-grid-row fr-grid-row--gutters">
-          <div className="fr-col-6 fr-col-md-3">
+          <div className="fr-col-12 fr-col-md-3">
             <div className="fr-card fr-enlarge-link fr-pt-3w">
               <div className="fr-card__body">
                 <h4 className="fr-card__title">
@@ -67,13 +67,13 @@ function ChallengesSection() {
                 </h4>
                 <p className="fr-card__desc">Recevez de nouvelles courses lorsque vous êtes en maraude</p>
               </div>
-              <div className={`fr-card__img ${stylesChallenges.image}`}>
+              <div className="fr-card__img">
                 <img src="/images/homepage/taxi.svg" className="fr-responsive-img" alt="" />
               </div>
             </div>
           </div>
 
-          <div className="fr-col-6 fr-col-md-3">
+          <div className="fr-col-12 fr-col-md-3">
             <div className="fr-card fr-enlarge-link fr-pt-3w">
               <div className="fr-card__body">
                 <h4 className="fr-card__title">
@@ -83,13 +83,13 @@ function ChallengesSection() {
                 </h4>
                 <p className="fr-card__desc">Connectez vos taxis à tous les usagers</p>
               </div>
-              <div className={`fr-card__img ${stylesChallenges.image}`}>
+              <div className="fr-card__img">
                 <img src="/images/homepage/taxis_group.svg" className="fr-responsive-img" alt="" />
               </div>
             </div>
           </div>
 
-          <div className="fr-col-6 fr-col-md-3">
+          <div className="fr-col-12 fr-col-md-3">
             <div className="fr-card fr-enlarge-link fr-pt-3w">
               <div className="fr-card__body">
                 <h4 className="fr-card__title">
@@ -99,13 +99,13 @@ function ChallengesSection() {
                 </h4>
                 <p className="fr-card__desc">Proposez aussi les taxis dans votre application grand public</p>
               </div>
-              <div className={`fr-card__img ${stylesChallenges.image}`}>
+              <div className="fr-card__img">
                 <img src="/images/homepage/trip_planning_application.svg" className="fr-responsive-img" alt="" />
               </div>
             </div>
           </div>
 
-          <div className="fr-col-6 fr-col-md-3">
+          <div className="fr-col-12 fr-col-md-3">
             <div className="fr-card fr-enlarge-link fr-pt-3w">
               <div className="fr-card__body">
                 <h4 className="fr-card__title">
@@ -115,7 +115,7 @@ function ChallengesSection() {
                 </h4>
                 <p className="fr-card__desc">Intégrez le service public des taxis à votre offre locale</p>
               </div>
-              <div className={`fr-card__img ${stylesChallenges.image}`}>
+              <div className="fr-card__img">
                 <img src="/images/homepage/maas.svg" className="fr-responsive-img" alt="" />
               </div>
             </div>
