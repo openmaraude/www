@@ -1,10 +1,14 @@
 .section {
   background-color: #E5E5F4;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 4.5rem;
+  padding-bottom: 6rem;
+  text-align: center;
 }
 
 .section h2 {
-  text-align: center;
   margin-bottom: 50px;
+}
+
+.section img {
+  width: 90%;
 }

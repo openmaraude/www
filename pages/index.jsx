@@ -23,17 +23,17 @@ function GoalsSection() {
   return (
     <section className={stylesGoals.section}>
       <div className="fr-container">
-        <div className="fr-grid-row fr-grid-row--gutters">
+        <div className="fr-grid-row fr-grid-row">
           <div className="fr-col-7">
-            <h2>le.taxi accélère <span className="highlight">la rencontre</span> entre usagers et taxis</h2>
+            <h1 className="fr-display-sm">le.taxi accélère <span className="highlight">la rencontre</span> entre usagers et taxis</h1>
 
             <h4>Nos objectifs</h4>
 
             <ul className={stylesGoals.goals}>
-              <li>Accompagner <span className="highlight">la modernisation</span> de l’offre de taxis</li>
-              <li>Mieux <span className="highlight">accéder aux taxis dans toute la France</span></li>
-              <li>Permettre <span className="highlight">aux usagers</span> et <span className="highlight">aux taxis</span> de se trouver facilement</li>
-              <li>Trouver les taxis dans toutes les <span className="highlight">applications clients</span></li>
+              <li className={stylesGoals.iconDiamond}>Accompagner <span className="highlight">la modernisation</span> de l’offre de taxis</li>
+              <li className={stylesGoals.iconTripleArrows}>Mieux <span className="highlight">accéder aux taxis dans toute la France</span></li>
+              <li className={stylesGoals.iconDoubleArrows}>Permettre <span className="highlight">aux usagers</span> et <span className="highlight">aux taxis</span> de se trouver facilement</li>
+              <li className={stylesGoals.iconWatch}>Trouver les taxis dans toutes les <span className="highlight">applications clients</span></li>
             </ul>
           </div>
 
@@ -131,10 +131,7 @@ function APIDescriptionSection() {
     <section className={stylesAPIDescription.section}>
       <div className="fr-container">
         <h2>Avec le.taxi : nous roulons ensemble !</h2>
-
-        <div className="fr-grid-row">
-          <img src="/images/homepage/api_schema.svg" alt="Illustration fonctionnement API" className="fr-responsive-img" />
-        </div>
+        <img src="/images/homepage/api_schema.svg" alt="Illustration fonctionnement API" className="fr-responsive-img" />
       </div>
     </section>
   );

@@ -1,10 +1,12 @@
 .section {
   background: linear-gradient(180deg, #fff 50%, #ECECFF);
-  padding-top: 30px;
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
 }
 
 .section h4 {
   color: #00006D;
+  margin-top: 3.5rem;
 }
 
 .goals {
@@ -16,41 +18,26 @@
 
 .goals li {
   position: relative;
-  background: url('/images/icons/list-check.svg') no-repeat left center;
   background-size: 22px;
   padding-left: 40px;
   padding-right: 10px;
   margin-bottom: 32px;
 }
 
-.goals li:after {
-  content: "";
-  border-left: 1px dashed #7f7fc8;
-
-  position: absolute;
-
-  /* half size of li + size of margin-bottom */
-  height: calc(50% + 32px - 11px);
-  /* middle of li + half of the background size */
-  top: calc(50% + 11px);
-  /* ~half of the background size */
-  left: 10px;
+.iconDiamond {
+  background: url('/images/icons/icon-diamond.svg') no-repeat left center;
 }
 
-.goals li:before {
-  content: "";
-  border-left: 1px dashed #7f7fc8;
-
-  height: calc(50%);
-  position: absolute;
-
-  left: 10px;
-  top: -11px;
+.iconTripleArrows {
+  background: url('/images/icons/icon-triple-arrows.svg') no-repeat left center;
 }
 
-.goals li:last-child:after,
-.goals li:first-child:before {
-  border-left: none;
+.iconDoubleArrows {
+  background: url('/images/icons/icon-double-arrows.svg') no-repeat left center;
+}
+
+.iconWatch {
+  background: url('/images/icons/icon-watch.svg') no-repeat left center;
 }
 
 @media (min-width: 1024px) {
@@ -63,26 +50,12 @@
     width: 50%;
   }
 
-  /* reset borders */
-  .goals li:after,
-  .goals li:before {
-    border: none;
-  }
-
   .goals li:nth-child(odd) {
     order: 0;
   }
 
   .goals li:nth-child(even) {
     order: 1;
-  }
-
-  .goals li:nth-child(odd):after {
-    border-left: 1px dashed #7f7fc8;
-  }
-
-  .goals li:nth-child(even):before {
-    border-left: 1px dashed #7f7fc8;
   }
 }
 
