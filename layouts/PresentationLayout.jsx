@@ -30,8 +30,8 @@ export function LandingSection({
       <div className="fr-container">
         <div className="fr-grid-row">
           <div className={`fr-col-12 fr-col-md-6 fr-mb-5w ${stylesLanding.boxContainer}`}>
-            <h2>{title}</h2>
-            <div className={stylesLanding.box}>
+            <h1>{title}</h1>
+            <div className={`${stylesLanding.box} fr-text--lead`}>
               {boxContent}
             </div>
           </div>
@@ -43,7 +43,7 @@ export function LandingSection({
               </div>
             </div>
 
-            <h4 className="highlight">{subtitle}</h4>
+            <h2 className="highlight">{subtitle}</h2>
 
             <ul>
               {bulletPoints.map((elem) => <li key={elem}><strong>{elem}</strong></li>)}
@@ -76,7 +76,7 @@ export function CardsSection({
   return (
     <section className={stylesCards.section}>
       <div className="fr-container">
-        <h4 className="highlight">{title}</h4>
+        <h2 className="highlight">{title}</h2>
 
         <div className="fr-grid-row">
           {cards.map((card) => (
@@ -108,7 +108,7 @@ export function BoxSection({ content }) {
       <div className="fr-container">
         <ul className="fr-grid-row">
           {content.map((elem, idx) => (
-            <li className="fr-col fr-pl-2w fr-pr-2w" key={String(idx)}>{elem}</li>
+            <li className="fr-col-12 fr-mb-5w fr-mb-md-1w fr-col-sm fr-pl-2w fr-pr-2w" key={String(idx)}>{elem}</li>
           ))}
         </ul>
       </div>
@@ -125,14 +125,14 @@ export function TwoSidesSection({ title, left, right }) {
     <section className={stylesTwoSides.section}>
       <div className="fr-container">
         <div className="fr-grid-row">
-          <div className="fr-col-6 fr-pl-1w fr-pr-1w">
-            <h4 className="fr-mt-3w">{title}</h4>
+          <div className={`fr-col-12 fr-col-md-6 fr-pl-1w fr-pr-1w ${stylesTwoSides.leftSide}`}>
+            <h2 className="fr-mt-3w">{title}</h2>
             <div className={stylesTwoSides.content}>
               {left}
             </div>
           </div>
-          <div className={`fr-col-6 fr-pl-1w fr-pr-1w ${stylesTwoSides.rightSide}`}>
-            <h4 className="fr-mt-3w">{title}</h4>
+          <div className={`fr-col-12 fr-col-md-6 fr-pl-1w fr-pr-1w ${stylesTwoSides.rightSide}`}>
+            <h2 className="fr-mt-3w">{title}</h2>
             <div className={stylesTwoSides.content}>
               {right}
             </div>
