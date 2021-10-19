@@ -1,12 +1,27 @@
 .card {
-  border: 1px solid black;
-  margin: 10px;
+  text-align: center;
+  border: 1px solid #aaa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .card .logo {
-  text-align: center;
+  min-height: 150px;
+  max-height: 150px;
+  overflow: hidden;
 }
 
-.card h4 {
-  text-align: center;
+.card .description {
+  height: 100%;
+}
+
+.card .links {
+  display: flex;
+  flex-direction: column;
+}
+
+.card .links > * {
+  margin: 0.5rem;
 }

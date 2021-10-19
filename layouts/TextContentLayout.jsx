@@ -18,7 +18,7 @@ export function Menu({ title, items }) {
 
 Menu.propTypes = {
   title: PropTypes.string.isRequired,
-  items: PropTypes.arrayOf(PropTypes.instanceOf({})).isRequired,
+  items: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
 };
 
 export function Content({ children }) {
