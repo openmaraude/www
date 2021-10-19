@@ -73,7 +73,9 @@ export default function AOMPage() {
 
       <BoxSection
         content={[
-          <>&nbsp;</>,
+          <>Disponibilité des taxis sur tout le territoire (loi LOM / Open data)</>,
+          <>Accès gratuit</>,
+          <>Service public 100% Taxis</>,
         ]}
       />
 
