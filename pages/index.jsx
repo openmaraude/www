@@ -27,7 +27,7 @@ function GoalsSection() {
     <section className={stylesGoals.section}>
       <div className="fr-container">
         <div className="fr-grid-row fr-grid-row">
-          <div className="fr-col-7">
+          <div className="fr-col fr-col-md-7">
             <h1 className="fr-display-sm">le.taxi accélère <span className="highlight">la rencontre</span> entre usagers et taxis</h1>
 
             <h4>Nos objectifs</h4>
