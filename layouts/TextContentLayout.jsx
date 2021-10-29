@@ -5,7 +5,7 @@ import BaseLayout from '@/layouts/BaseLayout';
 
 import styles from '@/styles/layouts/TextContent.module.css';
 
-function _get_menu(items, root) {
+function getMenu(items, root) {
   // If any of the items has submenus, use <ul> otherwise <ol>
   const List = items.filter((item) => item.submenus).length ? 'ul' : 'ol';
 
@@ -18,10 +18,10 @@ function _get_menu(items, root) {
           {item.submenus && (
             <>
               {item.title}
-              {_get_menu(item.submenus, [...root, item.title])}
+              {getMenu(item.submenus, [...root, item.title])}
             </>
           )}
-          </li>
+        </li>
       ))}
     </List>
   );
@@ -31,7 +31,7 @@ export function Menu({ title, items }) {
   return (
     <nav className={`fr-col-12 fr-col-md-3 ${styles.nav}`}>
       <h6>{title}</h6>
-      {_get_menu(items, [])}
+      {getMenu(items, [])}
     </nav>
   );
 }

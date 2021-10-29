@@ -4,8 +4,6 @@ import React from 'react';
 
 import TextContentLayout, { Content, Menu } from '@/layouts/TextContentLayout';
 
-import styles from '@/styles/FAQ.module.css';
-
 const SECTIONS = [
   {
     title: 'Général',
@@ -191,7 +189,8 @@ const SECTIONS = [
         questions: [
           {
             q: <>Comment puis-je faire bénéficier de la connexion à le.taxi aux chauffeurs membres de mon groupement de taxis ?</>,
-            a: <>
+            a: (
+              <>
                 Vous fournissez déjà une application à vos chauffeurs ?
 
                 <ul>
@@ -199,13 +198,14 @@ const SECTIONS = [
                   <li>2. Contactez le prestataire de votre application pour qu’ils vous active la connexion à l’API.</li>
                 </ul>
 
-                Vous n’utilisez pas d’application pour distribuer les courses à vos chauffeurs ? 
+                Vous n’utilisez pas d’application pour distribuer les courses à vos chauffeurs ?
 
                 <ul>
                   <li>1. Les chauffeurs membres de votre groupement peuvent télécharger l’une des applications partenaires visible sur notre site.</li>
                   <li>2. Ou vous pouvez vous rapprochez d’un de nos partenaires “éditeur de logiciel” pour avoir votre propre application.</li>
                 </ul>
-            </>,
+              </>
+            ),
           },
         ],
       },
@@ -362,7 +362,7 @@ const SECTIONS = [
 export default function FAQPage() {
   const menu = SECTIONS.map((section) => ({
     title: section.title,
-    submenus: section.categories.map((question) => ({title: question.title})),
+    submenus: section.categories.map((question) => ({ title: question.title })),
   }));
 
   return (
@@ -370,7 +370,7 @@ export default function FAQPage() {
       <Menu title="Sommaire" items={menu} />
       <Content>
         <h1>Questions fréquentes</h1>
-        {SECTIONS.map((section) =>
+        {SECTIONS.map((section) => (
           <section key={section.title}>
             <h2 className="fr-pt-3w" id={section.title}>{section.title}</h2>
             {section.categories.map((category) => (
@@ -378,7 +378,7 @@ export default function FAQPage() {
                 <h3 id={`${section.title}_${category.title}`}>{category.title}</h3>
                 <dl>
                   {category.questions.map((question, idx) => (
-                    <React.Fragment key={`${section.title}_${category.title}_${idx}`}>
+                    <React.Fragment key={`${section.title}_${category.title}_${String(idx)}`}>
                       <dt>{question.q}</dt>
                       <dd>{question.a}</dd>
                     </React.Fragment>
@@ -387,7 +387,7 @@ export default function FAQPage() {
               </React.Fragment>
             ))}
           </section>
-        )}
+        ))}
       </Content>
     </TextContentLayout>
   );
