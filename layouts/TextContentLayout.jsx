@@ -5,13 +5,33 @@ import BaseLayout from '@/layouts/BaseLayout';
 
 import styles from '@/styles/layouts/TextContent.module.css';
 
+function _get_menu(items, root) {
+  // If any of the items has submenus, use <ul> otherwise <ol>
+  const List = items.filter((item) => item.submenus).length ? 'ul' : 'ol';
+
+  return (
+    <List>
+      {items.map((item) => (
+        <li key={[...root, item.title].join('_')}>
+          {!item.submenus && <a href={`#${[...root, item.title].join('_')}`}>{item.title}</a>}
+
+          {item.submenus && (
+            <>
+              {item.title}
+              {_get_menu(item.submenus, [...root, item.title])}
+            </>
+          )}
+          </li>
+      ))}
+    </List>
+  );
+}
+
 export function Menu({ title, items }) {
   return (
     <nav className={`fr-col-12 fr-col-md-3 ${styles.nav}`}>
       <h6>{title}</h6>
-      <ul>
-        {items.map((item) => <li key={item.title}><a href={`#${item.title}`}>{item.title}</a></li>)}
-      </ul>
+      {_get_menu(items, [])}
     </nav>
   );
 }
