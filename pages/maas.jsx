@@ -1,7 +1,11 @@
+import Link from 'next/link';
+
 import PresentationLayout, {
   LandingSection,
   BoxSection,
 } from '@/layouts/PresentationLayout';
+
+import ButtonLink from '@/components/ButtonLink';
 
 import QuestionSection from '@/components/QuestionSection';
 import StyledNumberedList from '@/components/StyledNumberedList';
@@ -18,6 +22,13 @@ function HowToSection() {
           <>Taxis disponibles dans votre application</>,
         ]}
         />
+      </div>
+      <div className="fr-container">
+        <div className="fr-grid-row fr-grid-row--center fr-mb-3w">
+          <Link href="https://api.gouv.fr/les-api/le-taxi/demande-acces" passHref>
+            <ButtonLink>S'inscrire</ButtonLink>
+          </Link>
+        </div>
       </div>
     </section>
   );
