@@ -36,7 +36,7 @@ function TwoSidesRight() {
 
       <p>Choisissez votre futur partenaire parmi les services agréés.</p>
 
-      <Link href="/" passHref>
+      <Link href="/partners" passHref>
         <ButtonLink variant="secondary">Voir la liste</ButtonLink>
       </Link>
     </>
