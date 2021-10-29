@@ -1,4 +1,4 @@
-FROM node AS builder
+FROM node:16 AS builder
 
 RUN mkdir /app
 WORKDIR /app
