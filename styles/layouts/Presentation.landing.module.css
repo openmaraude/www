@@ -20,8 +20,12 @@
 }
 
 @media (min-width: 1024px) {
+  .section {
+    padding-bottom: 0;
+  }
+
   .boxContainer {
-    background: url('/images/page_taxis_group/illustration-road.svg') no-repeat center bottom;
+    background: url('/images/page_taxis_group/illustration-road.svg') no-repeat left bottom;
   }
 }
 
