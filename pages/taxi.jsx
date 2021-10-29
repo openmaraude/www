@@ -69,6 +69,7 @@ export default function TaxiPage() {
           "Obtenir plus de courses",
           "Simplifier votre mise en conformité avec la legislation en quelques clics",
         ]}
+        enableCTA={false}
       />
 
       <CardsSection
