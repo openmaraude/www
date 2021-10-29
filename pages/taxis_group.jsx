@@ -47,7 +47,7 @@ function TwoSidesRight() {
         Vos chauffeurs peuvent <strong>rejoindre l’un de nos partenaires.</strong>
       </p>
 
-      <Link href="/" passHref>
+      <Link href="/partners" passHref>
         <ButtonLink variant="secondary">Voir la liste des partenaires</ButtonLink>
       </Link>
     </>
