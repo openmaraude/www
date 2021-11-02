@@ -111,16 +111,16 @@ function Footer() {
             </p>
             <ul className="fr-footer__content-list">
               <li className="fr-footer__content-item">
-                <a className="fr-footer__content-link" href="https://legifrance.gouv.fr" rel="noreferrer" target="_blank">legifrance.gouv.fr</a>
+                <a className="fr-footer__content-link" href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039784232/2020-12-27" rel="noreferrer" target="_blank">legifrance.gouv.fr</a>
               </li>
               <li className="fr-footer__content-item">
-                <a className="fr-footer__content-link" href="https://gouvernement.fr" rel="noreferrer" target="_blank">gouvernement.fr</a>
+                <a className="fr-footer__content-link" href="https://www.ecologie.gouv.fr/direction-generale-des-infrastructures-des-transports-et-mer-dgitm" rel="noreferrer" target="_blank">ecologie.gouv.fr</a>
               </li>
               <li className="fr-footer__content-item">
                 <a className="fr-footer__content-link" href="https://service-public.fr" rel="noreferrer" target="_blank">service-public.fr</a>
               </li>
               <li className="fr-footer__content-item">
-                <a className="fr-footer__content-link" href="https://data.gouv.fr" rel="noreferrer" target="_blank">data.gouv.fr</a>
+                <a className="fr-footer__content-link" href="https://schema.data.gouv.fr/openmaraude/schema-stationstaxi/latest.html" rel="noreferrer" target="_blank">schema.data.gouv.fr</a>
               </li>
             </ul>
           </div>
