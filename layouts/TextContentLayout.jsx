@@ -8,16 +8,17 @@ import styles from '@/styles/layouts/TextContent.module.css';
 function getMenu(items, root) {
   // If any of the items has submenus, use <ul> otherwise <ol>
   const List = items.filter((item) => item.submenus).length ? 'ul' : 'ol';
+  const getLink = (item) => `#${[...root, item.title].join('_')}`;
 
   return (
     <List>
       {items.map((item) => (
         <li key={[...root, item.title].join('_')}>
-          {!item.submenus && <a href={`#${[...root, item.title].join('_')}`}>{item.title}</a>}
+          {!item.submenus && <a href={getLink(item)}>{item.title}</a>}
 
           {item.submenus && (
             <>
-              {item.title}
+              <a className={styles.topMenu} href={getLink(item)}>{item.title}</a>
               {getMenu(item.submenus, [...root, item.title])}
             </>
           )}
