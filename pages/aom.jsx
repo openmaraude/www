@@ -18,10 +18,10 @@ function HowToSection() {
         <h4 className="fr-mt-3w fr-mb-5w">Comment connecter votre application à le.taxi ?</h4>
         <StyledNumberedList
           elements={[
-            <>Inscrivez-vous au programme</>,
-            <><strong>Intégrez l'API</strong> à partir des docs transmis</>,
-            <strong>Testons le service ensemble</strong>,
-            <>Les taxis disponibles dans votre application</>,
+            <>Inscrivez-vous<br />au programme</>,
+            <>Intégrez<br /><strong>l'API le.taxi</strong></>,
+            <><strong>Testons le service ensemble</strong></>,
+            <>Les taxis disponibles pour<br /><strong>tous vos usagers</strong></>,
           ]}
         />
 
@@ -40,14 +40,15 @@ function HowToSection() {
 export default function AOMPage() {
   const pageTitle = (
     <>
-      Complétez <span className="highlight">votre application Maas</span> avec le service public du taxi
+      Complétez votre offre de services publics avec les taxis
     </>
   );
 
   const presentationBoxContent = (
     <>
-      Le.taxi est la brique publique des taxis pour le Maas qui permet aux usagers de héler un taxi
-      en un clic partout en France et sans frais d’approche
+      Le.taxi permet aux usagers de héler un taxi en un clic partout en France.
+      <br />
+      Vous pouvez l’ajouter à vos services Maas.
     </>
   );
 
@@ -59,9 +60,9 @@ export default function AOMPage() {
         backgroundImage="/images/page_aom/illustration-city.svg"
         subtitle="Les avantages pour les acteurs publics"
         bulletPoints={[
-          "Un accès facilité au service public du taxi pour vos usagers",
-          "Un service facile à intégrer dans le MaaS",
-          "Tous les taxis de votre territoire dans un service",
+          "Vos usagers peuvent trouver des taxis plus facilement",
+          "Un service simple à intégrer dans le MaaS",
+          "Tous les taxis de votre territoire dans vos services",
         ]}
       />
 
@@ -70,15 +71,16 @@ export default function AOMPage() {
         cards={[
           {
             backgroundImage: "/images/page_aom/illustration-client-app.svg",
-            content: <><span className="highlight">Les taxis disponibles à moins de 500m</span> dans votre service</>,
+            content: <><span className="highlight">Les taxis disponibles à moins de<br />500m</span> dans vos services</>,
+
           },
           {
             backgroundImage: "/images/page_aom/illustration-client-waiting.svg",
-            content: <><span className="highlight">Complémentarité</span> des offres de transports</>,
+            content: <><span className="highlight">Compléter votre offres de<br />transports</span> avec les taxis</>,
           },
           {
             backgroundImage: "/images/page_aom/illustration-map.svg",
-            content: <>Un meilleur accès aux taxis <span className="highlight">dans votre territoire</span></>,
+            content: <>Un meilleur accès aux taxis<br /><span className="highlight">dans votre territoire</span></>,
           },
         ]}
       />
