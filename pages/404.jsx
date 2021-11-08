@@ -9,7 +9,8 @@ export default function NotFoundPage() {
         <h1>Page non trouvée</h1>
 
         <p>
-          La page que vous cherchez n'existe pas. Elle s'est sûrement perdue lors d'une mise à jour de ce site.
+          La page que vous cherchez n'existe pas. Elle s'est sûrement perdue
+          lors d'une mise à jour de ce site.
         </p>
       </section>
     </BaseLayout>
