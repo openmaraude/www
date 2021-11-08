@@ -77,26 +77,24 @@ export default function TaxiPage() {
         cards={[
           {
             backgroundImage: "/images/page_taxi/illustration-clock.svg",
-            content: <><span className="highlight">Optimiser le temps</span> entre 2 courses</>,
+            content: <><span className="highlight">Optimiser le temps</span><br />entre 2 courses</>,
           },
           {
             backgroundImage: "/images/page_taxi/illustration-taxi-on-map.svg",
-            content: <><span className="highlight">Les clients vous localisent</span> à moins de 500m</>,
+            content: <><span className="highlight">Les clients vous localisent</span><br />à moins de 500m</>,
           },
           {
             backgroundImage: "/images/page_taxi/illustration-client-waiting.svg",
-            content: <>Paiement en voiture, <span className="highlight">sans frais d’approche</span></>,
+            content: <>Paiement en voiture,<br /><span className="highlight">sans frais d’approche</span></>,
           },
         ]}
       />
 
       <BoxSection
         content={[
-          <>
-            Réduisez les temps d’attente aux bornes
-          </>,
+          <>Réduisez les temps d’attente aux<br />bornes</>,
           <>Plus de clients à proximité</>,
-          <>Tous les taxis de France, dans 1 service</>,
+          <>Tous les taxis de France, dans 1<br />service</>,
         ]}
       />
 
