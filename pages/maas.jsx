@@ -16,10 +16,10 @@ function HowToSection() {
       <div className="fr-container">
         <h4 className="fr-mt-3w fr-mb-5w">Connectez simplement l’API le.taxi à votre application</h4>
         <StyledNumberedList elements={[
-          <>Valider le formulaire de demande d'accès</>,
-          <>Intégrez l’API à  à partir des docs transmis</>,
-          <>Test et validation</>,
-          <>Taxis disponibles dans votre application</>,
+          <>Inscrivez-vous<br />au programme</>,
+          <>Intégrez<br />l'API le.taxi</>,
+          <>Testons le service<br />ensemble</>,
+          <>Les taxis disponibles<br />pour tous vos<br />utlisateurs</>,
         ]}
         />
       </div>
