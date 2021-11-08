@@ -20,7 +20,7 @@ function TwoSidesLeft() {
       </h6>
 
       <p>
-        Renseignez-vous après de votre groupement. Il pourra vous dire si son
+        Renseignez-vous auprès de votre groupement. Il pourra vous dire si son
         application est connectée.
       </p>
     </>
