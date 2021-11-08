@@ -88,15 +88,15 @@ export default function TaxisGroupPage() {
         cards={[
           {
             backgroundImage: "/images/page_taxis_group/illustration-client-app.svg",
-            content: <><span className="highlight">Un taxi à moins de 500m</span> sans frais d’approche</>,
+            content: <><span className="highlight">Un taxi à moins de 500m</span><br />sans frais d’approche</>,
           },
           {
             backgroundImage: "/images/page_taxis_group/illustration-clock.svg",
-            content: <><span className="highlight">Optimiser le temps</span> entre 2 réservations</>,
+            content: <><span className="highlight">Optimiser le temps</span><br />entre 2 réservations</>,
           },
           {
             backgroundImage: "/images/page_taxis_group/illustration-map.svg",
-            content: <><span className="highlight">Un meilleur accès aux taxis</span> dans toute la France</>,
+            content: <><span className="highlight">Un meilleur accès aux taxis</span><br />dans toute la France</>,
           },
         ]}
       />
@@ -104,13 +104,13 @@ export default function TaxisGroupPage() {
       <BoxSection
         content={[
           <>
-            75 % de Français utilisent un smartphone*
+            75 % de Français utilisent un<br />smartphone*
             <br />
             <br />
             <small>*Source : FranceNum.gouv.fr</small>
           </>,
-          <>Les taxis disponibles dans les applications clients</>,
-          <>Tous les taxis de France, dans 1 service</>,
+          <>Les taxis disponibles dans les<br />applications clients</>,
+          <>Tous les taxis de France, dans 1<br />service</>,
         ]}
       />
 
