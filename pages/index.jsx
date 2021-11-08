@@ -133,8 +133,21 @@ function APIDescriptionSection() {
   return (
     <section className={stylesAPIDescription.section}>
       <div className="fr-container">
-        <h2>Avec le.taxi : nous roulons ensemble !</h2>
-        <img src="/images/homepage/api_schema.svg" alt="Illustration fonctionnement API" className="fr-responsive-img" />
+        <div className="fr-grid-row">
+          <div className="fr-col-12">
+            <h2>Avec le.taxi : nous roulons ensemble !</h2>
+          </div>
+          <div className="fr-col-12">
+            <img src="/images/homepage/api_schema.svg" alt="Illustration fonctionnement API" className="fr-responsive-img" />
+          </div>
+
+          <div className={`fr-mt-5w ${stylesAPIDescription.link}`}>
+            <span className="fr-fi-information-fill fr-pr-1w" aria-hidden="true" />
+            <Link href="https://api.gouv.fr/guides/api-definition" passHref>
+              <a href="https://api.gouv.fr/guides/api-definition">Qu'est-ce qu'une API ?</a>
+            </Link>
+          </div>
+        </div>
       </div>
     </section>
   );
