@@ -43,8 +43,11 @@ export default function MaaSPage() {
 
   const presentationBoxContent = (
     <>
-      Le.taxi est la brique publique des taxis pour le Maas qui permet aux usagers de héler un taxi
-      en un clic partout en France et sans frais d’approche
+      Avec le.taxi, vous permettez à vos utilisateurs de trouver le taxi le
+      plus proche, gratuitement, en un clic.
+      <br />
+      <br />
+      Disponible partout en France.
     </>
   );
 
@@ -54,19 +57,19 @@ export default function MaaSPage() {
         title={pageTitle}
         boxContent={presentationBoxContent}
         backgroundImage="/images/page_maas/illustration-application-customer.svg"
-        subtitle="Les avantages pour les applications de mobilité"
+        subtitle="Les avantages"
         bulletPoints={[
           "Vos utilisateurs voient les taxis dans un rayon de 500m",
-          "Pas de frais d’approche",
-          "Le tout dans votre service",
+          "Il n’y a aucun frais d’approche",
+          "Toutes les offres de mobilité dans votre service",
         ]}
       />
 
       <BoxSection
         content={[
-          <>Disponibilité des taxis sur tout le territoire (loi LOM / Open data)</>,
-          <>Accès gratuit</>,
-          <>Service public 100% Taxis</>,
+          <>Tous les taxis de France<br />dans votre service</>,
+          <>Gratuit pour vous<br />et vos utilisateurs</>,
+          <>Une offre proposée<br />par le service public</>,
         ]}
       />
 
