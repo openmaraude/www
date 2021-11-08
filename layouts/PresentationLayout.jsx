@@ -86,7 +86,7 @@ export function CardsSection({
       <div className="fr-container">
         <h2 className="highlight">{title}</h2>
 
-        <div className="fr-grid-row">
+        <div className="fr-grid-row fr-mt-5w">
           {cards.map((card) => (
             <div key={card.backgroundImage} className="fr-col-12 fr-col-md-4 fr-mb-5w">
               <div className={stylesCards.illustration}>
