@@ -71,7 +71,7 @@ function ChallengesSection() {
                 <p className="fr-card__desc">Recevez de nouvelles courses lorsque vous êtes en maraude</p>
               </div>
               <div className="fr-card__img">
-                <img src="/images/homepage/taxi.svg" className="fr-responsive-img" alt="" />
+                <img src="/images/homepage/taxi.svg" className={`fr-responsive-img ${stylesChallenges.img}`} alt="" />
               </div>
             </div>
           </div>
@@ -87,7 +87,7 @@ function ChallengesSection() {
                 <p className="fr-card__desc">Connectez vos taxis à tous les usagers</p>
               </div>
               <div className="fr-card__img">
-                <img src="/images/homepage/taxis_group.svg" className="fr-responsive-img" alt="" />
+                <img src="/images/homepage/taxis_group.svg" className={`fr-responsive-img ${stylesChallenges.img}`} alt="" />
               </div>
             </div>
           </div>
@@ -103,7 +103,7 @@ function ChallengesSection() {
                 <p className="fr-card__desc">Proposez aussi les taxis dans votre application grand public</p>
               </div>
               <div className="fr-card__img">
-                <img src="/images/homepage/trip_planning_application.svg" className="fr-responsive-img" alt="" />
+                <img src="/images/homepage/trip_planning_application.svg" className={`fr-responsive-img ${stylesChallenges.img}`} alt="" />
               </div>
             </div>
           </div>
@@ -119,7 +119,7 @@ function ChallengesSection() {
                 <p className="fr-card__desc">Intégrez le service public des taxis à votre offre locale</p>
               </div>
               <div className="fr-card__img">
-                <img src="/images/homepage/maas.svg" className="fr-responsive-img" alt="" />
+                <img src="/images/homepage/maas.svg" className={`fr-responsive-img ${stylesChallenges.img}`} alt="" />
               </div>
             </div>
           </div>
