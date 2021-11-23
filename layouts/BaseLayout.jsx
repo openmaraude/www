@@ -37,18 +37,6 @@ function Header() {
                 <p className="fr-header__service-tagline">le.taxi</p>
               </div>
             </div>
-
-            <div className="fr-header__tools">
-              <div className="fr-header__tools-links">
-                <ul className="fr-links-group">
-                  <li>
-                    <Link href="https://api.gouv.fr/les-api/le-taxi/demande-acces" passHref>
-                      <ButtonLink>S'inscrire</ButtonLink>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
       </div>
