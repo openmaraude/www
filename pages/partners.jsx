@@ -14,10 +14,11 @@ import DownloadPlayStore from '@/public/images/icons/download-playstore.svg';
 import LogoAppsolu from '@/public/images/partners/appsolu.png';
 import LogoAxygest from '@/public/images/partners/axygest.png';
 import LogoMob1taxi from '@/public/images/partners/mob1taxi.png';
+import LogoMob1taxiPro from '@/public/images/partners/mob1taxi-pro.png';
 import LogoOnlyMoov from '@/public/images/partners/only-moov.png';
-import LogoParisTaxis from '@/public/images/partners/paris-taxis.png';
 import LogoSpotloc from '@/public/images/partners/spotloc.png';
 import LogoTako from '@/public/images/partners/tako.png';
+import LogoTakoPro from '@/public/images/partners/tako-pro.png';
 
 import styles from '@/styles/Partners.module.css';
 
@@ -85,7 +86,7 @@ export default function PartnersPage() {
         <div className="fr-grid-row fr-grid-row--gutters">
           <Card
             title="Mob1Taxi"
-            Logo={<Image src={LogoMob1taxi} />}
+            Logo={<Image src={LogoMob1taxiPro} />}
             Description={(
               <p>
                 Téléchargement gratuit. Système de crédit payant, fixé à 0.75 € HT par course.
@@ -108,7 +109,7 @@ export default function PartnersPage() {
 
           <Card
             title="Tako"
-            Logo={<Image src={LogoTako} />}
+            Logo={<Image src={LogoTakoPro} />}
             Description={(
               <p>
                 Téléchargement gratuit. Sans commission pour les courses payées directement en CB ou
@@ -173,21 +174,6 @@ export default function PartnersPage() {
 
               <Link href="https://taxi.onlymoov.com/" passHref>
                 <ButtonLink variant="secondary">Site web</ButtonLink>
-              </Link>,
-            ]}
-          />
-
-          <Card
-            title="Paris Taxis"
-            Logo={<Image src={LogoParisTaxis} />}
-            Description={<p>Zone parisienne</p>}
-            Links={[
-              <Link href="https://play.google.com/store/apps/details?id=com.appspanel.taxiparis" passHref>
-                <a alt="download google play" href="https://play.google.com/store/apps/details?id=com.appspanel.taxiparis"><Image layout="responsive" src={DownloadPlayStore} /></a>
-              </Link>,
-
-              <Link href="https://itunes.apple.com/fr/app/id756914088?mt=8" passHref>
-                <a alt="download app store" href="https://itunes.apple.com/fr/app/id756914088?mt=8"><Image layout="responsive" src={DownloadAppStore} /></a>
               </Link>,
             ]}
           />

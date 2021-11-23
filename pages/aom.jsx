@@ -18,8 +18,8 @@ function HowToSection() {
         <h4 className="fr-mt-3w fr-mb-5w">Comment connecter votre application à le.taxi ?</h4>
         <StyledNumberedList
           elements={[
-            <>Inscrivez-vous<br />au programme</>,
-            <>Intégrez<br /><strong>l'API le.taxi</strong></>,
+            <>Inscrivez-vous<br />au registre le.taxi</>,
+            <>Intégrez<br /><strong>l'API</strong></>,
             <><strong>Testons le service ensemble</strong></>,
             <>Les taxis disponibles pour<br /><strong>tous vos usagers</strong></>,
           ]}

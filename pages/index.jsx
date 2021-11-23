@@ -8,7 +8,6 @@ import LogoAxygest from '@/public/images/partners/axygest.png';
 import LogoG7 from '@/public/images/partners/G7.png';
 import LogoMob1taxi from '@/public/images/partners/mob1taxi.png';
 import LogoOnlyMoov from '@/public/images/partners/only-moov.png';
-import LogoParisTaxis from '@/public/images/partners/paris-taxis.png';
 import LogoSpotloc from '@/public/images/partners/spotloc.png';
 import LogoTako from '@/public/images/partners/tako.png';
 import LogoTaxisJaunes from '@/public/images/partners/taxis-jaunes.png';
@@ -162,7 +161,6 @@ function PartnersSection() {
         <div className="fr-grid-row fr-grid-row--middle">
           <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoTako} /></div>
           <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoMob1taxi} /></div>
-          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoParisTaxis} /></div>
           <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoSpotloc} /></div>
           <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoG7} /></div>
           <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoTaxisLyonnais} /></div>

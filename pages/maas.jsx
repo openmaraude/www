@@ -16,8 +16,8 @@ function HowToSection() {
       <div className="fr-container">
         <h4 className="fr-mt-3w fr-mb-5w">Connectez simplement l’API le.taxi à votre application</h4>
         <StyledNumberedList elements={[
-          <>Inscrivez-vous<br />au programme</>,
-          <>Intégrez<br />l'API le.taxi</>,
+          <>Inscrivez-vous<br />au registre le.taxi</>,
+          <>Intégrez<br />l'API</>,
           <>Testons le service<br />ensemble</>,
           <>Les taxis disponibles<br />pour tous vos<br />utlisateurs</>,
         ]}
@@ -61,7 +61,7 @@ export default function MaaSPage() {
         bulletPoints={[
           "Vos utilisateurs voient les taxis dans un rayon de 500m",
           "Il n’y a aucun frais d’approche",
-          "Toutes les offres de mobilité dans votre service",
+          "Plus de 55 000 taxis répartis sur tout le territoire",
         ]}
       />
 

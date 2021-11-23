@@ -22,7 +22,7 @@ function TwoSidesLeft() {
 
       <StyledNumberedList
         elements={[
-          <><strong>Inscrivez-vous</strong> au programme le.taxi</>,
+          <><strong>Inscrivez-vous</strong> au registre le.taxi</>,
           <><strong>Intégrez l'API</strong> à votre application</>,
           <><strong>Vos chauffeurs</strong> reçoivent des courses</>,
         ]}
