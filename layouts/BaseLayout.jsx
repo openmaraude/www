@@ -24,18 +24,17 @@ function Header() {
                     <br />transports
                   </p>
                 </div>
-                <div className="fr-header__operator">
-                  <Link href="/" passHref>
-                    <a>
-                      <img src="/images/icons/logo.svg" className="fr-responsive-img" style={{ maxWidth: '9.0625rem' }} alt="Logo le.taxi" />
-                    </a>
-                  </Link>
-                </div>
                 <div className="fr-header__navbar">
                   <button className="fr-btn--menu fr-btn" data-fr-opened="false" aria-controls="modal-menu" aria-haspopup="menu" title="Menu" type="button">
                     Menu
                   </button>
                 </div>
+              </div>
+              <div className="fr-header__service">
+                <a href="/" title="Registre de disponibilité des taxis">
+                  <p className="fr-header__service-title">Registre de disponibilité des taxis</p>
+                </a>
+                <p className="fr-header__service-tagline">le.taxi</p>
               </div>
             </div>
 
