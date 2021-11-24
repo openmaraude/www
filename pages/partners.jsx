@@ -75,7 +75,7 @@ export default function PartnersPage() {
       <Menu title="Sommaire" items={SECTIONS} />
 
       <Content>
-        <h1>Choissisez une de nos application partenaire</h1>
+        <h1>Choissisez une de nos applications partenaires</h1>
 
         <h5 id={SECTIONS[0].title} className="fr-mt-3w">{SECTIONS[0].title}</h5>
         <h6>
