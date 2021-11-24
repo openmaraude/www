@@ -20,7 +20,8 @@ function TwoSidesLeft() {
       </h6>
 
       <p>
-        Renseignez son nom ainsi que votre email pour être tenu informé de sa connexion au registre le.taxi.
+        Renseignez son nom ainsi que votre email pour être tenu informé de sa connexion au registre
+        le.taxi.
       </p>
 
       <Link href="https://4f5c450d.sibforms.com/serve/MUIEAD0z8iCpmGPojLy4HKONuV0_pX7WwN6XXdRD9HC7B8EZVubFYgX0eMHjCdAu4EBd42c0utm9cECGmiQ8Jso2mw1K25YCzedBMSlkFDeJ02y43vgYY_HkkC6sgZ_I7cx23gcrzWORhx_X02g9xYXZKZEw_9EWnoRKCsVN5xTUUKNQLq6PI0sidIzx_ryokIXKTgYBsRPsN2Yn" passHref>
