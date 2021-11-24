@@ -9,7 +9,7 @@ export default function QuestionSection() {
     <section className={styles.section}>
       <div className="fr-container">
         <div className="fr-grid-row fr-grid-row--middle fr-grid-row--center">
-          <h5>Vous avez des questions ?</h5>
+          <h5 className="fr-mt-2w">Vous avez des questions ?</h5>
           <div className="fr-ml-3w">
             <Link href="/faq" passHref>
               <ButtonLink variant="secondary">Consultez la FAQ</ButtonLink>
