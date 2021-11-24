@@ -16,13 +16,16 @@ function TwoSidesLeft() {
   return (
     <>
       <h6 className={stylesTwoSides.subtitle}>
-        Vous êtes membre d’un groupement
+        Vous êtes membre d’un groupement ou d'une centrale radio
       </h6>
 
       <p>
-        Renseignez-vous auprès de votre groupement.<br />
-        Il pourra vous dire si son application est connectée.
+        Renseignez son nom ainsi que votre email pour être tenu informé de sa connexion au registre le.taxi.
       </p>
+
+      <Link href="https://4f5c450d.sibforms.com/serve/MUIEAD0z8iCpmGPojLy4HKONuV0_pX7WwN6XXdRD9HC7B8EZVubFYgX0eMHjCdAu4EBd42c0utm9cECGmiQ8Jso2mw1K25YCzedBMSlkFDeJ02y43vgYY_HkkC6sgZ_I7cx23gcrzWORhx_X02g9xYXZKZEw_9EWnoRKCsVN5xTUUKNQLq6PI0sidIzx_ryokIXKTgYBsRPsN2Yn" passHref>
+        <ButtonLink>Recevoir les informations</ButtonLink>
+      </Link>
     </>
   );
 }
