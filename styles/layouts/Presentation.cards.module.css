@@ -10,6 +10,7 @@
 
 .illustrationContainer {
   height: 200px;
+  position: relative;
 }
 
 .text {
