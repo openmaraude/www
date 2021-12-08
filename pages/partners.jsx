@@ -87,11 +87,6 @@ export default function PartnersPage() {
           <Card
             title="Mob1Taxi"
             Logo={<Image src={LogoMob1taxiPro} />}
-            Description={(
-              <p>
-                Téléchargement gratuit. Système de crédit payant, fixé à 0.75 € HT par course.
-              </p>
-            )}
             Links={[
               <Link href="https://play.google.com/store/apps/details?id=com.driver.mob1taxi" passHref>
                 <a alt="download google play" href="https://play.google.com/store/apps/details?id=com.driver.mob1taxi"><Image layout="responsive" src={DownloadPlayStore} /></a>
@@ -110,12 +105,6 @@ export default function PartnersPage() {
           <Card
             title="Tako"
             Logo={<Image src={LogoTakoPro} />}
-            Description={(
-              <p>
-                Téléchargement gratuit. Sans commission pour les courses payées directement en CB ou
-                espèces. 0.90€ sur les courses payées via mobile.
-              </p>
-            )}
             Links={[
               <Link href="https://play.google.com/store/apps/details?id=com.triperz.tako_driver&hl=fr" passHref>
                 <a alt="download google play" href="https://play.google.com/store/apps/details?id=com.triperz.tako_driver&hl=fr"><Image layout="responsive" src={DownloadPlayStore} /></a>
@@ -134,12 +123,6 @@ export default function PartnersPage() {
           <Card
             title="Taxi! by Spotloc"
             Logo={<Image src={LogoSpotloc} />}
-            Description={(
-              <p>
-                Téléchargement gratuit. Sans commission, sans abonnement, règlement des courses en
-                maraude le.taxi à bord.
-              </p>
-            )}
             Links={[
               <Link href="https://play.google.com/store/apps/details?id=com.spotloc.taxi&hl=fr" passHref>
                 <a alt="download google play" href="https://play.google.com/store/apps/details?id=com.spotloc.taxi&hl=fr"><Image layout="responsive" src={DownloadPlayStore} /></a>
