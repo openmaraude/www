@@ -25,7 +25,7 @@ import stylesPartners from '@/styles/Homepage.partners.module.css';
 function ChampagneSection() {
   return (
     <>
-      <Modal title="C'est en vigueur ⚖️" autoOpen>
+      <Modal title="C'est en vigueur ⚖️">
         <p>Le décret relatif au <Link href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000044514743">registre de disponibilité des taxis</Link> ainsi que son <Link href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000044514795">arrêté d’application</Link> sont publiés au Journal Officiel.</p>
         <p><span className="fr-fi-arrow-right-line fr-fi--md" /> L’ensemble des conducteurs de taxis de France ont désormais l’obligation de se connecter au registre de disponibilité des taxis le.taxi.</p>
       </Modal>

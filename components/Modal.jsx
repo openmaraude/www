@@ -23,16 +23,13 @@ ModalButton.defaultProps = {
 
 /**
  * The modal dialog itself. As advised in the documentation, it must be a direct child of <body>.
- * Then a ModalButton with the same modalId will open it, unless you asked autoOpen.
  */
 export default function Modal({
-  title, children, modalId, autoOpen,
+  title, children, modalId
 }) {
   return (
     <>
-      {autoOpen && (
-        <input type="hidden" className="fr-btn" data-fr-opened="true" aria-controls={modalId} />
-      )}
+      <input type="hidden" className="fr-btn" data-fr-opened="true" aria-controls={modalId} />
       <dialog id={modalId} className="fr-modal">
         <div className="fr-container fr-container--fluid fr-container-md">
           <div className="fr-grid-row fr-grid-row--center">
@@ -58,10 +55,8 @@ Modal.propTypes = {
   title: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
   modalId: PropTypes.string,
-  autoOpen: PropTypes.bool,
 };
 
 Modal.defaultProps = {
   modalId: "fr-modal-1",
-  autoOpen: false,
 };
