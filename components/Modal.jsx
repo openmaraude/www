@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 
 /**
@@ -27,6 +28,27 @@ ModalButton.defaultProps = {
 export default function Modal({
   title, children, modalId
 }) {
+  const [closed, setClosed] = React.useState(false);
+
+  React.useEffect(() => {
+    const key = `modal-${title}`;
+
+    // User clicked on "close", store setting.
+    if (closed) {
+      localStorage.setItem(key, 'true');
+    }
+
+    // Close popup if local storage settings is set.
+    const val = localStorage.getItem(key);
+    if (val === 'true') {
+      setClosed(true);
+    }
+  }, [closed]);
+
+  if (closed) {
+    return null;
+  }
+
   return (
     <>
       <input type="hidden" className="fr-btn" data-fr-opened="true" aria-controls={modalId} />
@@ -36,7 +58,15 @@ export default function Modal({
             <div className="fr-col-12 fr-col-md-8 fr-col-lg-6">
               <div className="fr-modal__body">
                 <div className="fr-modal__header">
-                  <button type="button" className="fr-link--close fr-link" title="Fermer la fenêtre modale" aria-controls={modalId}>Fermer</button>
+                  <button
+                    type="button"
+                    className="fr-link--close fr-link"
+                    title="Fermer la fenêtre modale"
+                    aria-controls={modalId}
+                    onClick={() => setClosed(true)}
+                  >
+                    Fermer
+                  </button>
                 </div>
                 <div className="fr-modal__content">
                   <h1 id="fr-modal-title-modal-1" className="fr-modal__title">{title}</h1>
