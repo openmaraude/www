@@ -26,7 +26,7 @@ ModalButton.defaultProps = {
  * The modal dialog itself. As advised in the documentation, it must be a direct child of <body>.
  */
 export default function Modal({
-  title, children, modalId
+  title, children, modalId,
 }) {
   const [closed, setClosed] = React.useState(false);
 

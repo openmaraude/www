@@ -6,8 +6,6 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-import ButtonLink from '@/components/ButtonLink';
-
 function Header() {
   const router = useRouter();
   return (
