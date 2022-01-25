@@ -32,12 +32,14 @@ function Card({
   title,
   Logo,
   Description,
-  Links,
+  playStoreLink,
+  appStoreLink,
+  websiteLink,
 }) {
   return (
     <div className={`fr-col-11 fr-col-sm-6 fr-col-md-3 fr-m-3w fr-p-2w ${styles.card}`}>
       <div className={styles.logo}>
-        {Logo}
+        <Image src={Logo} />
       </div>
 
       <div className={styles.description}>
@@ -47,11 +49,20 @@ function Card({
 
       </div>
 
-      {Links.length > 0 && (
-        <div className={styles.links}>
-          {Links.map((Lnk, idx) => <React.Fragment key={String(idx)}>{Lnk}</React.Fragment>)}
-        </div>
-      )}
+      <div className={styles.links}>
+        {playStoreLink && (
+          <Link href={playStoreLink} passHref>
+            <a alt="download google play"><Image layout="responsive" src={DownloadPlayStore} /></a>
+          </Link>)}
+        {appStoreLink && (
+          <Link href={appStoreLink} passHref>
+            <a alt="download app store"><Image layout="responsive" src={DownloadAppStore} /></a>
+          </Link>)}
+        {websiteLink && (
+          <Link href={websiteLink} passHref>
+            <ButtonLink variant="secondary">Site web</ButtonLink>
+          </Link>)}
+      </div>
     </div>
   );
 }
@@ -59,14 +70,18 @@ function Card({
 Card.defaultProps = {
   Logo: null,
   Description: null,
-  Links: [],
+  playStoreLink: null,
+  appStoreLink: null,
+  websiteLink: null,
 };
 
 Card.propTypes = {
   title: PropTypes.string.isRequired,
-  Logo: PropTypes.node,
+  Logo: PropTypes.object,
   Description: PropTypes.node,
-  Links: PropTypes.arrayOf(PropTypes.node),
+  playStoreLink: PropTypes.string,
+  appStoreLink: PropTypes.string,
+  websiteLink: PropTypes.string,
 };
 
 export default function PartnersPage() {
@@ -86,56 +101,26 @@ export default function PartnersPage() {
         <div className="fr-grid-row fr-grid-row--gutters">
           <Card
             title="Mob1Taxi"
-            Logo={<Image src={LogoMob1taxiPro} />}
-            Links={[
-              <Link href="https://play.google.com/store/apps/details?id=com.driver.mob1taxi" passHref>
-                <a alt="download google play" href="https://play.google.com/store/apps/details?id=com.driver.mob1taxi"><Image layout="responsive" src={DownloadPlayStore} /></a>
-              </Link>,
-
-              <Link href="https://apps.apple.com/fr/app/mob1taxi-chauffeurs/id1458521482" passHref>
-                <a alt="download app store" href="https://apps.apple.com/fr/app/mob1taxi-chauffeurs/id1458521482"><Image layout="responsive" src={DownloadAppStore} /></a>
-              </Link>,
-
-              <Link href="https://www.mob1taxi.com/passager" passHref>
-                <ButtonLink variant="secondary">Site web</ButtonLink>
-              </Link>,
-            ]}
+            Logo={LogoMob1taxiPro}
+            playStoreLink="https://play.google.com/store/apps/details?id=com.driver.mob1taxi"
+            appStoreLink="https://apps.apple.com/fr/app/mob1taxi-chauffeurs/id1458521482"
+            websiteLink="https://www.mob1taxi.com/passager"
           />
 
           <Card
             title="Tako"
-            Logo={<Image src={LogoTakoPro} />}
-            Links={[
-              <Link href="https://play.google.com/store/apps/details?id=com.triperz.tako_driver&hl=fr" passHref>
-                <a alt="download google play" href="https://play.google.com/store/apps/details?id=com.triperz.tako_driver&hl=fr"><Image layout="responsive" src={DownloadPlayStore} /></a>
-              </Link>,
-
-              <Link href="https://apps.apple.com/fr/app/tako-pro/id1473625302" passHref>
-                <a alt="download app store" href="https://apps.apple.com/fr/app/tako-pro/id1473625302"><Image layout="responsive" src={DownloadAppStore} /></a>
-              </Link>,
-
-              <Link href="https://www.tak-o.com/CHAUFFEUR.html" passHref>
-                <ButtonLink variant="secondary">Site web</ButtonLink>
-              </Link>,
-            ]}
+            Logo={LogoTakoPro}
+            playStoreLink="https://play.google.com/store/apps/details?id=com.triperz.tako_driver&hl=fr"
+            appStoreLink="https://apps.apple.com/fr/app/tako-pro/id1473625302"
+            websiteLink="https://www.tak-o.com/CHAUFFEUR.html"
           />
 
           <Card
             title="Taxi! by Spotloc"
-            Logo={<Image src={LogoSpotloc} />}
-            Links={[
-              <Link href="https://play.google.com/store/apps/details?id=com.spotloc.taxi&hl=fr" passHref>
-                <a alt="download google play" href="https://play.google.com/store/apps/details?id=com.spotloc.taxi&hl=fr"><Image layout="responsive" src={DownloadPlayStore} /></a>
-              </Link>,
-
-              <Link href="https://apps.apple.com/fr/app/taxi-by-spotloc/id1469036335" passHref>
-                <a alt="download app store" href="https://apps.apple.com/fr/app/taxi-by-spotloc/id1469036335"><Image layout="responsive" src={DownloadAppStore} /></a>
-              </Link>,
-
-              <Link href="https://www.spotloc.solutions/" passHref>
-                <ButtonLink variant="secondary">Site web</ButtonLink>
-              </Link>,
-            ]}
+            Logo={LogoSpotloc}
+            playStoreLink="https://play.google.com/store/apps/details?id=com.spotloc.taxi&hl=fr"
+            appStoreLink="https://apps.apple.com/fr/app/taxi-by-spotloc/id1469036335"
+            websiteLink="https://www.spotloc.solutions/"
           />
         </div>
 
@@ -148,55 +133,28 @@ export default function PartnersPage() {
         <div className="fr-grid-row fr-grid-row--gutters">
           <Card
             title="Onlymoov"
-            Logo={<Image src={LogoOnlyMoov} />}
+            Logo={LogoOnlyMoov}
             Description={<p>Grand Lyon</p>}
-            Links={[
-              <Link href="https://play.google.com/store/apps/details?id=com.grandlyon.onlymoov" passHref>
-                <a alt="download google play" href="https://play.google.com/store/apps/details?id=com.grandlyon.onlymoov"><Image layout="responsive" src={DownloadPlayStore} /></a>
-              </Link>,
-
-              <Link href="https://taxi.onlymoov.com/" passHref>
-                <ButtonLink variant="secondary">Site web</ButtonLink>
-              </Link>,
-            ]}
+            playStoreLink="https://play.google.com/store/apps/details?id=com.grandlyon.onlymoov"
+            websiteLink="https://taxi.onlymoov.com/"
           />
 
           <Card
             title="Tako"
-            Logo={<Image src={LogoTako} />}
+            Logo={LogoTako}
             Description={<p>France</p>}
-            Links={[
-              <Link href="https://play.google.com/store/apps/details?id=com.triperz.tako_traveller" passHref>
-                <a alt="download google play" href="https://play.google.com/store/apps/details?id=com.triperz.tako_traveller"><Image layout="responsive" src={DownloadPlayStore} /></a>
-              </Link>,
-
-              <Link href="https://itunes.apple.com/fr/app/id1473625254?mt=8" passHref>
-                <a alt="download app store" href="https://itunes.apple.com/fr/app/id1473625254?mt=8"><Image layout="responsive" src={DownloadAppStore} /></a>
-              </Link>,
-
-              <Link href="http://www.tak-o.com/" passHref>
-                <ButtonLink variant="secondary">Site web</ButtonLink>
-              </Link>,
-            ]}
+            playStoreLink="https://play.google.com/store/apps/details?id=com.triperz.tako_traveller"
+            appStoreLink="https://itunes.apple.com/fr/app/id1473625254?mt=8"
+            websiteLink="http://www.tak-o.com/"
           />
 
           <Card
             title="Mob1taxi"
-            Logo={<Image src={LogoMob1taxi} />}
+            Logo={LogoMob1taxi}
             Description={<p>France</p>}
-            Links={[
-              <Link href="https://play.google.com/store/apps/details?id=com.mob1taxi&feature=more_from_developerr" passHref>
-                <a alt="download google play" href="https://play.google.com/store/apps/details?id=com.mob1taxi&feature=more_from_developerr"><Image layout="responsive" src={DownloadPlayStore} /></a>
-              </Link>,
-
-              <Link href="https://apps.apple.com/fr/app/mob1taxi/id576991159?mt=8" passHref>
-                <a alt="download app store" href="https://apps.apple.com/fr/app/mob1taxi/id576991159?mt=8"><Image layout="responsive" src={DownloadAppStore} /></a>
-              </Link>,
-
-              <Link href="https://www.mob1taxi.com/" passHref>
-                <ButtonLink variant="secondary">Site web</ButtonLink>
-              </Link>,
-            ]}
+            playStoreLink="https://play.google.com/store/apps/details?id=com.mob1taxi&feature=more_from_developerr"
+            appStoreLink="https://apps.apple.com/fr/app/mob1taxi/id576991159?mt=8"
+            websiteLink="https://www.mob1taxi.com/"
           />
         </div>
 
@@ -209,24 +167,16 @@ export default function PartnersPage() {
         <div className="fr-grid-row fr-grid-row--gutters">
           <Card
             title="Appsolu"
-            Logo={<Image src={LogoAppsolu} />}
+            Logo={LogoAppsolu}
             Description={<p>Équipementier</p>}
-            Links={[
-              <Link href="https://www.appsolu.fr/" passHref>
-                <ButtonLink variant="secondary">Site web</ButtonLink>
-              </Link>,
-            ]}
+            websiteLink="https://www.appsolu.fr/"
           />
 
           <Card
             title="Axygest"
-            Logo={<Image src={LogoAxygest} />}
+            Logo={LogoAxygest}
             Description={<p>Équipementier</p>}
-            Links={[
-              <Link href="http://www.axygest.fr/" passHref>
-                <ButtonLink variant="secondary">Site web</ButtonLink>
-              </Link>,
-            ]}
+            websiteLink="http://www.axygest.fr/"
           />
         </div>
       </Content>
