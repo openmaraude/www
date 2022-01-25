@@ -12,6 +12,7 @@ import LogoSpotloc from '@/public/images/partners/spotloc.png';
 import LogoTako from '@/public/images/partners/tako.png';
 import LogoTaxisJaunes from '@/public/images/partners/taxis-jaunes.png';
 import LogoTaxisLyonnais from '@/public/images/partners/taxis-lyonnais.png';
+import LogoSimplyTaxi from '@/public/images/partners/simply-taxi.png';
 
 import ButtonLink from '@/components/ButtonLink';
 import QuestionSection from '@/components/QuestionSection';
@@ -180,6 +181,7 @@ function PartnersSection() {
           <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoOnlyMoov} /></div>
           <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoAppsolu} /></div>
           <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoAxygest} /></div>
+          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoSimplyTaxi} /></div>
         </div>
 
         <div className="fr-grid-row fr-grid-row--center">
