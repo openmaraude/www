@@ -19,6 +19,7 @@ import LogoOnlyMoov from '@/public/images/partners/only-moov.png';
 import LogoSpotloc from '@/public/images/partners/spotloc.png';
 import LogoTako from '@/public/images/partners/tako.png';
 import LogoTakoPro from '@/public/images/partners/tako-pro.png';
+import LogoSimplyTaxi from '@/public/images/partners/simply-taxi.png';
 
 import styles from '@/styles/Partners.module.css';
 
@@ -122,6 +123,14 @@ export default function PartnersPage() {
             appStoreLink="https://apps.apple.com/fr/app/taxi-by-spotloc/id1469036335"
             websiteLink="https://www.spotloc.solutions/"
           />
+
+          <Card
+            title="Simply Taxi"
+            Logo={LogoSimplyTaxi}
+            playStoreLink="https://play.google.com/store/apps/details?id=fr.simplytaxi.app&hl=fr"
+            appStoreLink="https://apps.apple.com/fr/app/simplytaxi-r%C3%A9volution/id1534870637"
+            websiteLink="https://www.simply-taxi.com/"
+          />
         </div>
 
         <h5 id={SECTIONS[1].title} className="fr-mt-3w">{SECTIONS[1].title}</h5>
@@ -155,6 +164,14 @@ export default function PartnersPage() {
             playStoreLink="https://play.google.com/store/apps/details?id=com.mob1taxi&feature=more_from_developerr"
             appStoreLink="https://apps.apple.com/fr/app/mob1taxi/id576991159?mt=8"
             websiteLink="https://www.mob1taxi.com/"
+          />
+
+          <Card
+            title="Simply Taxi"
+            Logo={LogoSimplyTaxi}
+            playStoreLink="https://play.google.com/store/apps/details?id=fr.simplytaxi.app&hl=fr"
+            appStoreLink="https://apps.apple.com/fr/app/simplytaxi-r%C3%A9volution/id1534870637"
+            websiteLink="https://www.simply-taxi.com/"
           />
         </div>
 
