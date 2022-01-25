@@ -53,16 +53,19 @@ function Card({
       <div className={styles.links}>
         {playStoreLink && (
           <Link href={playStoreLink} passHref>
-            <a alt="download google play"><Image layout="responsive" src={DownloadPlayStore} /></a>
-          </Link>)}
+            <a alt="download google play" href><Image layout="responsive" src={DownloadPlayStore} /></a>
+          </Link>
+        )}
         {appStoreLink && (
           <Link href={appStoreLink} passHref>
-            <a alt="download app store"><Image layout="responsive" src={DownloadAppStore} /></a>
-          </Link>)}
+            <a alt="download app store" href><Image layout="responsive" src={DownloadAppStore} /></a>
+          </Link>
+        )}
         {websiteLink && (
           <Link href={websiteLink} passHref>
             <ButtonLink variant="secondary">Site web</ButtonLink>
-          </Link>)}
+          </Link>
+        )}
       </div>
     </div>
   );
@@ -78,7 +81,7 @@ Card.defaultProps = {
 
 Card.propTypes = {
   title: PropTypes.string.isRequired,
-  Logo: PropTypes.object,
+  Logo: PropTypes.shape({ src: PropTypes.string.isRequired }),
   Description: PropTypes.node,
   playStoreLink: PropTypes.string,
   appStoreLink: PropTypes.string,
