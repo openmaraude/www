@@ -1,15 +1,15 @@
 import Link from 'next/link';
 
-import ButtonLink from '../components/ButtonLink';
+import ButtonLink from '@/components/ButtonLink';
+import QuestionSection from '@/components/QuestionSection';
+import StyledNumberedList from '@/components/StyledNumberedList';
+
 import PresentationLayout, {
   LandingSection,
   CardsSection,
   BoxSection,
   TwoSidesSection,
-} from '../layouts/PresentationLayout';
-
-import QuestionSection from '@/components/QuestionSection';
-import StyledNumberedList from '@/components/StyledNumberedList';
+} from '@/layouts/PresentationLayout';
 
 import stylesTwoSides from '@/styles/TaxisGroup.two_sides.module.css';
 
