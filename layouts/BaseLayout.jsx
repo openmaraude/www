@@ -124,6 +124,9 @@ function Footer() {
             <li className="fr-footer__bottom-item">
               <a className="fr-footer__bottom-link" href="#">Gestion des cookies</a>
             </li>
+            <li className="fr-footer__bottom-item">
+              <a className="fr-footer__bottom-link" href="/assets/documents/CGU.pdf?20220131">Conditions générales d'utilisation de l'API</a>
+            </li>
           </ul>
           <div className="fr-footer__bottom-copy">
             <p>Sauf mention contraire, tous les textes de ce site sont sous <a href="https://github.com/etalab/licence-ouverte/blob/master/LO.md" rel="noreferrer" target="_blank">licence etalab-2.0</a>
