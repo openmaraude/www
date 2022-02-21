@@ -113,18 +113,6 @@ function Footer() {
         <div className="fr-footer__bottom">
           <ul className="fr-footer__bottom-list">
             <li className="fr-footer__bottom-item">
-              <a className="fr-footer__bottom-link" href="#">Accessibilité</a>
-            </li>
-            <li className="fr-footer__bottom-item">
-              <a className="fr-footer__bottom-link" href="#">Mentions légales</a>
-            </li>
-            <li className="fr-footer__bottom-item">
-              <a className="fr-footer__bottom-link" href="#">Données personnelles</a>
-            </li>
-            <li className="fr-footer__bottom-item">
-              <a className="fr-footer__bottom-link" href="#">Gestion des cookies</a>
-            </li>
-            <li className="fr-footer__bottom-item">
               <a className="fr-footer__bottom-link" href="/assets/documents/CGU.pdf?20220131">Conditions générales d'utilisation de l'API</a>
             </li>
           </ul>
