@@ -12,11 +12,10 @@ import DownloadAppStore from '@/public/images/icons/download-appstore.svg';
 import DownloadPlayStore from '@/public/images/icons/download-playstore.svg';
 
 import LogoAppsolu from '@/public/images/partners/appsolu.png';
-import LogoAxygest from '@/public/images/partners/axygest.png';
+import LogoAxygest from '@/public/images/partners/LOGO_AXYGEST_NOIR.jpg';
 import LogoMob1taxi from '@/public/images/partners/mob1taxi.png';
 import LogoMob1taxiPro from '@/public/images/partners/mob1taxi-pro.png';
 import LogoOnlyMoov from '@/public/images/partners/only-moov.png';
-import LogoSpotloc from '@/public/images/partners/spotloc.png';
 import LogoTako from '@/public/images/partners/tako.png';
 import LogoTakoPro from '@/public/images/partners/tako-pro.png';
 import LogoSimplyTaxi from '@/public/images/partners/simply-taxi.png';
@@ -120,19 +119,25 @@ export default function PartnersPage() {
           />
 
           <Card
-            title="Taxi! by Spotloc"
-            Logo={LogoSpotloc}
-            playStoreLink="https://play.google.com/store/apps/details?id=com.spotloc.taxi&hl=fr"
-            appStoreLink="https://apps.apple.com/fr/app/taxi-by-spotloc/id1469036335"
-            websiteLink="https://www.spotloc.solutions/"
-          />
-
-          <Card
             title="Simply Taxi"
             Logo={LogoSimplyTaxi}
             playStoreLink="https://play.google.com/store/apps/details?id=fr.simplytaxi.app&hl=fr"
             appStoreLink="https://apps.apple.com/fr/app/simplytaxi-r%C3%A9volution/id1534870637"
             websiteLink="https://www.simply-taxi.com/"
+          />
+
+          <Card
+            title="Appsolu"
+            Logo={LogoAppsolu}
+            Description={<p>Équipementier</p>}
+            websiteLink="https://www.appsolu.fr/"
+          />
+
+          <Card
+            title="Axygest"
+            Logo={LogoAxygest}
+            Description={<p>Équipementier</p>}
+            websiteLink="http://www.axygest.fr/"
           />
         </div>
 
