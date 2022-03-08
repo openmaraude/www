@@ -4,7 +4,7 @@ import Link from 'next/link';
 import BaseLayout from '@/layouts/BaseLayout';
 
 import LogoAppsolu from '@/public/images/partners/appsolu.png';
-import LogoAxygest from '@/public/images/partners/LOGO_AXYGEST_NOIR.jpg';
+import LogoAxygest from '@/public/images/partners/LOGO_AXYGEST_NOIR.png';
 import LogoG7 from '@/public/images/partners/G7.png';
 import LogoMob1taxi from '@/public/images/partners/mob1taxi.png';
 import LogoOnlyMoov from '@/public/images/partners/only-moov.png';

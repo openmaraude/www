@@ -12,7 +12,7 @@ import DownloadAppStore from '@/public/images/icons/download-appstore.svg';
 import DownloadPlayStore from '@/public/images/icons/download-playstore.svg';
 
 import LogoAppsolu from '@/public/images/partners/appsolu.png';
-import LogoAxygest from '@/public/images/partners/LOGO_AXYGEST_NOIR.jpg';
+import LogoAxygest from '@/public/images/partners/LOGO_AXYGEST_NOIR.png';
 import LogoMob1taxi from '@/public/images/partners/mob1taxi.png';
 import LogoMob1taxiPro from '@/public/images/partners/mob1taxi-pro.png';
 import LogoOnlyMoov from '@/public/images/partners/only-moov.png';
