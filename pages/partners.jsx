@@ -16,9 +16,10 @@ import LogoAxygest from '@/public/images/partners/axygest.png';
 import LogoMob1taxi from '@/public/images/partners/mob1taxi.png';
 import LogoMob1taxiPro from '@/public/images/partners/mob1taxi-pro.png';
 import LogoOnlyMoov from '@/public/images/partners/only-moov.png';
+import LogoSimplyTaxi from '@/public/images/partners/simply-taxi.png';
 import LogoTako from '@/public/images/partners/tako.png';
 import LogoTakoPro from '@/public/images/partners/tako-pro.png';
-import LogoSimplyTaxi from '@/public/images/partners/simply-taxi.png';
+import LogoTessa from '@/public/images/partners/tessa.png';
 
 import styles from '@/styles/Partners.module.css';
 
@@ -139,6 +140,13 @@ export default function PartnersPage() {
             Description={<p>Équipementier</p>}
             websiteLink="http://www.axygest.fr/"
           />
+
+          <Card
+            title="Tessa"
+            Logo={LogoTessa}
+            Description={<p>Équipementier</p>}
+            websiteLink="https://www.tessa.fr/"
+          />
         </div>
 
         <h5 id={SECTIONS[1].title} className="fr-mt-3w">{SECTIONS[1].title}</h5>
@@ -202,6 +210,13 @@ export default function PartnersPage() {
             Logo={LogoAxygest}
             Description={<p>Équipementier</p>}
             websiteLink="http://www.axygest.fr/"
+          />
+
+          <Card
+            title="Tessa"
+            Logo={LogoTessa}
+            Description={<p>Équipementier</p>}
+            websiteLink="https://www.tessa.fr/"
           />
         </div>
       </Content>
