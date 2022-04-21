@@ -81,6 +81,7 @@ export default function TaxisGroupPage() {
           "Encore plus de courses pour les taxis",
           "Votre clientèle trouve un taxi partout en France, via votre application",
         ]}
+        enableFlyer
       />
 
       <CardsSection

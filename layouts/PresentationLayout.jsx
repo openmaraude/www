@@ -25,6 +25,7 @@ export function LandingSection({
   subtitle,
   bulletPoints,
   enableCTA,
+  enableFlyer,
 }) {
   return (
     <section className={stylesLanding.section}>
@@ -50,13 +51,24 @@ export function LandingSection({
               {bulletPoints.map((elem) => <li key={elem}><strong>{elem}</strong></li>)}
             </ul>
 
-            {enableCTA && (
-              <div className={stylesLanding.CTA}>
-                <Link href="https://api.gouv.fr/les-api/le-taxi/demande-acces" passHref>
-                  <ButtonLink>S'inscrire</ButtonLink>
-                </Link>
+            <div className="fr-container">
+              <div className="fr-grid-row">
+                {enableCTA && (
+                  <div className={stylesLanding.CTA}>
+                    <Link href="https://api.gouv.fr/les-api/le-taxi/demande-acces" passHref>
+                      <ButtonLink>S'inscrire</ButtonLink>
+                    </Link>
+                  </div>
+                )}
+                {enableFlyer && (
+                  <div className="fr-ml-1w">
+                    <Link href="/assets/documents/le.taxi_ maraude_flyerA5_avril2022.pdf?20220421" passHref>
+                      <ButtonLink variant="secondary">Télécharger le flyer</ButtonLink>
+                    </Link>
+                  </div>
+                )}
               </div>
-            )}
+            </div>
           </div>
         </div>
       </div>
@@ -66,6 +78,7 @@ export function LandingSection({
 
 LandingSection.defaultProps = {
   enableCTA: true,
+  enableFlyer: false,
 };
 
 LandingSection.propTypes = {
@@ -75,6 +88,7 @@ LandingSection.propTypes = {
   subtitle: PropTypes.node.isRequired,
   bulletPoints: PropTypes.arrayOf(PropTypes.node).isRequired,
   enableCTA: PropTypes.bool,
+  enableFlyer: PropTypes.bool,
 };
 
 export function CardsSection({

@@ -15,6 +15,11 @@ export default function QuestionSection() {
               <ButtonLink variant="secondary">Consultez la FAQ</ButtonLink>
             </Link>
           </div>
+          <div className="fr-ml-1w">
+            <Link href="/assets/documents/le.taxi_ maraude_flyerA5_avril2022.pdf?20220421" passHref>
+              <ButtonLink variant="secondary">Télécharger le flyer</ButtonLink>
+            </Link>
+          </div>
         </div>
       </div>
     </section>
