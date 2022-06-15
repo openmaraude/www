@@ -61,11 +61,18 @@ export function LandingSection({
                   </div>
                 )}
                 {enableFlyer && (
-                  <div className="fr-ml-1w">
-                    <Link href="/assets/documents/le.taxi_ maraude_flyerA5_avril2022.pdf?20220421" passHref>
-                      <ButtonLink variant="secondary">Télécharger le flyer</ButtonLink>
-                    </Link>
-                  </div>
+                  <>
+                    <div className="fr-ml-1w fr-mr-1w ">
+                      <Link href="/assets/documents/22016_TAXI maraude_flyerA5-red472_BATweb_ministere_ecologie_territoires.pdf" passHref>
+                        <ButtonLink variant="secondary">Télécharger le flyer</ButtonLink>
+                      </Link>
+                    </div>
+                    <div className="fr-mt-1w">
+                      <Link href="/assets/documents/Livret Chauffeur.pdf?20220615" passHref>
+                        <ButtonLink variant="secondary">Télécharger le livret chauffeur</ButtonLink>
+                      </Link>
+                    </div>
+                  </>
                 )}
               </div>
             </div>
