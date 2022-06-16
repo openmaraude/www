@@ -15,6 +15,7 @@ import LogoAppsolu from '@/public/images/partners/appsolu.png';
 import LogoAxygest from '@/public/images/partners/axygest.png';
 import LogoMob1taxi from '@/public/images/partners/mob1taxi.png';
 import LogoMob1taxiPro from '@/public/images/partners/mob1taxi-pro.png';
+import LogoMyCloudTaxi from '@/public/images/partners/Logo_myCloudTaxi.png';
 import LogoOnlyMoov from '@/public/images/partners/only-moov.png';
 import LogoSimplyTaxi from '@/public/images/partners/simply-taxi.png';
 import LogoTako from '@/public/images/partners/tako.png';
@@ -147,6 +148,14 @@ export default function PartnersPage() {
             Description={<p>Équipementier</p>}
             websiteLink="https://www.tessa.fr/"
           />
+
+          <Card
+            title="MyCloudTaxi"
+            Logo={LogoMyCloudTaxi}
+            Description={<p>Équipementier</p>}
+            websiteLink="https://www.ata-electronics.com/fr/nos-solutions/mycloudtaxi/"
+            appStoreLink="https://apps.apple.com/us/app/mycloudtaxi-pour-chauffeur/id1621260312"
+          />
         </div>
 
         <h5 id={SECTIONS[1].title} className="fr-mt-3w">{SECTIONS[1].title}</h5>
@@ -217,6 +226,14 @@ export default function PartnersPage() {
             Logo={LogoTessa}
             Description={<p>Équipementier</p>}
             websiteLink="https://www.tessa.fr/"
+          />
+
+          <Card
+            title="MyCloudTaxi"
+            Logo={LogoMyCloudTaxi}
+            Description={<p>Équipementier</p>}
+            websiteLink="https://www.ata-electronics.com/fr/nos-solutions/mycloudtaxi/"
+            appStoreLink="https://apps.apple.com/us/app/mycloudtaxi-pour-chauffeur/id1621260312"
           />
         </div>
       </Content>

@@ -7,6 +7,7 @@ import LogoAppsolu from '@/public/images/partners/appsolu.png';
 import LogoAxygest from '@/public/images/partners/axygest.png';
 import LogoG7 from '@/public/images/partners/G7.png';
 import LogoMob1taxi from '@/public/images/partners/mob1taxi.png';
+import LogoMyCloudTaxi from '@/public/images/partners/Logo_myCloudTaxi.png';
 import LogoOnlyMoov from '@/public/images/partners/only-moov.png';
 import LogoSimplyTaxi from '@/public/images/partners/simply-taxi.png';
 import LogoTako from '@/public/images/partners/tako.png';
@@ -182,6 +183,7 @@ function PartnersSection() {
           <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoAxygest} /></div>
           <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoSimplyTaxi} /></div>
           <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoTessa} /></div>
+          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoMyCloudTaxi} /></div>
         </div>
 
         <div className="fr-grid-row fr-grid-row--center">
