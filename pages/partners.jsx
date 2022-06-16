@@ -267,7 +267,7 @@ export default function PartnersPage() {
             websiteLink="https://www.ata-electronics.com/fr/nos-solutions/mycloudtaxi/"
             appStoreLink="https://apps.apple.com/us/app/mycloudtaxi-pour-chauffeur/id1621260312"
           />
-          
+
           <Card
             title="Gestav"
             Logo={LogoGestav}
