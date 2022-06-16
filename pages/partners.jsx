@@ -23,6 +23,7 @@ import LogoOpenTaxis from '@/public/images/partners/logo-opentaxis.png';
 import LogoSimplyTaxi from '@/public/images/partners/simply-taxi.png';
 import LogoTako from '@/public/images/partners/tako.png';
 import LogoTakoPro from '@/public/images/partners/tako-pro.png';
+import LogoTaxisNantes from '@/public/images/partners/taxis-nantes-appclient.png';
 import LogoTessa from '@/public/images/partners/tessa.png';
 
 import styles from '@/styles/Partners.module.css';
@@ -220,6 +221,14 @@ export default function PartnersPage() {
             playStoreLink="https://play.google.com/store/apps/details?id=fr.simplytaxi.app&hl=fr"
             appStoreLink="https://apps.apple.com/fr/app/simplytaxi-r%C3%A9volution/id1534870637"
             websiteLink="https://www.simply-taxi.com/"
+          />
+
+          <Card
+            title="Taxis-Nantes"
+            Logo={LogoTaxisNantes}
+            websiteLink="https://www.taxis-nantes.com/#download"
+            playStoreLink="https://play.google.com/store/apps/details?id=com.lanoosphere.tessa.taxi_nantes&hl=fr"
+            appStoreLink="https://apps.apple.com/fr/app/taxi-nantes/id924386923"
           />
         </div>
 

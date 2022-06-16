@@ -16,6 +16,7 @@ import LogoSimplyTaxi from '@/public/images/partners/simply-taxi.png';
 import LogoTako from '@/public/images/partners/tako.png';
 import LogoTaxisJaunes from '@/public/images/partners/taxis-jaunes.png';
 import LogoTaxisLyonnais from '@/public/images/partners/taxis-lyonnais.png';
+import LogoTaxisNantes from '@/public/images/partners/taxis-nantes-appclient.png';
 import LogoTessa from '@/public/images/partners/tessa.png';
 
 import ButtonLink from '@/components/ButtonLink';
@@ -190,6 +191,7 @@ function PartnersSection() {
           <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoOpenTaxis} /></div>
           <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoGestav} /></div>
           <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoJoliTaxi} /></div>
+          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoTaxisNantes} /></div>
         </div>
 
         <div className="fr-grid-row fr-grid-row--center">
