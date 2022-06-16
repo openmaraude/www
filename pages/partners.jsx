@@ -17,6 +17,7 @@ import LogoMob1taxi from '@/public/images/partners/mob1taxi.png';
 import LogoMob1taxiPro from '@/public/images/partners/mob1taxi-pro.png';
 import LogoMyCloudTaxi from '@/public/images/partners/Logo_myCloudTaxi.png';
 import LogoOnlyMoov from '@/public/images/partners/only-moov.png';
+import LogoOpenTaxis from '@/public/images/partners/logo-opentaxis.png';
 import LogoSimplyTaxi from '@/public/images/partners/simply-taxi.png';
 import LogoTako from '@/public/images/partners/tako.png';
 import LogoTakoPro from '@/public/images/partners/tako-pro.png';
@@ -155,6 +156,13 @@ export default function PartnersPage() {
             Description={<p>Équipementier</p>}
             websiteLink="https://www.ata-electronics.com/fr/nos-solutions/mycloudtaxi/"
             appStoreLink="https://apps.apple.com/us/app/mycloudtaxi-pour-chauffeur/id1621260312"
+          />
+
+          <Card
+            title="OpenTaxis"
+            Logo={LogoOpenTaxis}
+            websiteLink="http://www.opentaxis.fr/"
+            playStoreLink="https://play.google.com/store/apps/details?id=com.taxisnantes.appchauffeur"
           />
         </div>
 
