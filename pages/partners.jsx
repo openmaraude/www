@@ -13,6 +13,7 @@ import DownloadPlayStore from '@/public/images/icons/download-playstore.svg';
 
 import LogoAppsolu from '@/public/images/partners/appsolu.png';
 import LogoAxygest from '@/public/images/partners/axygest.png';
+import LogoGestav from '@/public/images/partners/logo_gestav.svg';
 import LogoMob1taxi from '@/public/images/partners/mob1taxi.png';
 import LogoMob1taxiPro from '@/public/images/partners/mob1taxi-pro.png';
 import LogoMyCloudTaxi from '@/public/images/partners/Logo_myCloudTaxi.png';
@@ -164,6 +165,13 @@ export default function PartnersPage() {
             websiteLink="http://www.opentaxis.fr/"
             playStoreLink="https://play.google.com/store/apps/details?id=com.taxisnantes.appchauffeur"
           />
+
+          <Card
+            title="Gestav"
+            Logo={LogoGestav}
+            websiteLink="https://gestav.com/"
+            playStoreLink="https://play.google.com/store/apps/details?id=com.gestav.txs&hl=fr&gl=US"
+          />
         </div>
 
         <h5 id={SECTIONS[1].title} className="fr-mt-3w">{SECTIONS[1].title}</h5>
@@ -242,6 +250,13 @@ export default function PartnersPage() {
             Description={<p>Équipementier</p>}
             websiteLink="https://www.ata-electronics.com/fr/nos-solutions/mycloudtaxi/"
             appStoreLink="https://apps.apple.com/us/app/mycloudtaxi-pour-chauffeur/id1621260312"
+          />
+          
+          <Card
+            title="Gestav"
+            Logo={LogoGestav}
+            websiteLink="https://gestav.com/"
+            playStoreLink="https://play.google.com/store/apps/details?id=com.gestav.txs&hl=fr&gl=US"
           />
         </div>
       </Content>
