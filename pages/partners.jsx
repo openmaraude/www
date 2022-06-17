@@ -23,6 +23,7 @@ import LogoOpenTaxis from '@/public/images/partners/logo-opentaxis.png';
 import LogoSimplyTaxi from '@/public/images/partners/simply-taxi.png';
 import LogoTako from '@/public/images/partners/tako.png';
 import LogoTakoPro from '@/public/images/partners/tako-pro.png';
+import LogoTaxiMoove from '@/public/images/partners/taximoove.png';
 import LogoTaxisNantes from '@/public/images/partners/taxis-nantes-appclient.png';
 import LogoTessa from '@/public/images/partners/tessa.png';
 
@@ -180,6 +181,14 @@ export default function PartnersPage() {
             Logo={LogoJoliTaxi}
             websiteLink="https://jolitaxi.fr/"
           />
+
+          <Card
+            title="Taximoove"
+            Logo={LogoTaxiMoove}
+            websiteLink="https://reseau.alliancetaxis78.fr"
+            appStoreLink="https://apps.apple.com/fr/app/taximoove/id1587851273"
+            playStoreLink="https://play.google.com/store/apps/details?id=com.aom.taximoove&hl=fr"
+          />
         </div>
 
         <h5 id={SECTIONS[1].title} className="fr-mt-3w">{SECTIONS[1].title}</h5>
@@ -273,6 +282,14 @@ export default function PartnersPage() {
             Logo={LogoGestav}
             websiteLink="https://gestav.com/"
             playStoreLink="https://play.google.com/store/apps/details?id=com.gestav.txs&hl=fr&gl=US"
+          />
+
+          <Card
+            title="Taximoove"
+            Logo={LogoTaxiMoove}
+            websiteLink="https://reseau.alliancetaxis78.fr"
+            appStoreLink="https://apps.apple.com/fr/app/taximoove/id1587851273"
+            playStoreLink="https://play.google.com/store/apps/details?id=com.aom.taximoove&hl=fr"
           />
         </div>
       </Content>
