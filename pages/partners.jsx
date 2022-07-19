@@ -155,10 +155,11 @@ export default function PartnersPage() {
           />
 
           <Card
-            title="MyCloudTaxi"
+            title="myCloudTaxi"
             Logo={LogoMyCloudTaxi}
             Description={<p>Équipementier</p>}
             websiteLink="https://www.ata-electronics.com/fr/nos-solutions/mycloudtaxi/"
+            playStoreLink="https://play.google.com/store/apps/details?id=com.kaiman.ata.app.prod"
             appStoreLink="https://apps.apple.com/us/app/mycloudtaxi-pour-chauffeur/id1621260312"
           />
 
