@@ -136,8 +136,8 @@ export function BoxSection({ content }) {
     <section className={stylesBox.section}>
       <div className="fr-container">
         <ul className="fr-grid-row">
-          {content.map((elem, idx) => (
-            <li className="fr-col-12 fr-mb-5w fr-mb-md-1w fr-col-sm fr-pl-2w fr-pr-2w" key={String(idx)}>{elem}</li>
+          {content.map((elem) => (
+            <li className="fr-col-12 fr-mb-5w fr-mb-md-1w fr-col-sm fr-pl-2w fr-pr-2w">{elem}</li>
           ))}
         </ul>
       </div>
