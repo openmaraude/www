@@ -59,17 +59,17 @@ function Card({
       <div className={styles.links}>
         {playStoreLink && (
           <Link href={playStoreLink} passHref>
-            <a alt="download google play" href><Image layout="responsive" src={DownloadPlayStore} /></a>
+            <a alt="download google play" href target="_blank" rel="noreferrer noopener"><Image layout="responsive" src={DownloadPlayStore} /></a>
           </Link>
         )}
         {appStoreLink && (
           <Link href={appStoreLink} passHref>
-            <a alt="download app store" href><Image layout="responsive" src={DownloadAppStore} /></a>
+            <a alt="download app store" href target="_blank" rel="noreferrer noopener"><Image layout="responsive" src={DownloadAppStore} /></a>
           </Link>
         )}
         {websiteLink && (
           <Link href={websiteLink} passHref>
-            <ButtonLink variant="secondary">Site web</ButtonLink>
+            <ButtonLink variant="secondary" href target="_blank">Site web</ButtonLink>
           </Link>
         )}
       </div>

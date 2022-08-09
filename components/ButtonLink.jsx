@@ -2,7 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const ButtonLink = React.forwardRef(
-  ({ onClick, children, variant }, ref) => {
+  ({
+    children, variant, href, target,
+  }, ref) => {
     const classes = ['fr-btn'];
 
     if (variant === 'secondary') {
@@ -10,22 +12,24 @@ const ButtonLink = React.forwardRef(
     }
 
     return (
-      <button type="button" onClick={onClick} ref={ref} className={classes.join(' ')}>
+      <a href={href} ref={ref} className={classes.join(' ')} target={target} rel={target === '_blank' ? 'noreferrer noopener' : null}>
         { children }
-      </button>
+      </a>
     );
   },
 );
 
 ButtonLink.defaultProps = {
-  onClick: null,
   variant: "primary",
+  href: null,
+  target: null,
 };
 
 ButtonLink.propTypes = {
-  onClick: PropTypes.func,
   children: PropTypes.node.isRequired,
   variant: PropTypes.string,
+  href: PropTypes.string,
+  target: PropTypes.string,
 };
 
 export default ButtonLink;
