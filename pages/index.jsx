@@ -5,6 +5,7 @@ import BaseLayout from '@/layouts/BaseLayout';
 
 import LogoAppsolu from '@/public/images/partners/appsolu.png';
 import LogoAxygest from '@/public/images/partners/axygest.png';
+import LogoCourseDeRue from '@/public/images/partners/coursederue.png';
 import LogoG7 from '@/public/images/partners/G7.png';
 import LogoGestav from '@/public/images/partners/logo_gestav.svg';
 import LogoJoliTaxi from '@/public/images/partners/logo_jolitaxi.png';
@@ -194,6 +195,7 @@ function PartnersSection() {
           <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoJoliTaxi} /></div>
           <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoTaxisNantes} /></div>
           <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoTaxiMoove} /></div>
+          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoCourseDeRue} /></div>
         </div>
 
         <div className="fr-grid-row fr-grid-row--center">

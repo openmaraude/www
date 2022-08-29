@@ -13,6 +13,7 @@ import DownloadPlayStore from '@/public/images/icons/download-playstore.svg';
 
 import LogoAppsolu from '@/public/images/partners/appsolu.png';
 import LogoAxygest from '@/public/images/partners/axygest.png';
+import LogoCourseDeRue from '@/public/images/partners/coursederue.png';
 import LogoGestav from '@/public/images/partners/logo_gestav.svg';
 import LogoJoliTaxi from '@/public/images/partners/logo_jolitaxi.png';
 import LogoMob1taxi from '@/public/images/partners/mob1taxi.png';
@@ -189,6 +190,12 @@ export default function PartnersPage() {
             websiteLink="https://reseau.alliancetaxis78.fr"
             appStoreLink="https://apps.apple.com/fr/app/taximoove/id1587851273"
             playStoreLink="https://play.google.com/store/apps/details?id=com.aom.taximoove&hl=fr"
+          />
+
+          <Card
+            title="Course de rue"
+            Logo={LogoCourseDeRue}
+            websiteLink="https://www.coursederue.fr/"
           />
         </div>
 
