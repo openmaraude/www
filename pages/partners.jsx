@@ -196,6 +196,7 @@ export default function PartnersPage() {
             title="Course de rue"
             Logo={LogoCourseDeRue}
             websiteLink="https://www.coursederue.fr/"
+            playStoreLink="https://play.google.com/store/apps/details?id=com.gescop.course_de_rue"
           />
         </div>
 
