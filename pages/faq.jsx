@@ -136,7 +136,7 @@ const SECTIONS = [
             q: <>Quelles informations sont nécessaires pour m’inscrire ?</>,
             a: (
               <>
-                Lors de votre inscription sur le.taxi, vous devrez renseigner des informations comme vos :
+                Lors de votre inscription sur le.taxi, vous devrez renseigner des informations comme votre :
                 <ul>
                   <li>Identité</li>
                   <li>Numéro d’ADS</li>
@@ -214,7 +214,7 @@ const SECTIONS = [
         questions: [
           {
             q: <>La connexion à Le.taxi est elle payante ?</>,
-            a: <>Non, Le.taxi est un service 100% gratuit développé par l’Etat. Afin de s’y connecter le chauffeur doit nénmoins recourir à un applicatif client qui peut imposer des frais de service. Il est possible de connaitre les offres gratuites en consultant la page dédiée.</>,
+            a: <>Non, Le.taxi est un service 100% gratuit développé par l’Etat. Afin de s’y connecter le chauffeur doit néanmoins recourir à un applicatif client qui peut imposer des frais de service. Il est possible de connaitre les offres gratuites en consultant la page dédiée.</>,
           },
         ],
       },
