@@ -46,8 +46,8 @@ export default function DonwloadLinks({ partner, reset }) {
         )}
       </div>
 
-      <p>
-        <button type="button" onClick={reset} className="fr-btn fr-btn--secondary fr-mt-3w">Retour au choix du partenaire</button>
+      <p className="fr-mt-3w">
+        <button type="button" onClick={reset} className="fr-btn fr-btn--secondary">Retour au choix du partenaire</button>
       </p>
     </div>
   );

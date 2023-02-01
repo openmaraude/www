@@ -2,6 +2,7 @@ import React from 'react';
 
 import TextContentLayout, { Content } from '@/layouts/TextContentLayout';
 
+import ButtonLink from '@/components/ButtonLink';
 import DonwloadLinks from '@/components/DownloadLinks';
 import Tile from '@/components/Tile';
 
@@ -172,6 +173,10 @@ function chooseProfile(setChoice) {
           />
         </div>
       </div>
+
+      <p className="fr-mt-3w">
+        <ButtonLink href="/partners/driver" variant="secondary">Retour aux explications le.taxi</ButtonLink>
+      </p>
     </div>
   );
 }
@@ -242,8 +247,8 @@ function ListPartners(choice, setChoice, setSelectedPartner) {
         ))}
       </div>
 
-      <p>
-        <button type="button" onClick={() => setChoice(null)} className="fr-btn fr-btn--secondary fr-mt-3w">Retour au choix du profil</button>
+      <p className="fr-mt-3w">
+        <button type="button" onClick={() => setChoice(null)} className="fr-btn fr-btn--secondary">Retour au choix du profil</button>
       </p>
     </div>
   );

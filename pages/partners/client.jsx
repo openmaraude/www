@@ -186,8 +186,9 @@ export default function PartnersPage() {
                   </div>
                 ))}
               </div>
-              <p>
-                <button type="button" onClick={() => setLocation(null)} className="fr-btn fr-btn--secondary fr-mt-3w">Retour au choix de la ville</button>
+
+              <p className="fr-mt-3w">
+                <button type="button" onClick={() => setLocation(null)} className="fr-btn fr-btn--secondary">Retour au choix de la ville</button>
               </p>
             </>
           )}
