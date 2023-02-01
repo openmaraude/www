@@ -10,7 +10,7 @@ import LogoAxygest from '@/public/images/partners/axygest.png';
 import LogoCourseDeRue from '@/public/images/partners/coursederue.png';
 import LogoG7 from '@/public/images/partners/G7.png';
 import LogoGestav from '@/public/images/partners/logo_gestav.svg';
-import LogoGeoway from '@/public/images/partners/geoway.svg';
+import LogoGeoway from '@/public/images/partners/geoway.png';
 import LogoJoliTaxi from '@/public/images/partners/logo_jolitaxi.png';
 import LogoMob1taxiPro from '@/public/images/partners/mob1taxi-pro.png';
 import LogoMyCloudTaxi from '@/public/images/partners/Logo_myCloudTaxi.png';
@@ -40,6 +40,7 @@ const PARTNERS = {
   g7: {
     title: "G7",
     logo: LogoG7,
+    description: <p>Bientôt disponible sur les stores</p>,
     appStoreLink: "",
     playStoreLink: "",
     websiteLink: "https://chauffeur.g7.fr/",
@@ -47,6 +48,8 @@ const PARTNERS = {
   appsolu: {
     title: "Appsolu",
     logo: LogoAppsolu,
+    appStoreLink: "https://apps.apple.com/fr/app/appsolu-taxi/id962398406",
+    playStoreLink: "https://play.google.com/store/apps/details?id=appsolu.taxi.driver",
     websiteLink: "https://www.appsolu.fr/",
   },
   simplytaxi: {
@@ -98,6 +101,8 @@ const PARTNERS = {
   jolitaxi: {
     title: "Jolitaxi",
     logo: LogoJoliTaxi,
+    playStoreLink: "https://play.google.com/store/apps/details?id=com.jolitaxi.jolitaxichauffeur",
+    appStoreLink: "https://apps.apple.com/fr/app/jolitaxi-chauffeur/id1634474154",
     websiteLink: "https://jolitaxi.fr/",
   },
   tessa: {
@@ -255,7 +260,9 @@ export default function PartnersPage() {
 
         {(choice && !selectedPartner) && ListPartners(choice, setChoice, setSelectedPartner)}
 
-        {(choice && selectedPartner) && DonwloadLinks(selectedPartner, setSelectedPartner)}
+        {(choice && selectedPartner) && (
+          <DonwloadLinks partner={selectedPartner} reset={() => setSelectedPartner(null)} />
+        )}
       </Content>
     </TextContentLayout>
   );

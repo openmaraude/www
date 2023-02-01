@@ -6,12 +6,14 @@ import Link from 'next/link';
 import DownloadAppStore from '@/public/images/icons/download-appstore.svg';
 import DownloadPlayStore from '@/public/images/icons/download-playstore.svg';
 
-export default function DonwloadLinks(selectedPartner, setSelectedPartner) {
-  const { playStoreLink, appStoreLink } = selectedPartner;
+export default function DonwloadLinks({ partner, reset }) {
+  const { description, playStoreLink, appStoreLink } = partner;
 
   return (
     <div className="fr-container">
       <h1 className="fr-display-sm">J'utilise l'application en version iOS ou Android</h1>
+
+      {!playStoreLink && !appStoreLink && <p>{description}</p>}
 
       <div className="fr-grid-row fr-grid-row--gutters fr-grid-row--center">
         {appStoreLink && (
@@ -45,13 +47,17 @@ export default function DonwloadLinks(selectedPartner, setSelectedPartner) {
       </div>
 
       <p>
-        <button type="button" onClick={() => setSelectedPartner(null)} className="fr-btn fr-btn--secondary fr-mt-3w">Retour au choix du partenaire</button>
+        <button type="button" onClick={reset} className="fr-btn fr-btn--secondary fr-mt-3w">Retour au choix du partenaire</button>
       </p>
     </div>
   );
 }
 
 DonwloadLinks.propTypes = {
-  selectedPartner: PropTypes.shape({}).isRequired,
-  setSelectedPartner: PropTypes.func.isRequired, /* eslint react/no-unused-prop-types: off */
+  partner: PropTypes.shape({
+    description: PropTypes.node,
+    playStoreLink: PropTypes.string,
+    appStoreLink: PropTypes.string,
+  }).isRequired,
+  reset: PropTypes.func.isRequired, /* eslint react/no-unused-prop-types: off */
 };

@@ -19,10 +19,19 @@ const API_URL = 'https://api-adresse.data.gouv.fr';
 const PARTNERS = [{
   title: "Onlymoov",
   logo: LogoOnlyMoov,
-  description: <p>Grand Lyon</p>,
-  playStoreLink: "https://play.google.com/store/apps/details?id=com.grandlyon.onlymoov",
+  description: <p>La solution officielle du Grand Lyon</p>,
   websiteLink: "https://taxi.onlymoov.com/",
-  locations: ['69123', '69381', '69382', '69383', '69384', '69385', '69386', '69387', '69388', '69389'],
+  locations: [
+    // Lyon et arrondissements
+    '69123', '69381', '69382', '69383', '69384', '69385', '69386', '69387', '69388', '69389',
+    // Métropole
+    '69003', '69029', '69033', '69034', '69040', '69044', '69046', '69271', '69063', '69273',
+    '69068', '69069', '69071', '69072', '69275', '69081', '69276', '69085', '69087', '69088',
+    '69089', '69278', '69091', '69096', '69100', '69279', '69116', '69117', '69127', '69282',
+    '69283', '69284', '69142', '69143', '69149', '69152', '69153', '69163', '69286', '69168',
+    '69191', '69194', '69202', '69199', '69204', '69205', '69207', '69290', '69233', '69292',
+    '69293', '69296', '69244', '69250', '69256', '69259', '69260', '69266',
+  ],
 },
 {
   title: "Tako",
@@ -30,7 +39,7 @@ const PARTNERS = [{
   description: <p>France</p>,
   playStoreLink: "https://play.google.com/store/apps/details?id=com.triperz.tako_traveller",
   appStoreLink: "https://itunes.apple.com/fr/app/id1473625254?mt=8",
-  websiteLink: "http://www.tak-o.com/",
+  // websiteLink: "http://www.tak-o.com/",
 },
 {
   title: "Mob1taxi",
@@ -38,19 +47,20 @@ const PARTNERS = [{
   description: <p>France</p>,
   playStoreLink: "https://play.google.com/store/apps/details?id=com.mob1taxi&feature=more_from_developer",
   appStoreLink: "https://apps.apple.com/fr/app/mob1taxi/id576991159?mt=8",
-  websiteLink: "https://www.mob1taxi.com/",
+  // websiteLink: "https://www.mob1taxi.com/",
 },
 {
   title: "Simply Taxi",
   logo: LogoSimplyTaxi,
+  description: <p>France</p>,
   playStoreLink: "https://play.google.com/store/apps/details?id=fr.simplytaxi.app&hl=fr",
   appStoreLink: "https://apps.apple.com/fr/app/simplytaxi-r%C3%A9volution/id1534870637",
-  websiteLink: "https://www.simply-taxi.com/",
+  // websiteLink: "https://www.simply-taxi.com/",
 },
 {
   title: "Taxis-Nantes",
   logo: LogoTaxisNantes,
-  websiteLink: "https://www.taxis-nantes.com/#download",
+  // websiteLink: "https://www.taxis-nantes.com/#download",
   playStoreLink: "https://play.google.com/store/apps/details?id=com.lanoosphere.tessa.taxi_nantes&hl=fr",
   appStoreLink: "https://apps.apple.com/fr/app/taxi-nantes/id924386923",
   locations: ['44109'],
@@ -121,7 +131,7 @@ export default function PartnersPage() {
                         <legend className="fr-fieldset__legend fr-text--regular" id="radio-legend" />
                         <div className="fr-fieldset__content" role="listbox">
                           {data.map((r) => (
-                            <div className="fr-radio-group" role="listitem">
+                            <div className="fr-radio-group" role="listitem" key={r.properties.id}>
                               <input
                                 type="radio"
                                 id={`radio-rich-${r.properties.id}`}
@@ -170,7 +180,8 @@ export default function PartnersPage() {
                       title={partner.title}
                       description={partner.description}
                       img={partner.logo}
-                      onClick={() => setSelectedPartner(partner)}
+                      href={partner.websiteLink}
+                      onClick={() => (!partner.websiteLink ? setSelectedPartner(partner) : null)}
                     />
                   </div>
                 ))}
@@ -182,7 +193,9 @@ export default function PartnersPage() {
           )}
         </div>
 
-        {selectedPartner && DonwloadLinks(selectedPartner, setSelectedPartner)}
+        {selectedPartner && (
+          <DonwloadLinks partner={selectedPartner} reset={() => setSelectedPartner(null)} />
+        )}
       </Content>
     </TextContentLayout>
   );
