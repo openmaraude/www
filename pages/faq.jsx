@@ -130,7 +130,7 @@ const SECTIONS = [
               <>
                 Il existe différents cas :
                 <ul>
-                  <li>Non connexion d’un conducteur disponible : amende de 68 euros après un premier avertissement (Entrée en vigueur différée au 1er juillet 2022 et 1er septembre 2022 pour les DROM COM)</li>
+                  <li>Non connexion d’un conducteur disponible : amende de 68 euros après un premier avertissement (<strong>Entrée en vigueur différée au 1er juillet 2022 et 1er septembre 2022 pour les DROM COM</strong>)</li>
                   <li>Refus de course (hors cas légitimes) :
                     <ul>
                       <li>Refus de vente - contravention de 5° classe 1500 euros pour une personne physique</li>
