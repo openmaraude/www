@@ -16,12 +16,12 @@ export default function QuestionSection() {
             </Link>
           </div>
           <div className="fr-ml-1w">
-            <Link href="/assets/documents/22016_TAXI maraude_flyerA5-red472_BATweb_ministere_ecologie_territoires.pdf" passHref>
+            <Link href="/assets/documents/22016_TAXI_maraude_flyerA5_BATweb.pdf?20230313" passHref>
               <ButtonLink variant="secondary">Télécharger le flyer</ButtonLink>
             </Link>
           </div>
           <div className="fr-ml-1w">
-            <Link href="/assets/documents/Livret Chauffeur.pdf?20220615" passHref>
+            <Link href="/assets/documents/22077_TAXI-livretA5-chauffeur_BATweb.pdf?20230313" passHref>
               <ButtonLink variant="secondary">Télécharger le livret chauffeur</ButtonLink>
             </Link>
           </div>
