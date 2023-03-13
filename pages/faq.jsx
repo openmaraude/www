@@ -106,6 +106,7 @@ const SECTIONS = [
       },
       {
         title: 'Obligation',
+        description: <>Le décret relatif au registre de disponibilité des taxis ainsi que son arrêté d’application sont publiés au Journal Officiel. L’ensemble des conducteurs de taxis de France ont désormais l’obligation de se connecter au registre de disponibilité des taxis le.taxi.</>,
         questions: [
           {
             q: <>Ai-je l’obligation de me connecter à Le.taxi ?</>,
@@ -122,6 +123,23 @@ const SECTIONS = [
           {
             q: <>Je viens de recevoir une course via Le.taxi, un client me hèle dans la rue, que dois-je faire ?</>,
             a: <>Vous pouvez dans ce cas indiquer dans votre application que vous refusez à posteriori la demande de course.</>,
+          },
+          {
+            q: <>Qu’est ce que je risque si je ne m’enregistre pas sur le.taxi ?</>,
+            a: (
+              <>
+                Il existe différents cas :
+                <ul>
+                  <li>Non connexion d’un conducteur disponible : amende de 68 euros après un premier avertissement (Entrée en vigueur différée au 1er juillet 2022 et 1er septembre 2022 pour les DROM COM)</li>
+                  <li>Refus de course (hors cas légitimes) :
+                    <ul>
+                      <li>Refus de vente - contravention de 5° classe 1500 euros pour une personne physique</li>
+                      <li>Avertissement / retrait de la carte professionnelle ou de l’ADS après avis de la commission disciplinaire</li>
+                    </ul>
+                  </li>
+                </ul>
+              </>
+            ),
           },
         ],
       },
@@ -376,6 +394,7 @@ export default function FAQPage() {
             {section.categories.map((category) => (
               <React.Fragment key={`${section.title}_${category.title}`}>
                 <h3 id={`${section.title}_${category.title}`}>{category.title}</h3>
+                {category.description}
                 <dl>
                   {category.questions.map((question, idx) => (
                     <React.Fragment key={`${section.title}_${category.title}_${String(idx)}`}>
