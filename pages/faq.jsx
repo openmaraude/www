@@ -106,11 +106,10 @@ const SECTIONS = [
       },
       {
         title: 'Obligation',
-        description: <>Le décret relatif au registre de disponibilité des taxis ainsi que son arrêté d’application sont publiés au Journal Officiel. L’ensemble des conducteurs de taxis de France ont désormais l’obligation de se connecter au registre de disponibilité des taxis le.taxi.</>,
         questions: [
           {
             q: <>Ai-je l’obligation de me connecter à Le.taxi ?</>,
-            a: <>Dans quelques semaines, l'obligation de connexion à Le.taxi sera effective pour l’ensemble des artisans taxis de  France. Pour prendre de l’avance et me mettre en conformité avec cette future obligation je peux me connecter dès maintenant via un partenaire agréé.</>,
+            a: <>Le décret relatif au registre de disponibilité des taxis ainsi que son arrêté d’application sont publiés au Journal Officiel. L’ensemble des conducteurs de taxis de France ont désormais l’obligation de se connecter au registre de disponibilité des taxis le.taxi.</>,
           },
           {
             q: <>Est-ce que je dois accepter les courses qui me sont attribuées par le.taxi ?</>,
@@ -394,7 +393,6 @@ export default function FAQPage() {
             {section.categories.map((category) => (
               <React.Fragment key={`${section.title}_${category.title}`}>
                 <h3 id={`${section.title}_${category.title}`}>{category.title}</h3>
-                {category.description}
                 <dl>
                   {category.questions.map((question, idx) => (
                     <React.Fragment key={`${section.title}_${category.title}_${String(idx)}`}>
