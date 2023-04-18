@@ -74,6 +74,55 @@ function Header() {
   );
 }
 
+function FollowUs() {
+  return (
+    <div className="fr-follow">
+      <div className="fr-container">
+        <div className="fr-grid-row">
+          <div className="fr-col-12 fr-col-md-8">
+            <div className="fr-follow__newsletter">
+              <p className="fr-h5">Abonnez-vous à notre lettre d’information</p>
+              <div>
+                <a className="fr-btn" title="S‘abonner à notre lettre d’information" href="https://4f5c450d.sibforms.com/serve/MUIEAKTQDjfzFCKEawgOwstRv3ndc7jEO5_EoGmnNsURyEvb2MuwyG_pv5TBC0FFOZCrId9AIiFM9vvicsgo9eWBxApkPRKJUA1mro2TqzAAfJds1gzQPxHCU2Yw2We0jlshKHzfnox5o9t_BUPzIR8dUKzA3EYThMO5HGoZ-Pmfdc2Au7SphUj7A2P39skzNLvRwAAl8mcYGFX7" target="_blank" rel="noreferrer">
+                  S'abonner
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="fr-col-12 fr-col-md-4">
+            <div className="fr-follow__social">
+              <p className="fr-h5">Suivez-nous<br />sur les réseaux sociaux
+              </p>
+              <ul className="fr-links-group">
+                <li>
+                  <a className="fr-link--facebook fr-link" title="Facebook - nouvelle fenêtre" href="https://www.facebook.com/people/letaxi/100083328183554/" target="_blank" rel="noreferrer">
+                    facebook
+                  </a>
+                </li>
+                <li>
+                  <a className="fr-link--linkedin fr-link" title="LinkedIn - nouvelle fenêtre" href="https://www.linkedin.com/company/letaxi/?viewAsMember=true" target="_blank" rel="noreferrer">
+                    linkedin
+                  </a>
+                </li>
+                <li>
+                  <a className="fr-link--instagram fr-link" title="Instagram - nouvelle fenêtre" href="https://www.instagram.com/le.taxi_officiel/" target="_blank" rel="noreferrer">
+                    instagram
+                  </a>
+                </li>
+                <li>
+                  <a className="fr-link--youtube fr-link" title="YouTube - nouvelle fenêtre" href="https://www.youtube.com/@registrededisponibilitedes424" target="_blank" rel="noreferrer">
+                    youtube
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function Footer() {
   return (
     <footer className="fr-footer" role="contentinfo" id="footer">
@@ -138,6 +187,8 @@ export default function BaseLayout({ children }) {
       <Header />
 
       {children}
+
+      <FollowUs />
 
       <Footer />
     </div>
