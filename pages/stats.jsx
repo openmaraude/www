@@ -108,7 +108,7 @@ export default function StatsPage() {
                     </li>
                     <li>
                       <p>
-                        {Math.round(data?.hails_growth.lyon[1][1])}&nbsp;%
+                        {Math.round(data?.hails_growth.lyon)}&nbsp;%
                         d'augmentation des courses
                       </p>
                     </li>
