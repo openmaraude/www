@@ -47,6 +47,11 @@ function Header() {
           <nav className="fr-nav" role="navigation" aria-label="Menu principal" id="header-navigation">
             <ul className="fr-nav__list">
               <li className="fr-nav__item">
+                <Link href="/" passHref>
+                  <a className="fr-nav__link" {...(router.asPath === "/" ? { "aria-current": "page" } : {})}>Comment ça marche&nbsp;?</a>
+                </Link>
+              </li>
+              <li className="fr-nav__item">
                 <Link href="/taxis_group" passHref>
                   <a className="fr-nav__link" {...(router.asPath === "/taxis_group" ? { "aria-current": "page" } : {})}>Groupement de taxis</a>
                 </Link>
@@ -64,6 +69,11 @@ function Header() {
               <li className="fr-nav__item">
                 <Link href="/maas" passHref>
                   <a className="fr-nav__link" {...(router.asPath === "/maas" ? { "aria-current": "page" } : {})}>Application de mobilité</a>
+                </Link>
+              </li>
+              <li className="fr-nav__item">
+                <Link href="/faq" passHref>
+                  <a className="fr-nav__link" {...(router.asPath === "/faq" ? { "aria-current": "page" } : {})}>Foire aux questions</a>
                 </Link>
               </li>
             </ul>
