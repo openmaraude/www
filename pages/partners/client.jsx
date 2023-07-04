@@ -9,7 +9,6 @@ import Tile from '@/components/Tile';
 
 import LogoMob1taxi from '@/public/images/partners/mob1taxi.png';
 import LogoOnlyMoov from '@/public/images/partners/only-moov.png';
-import LogoSimplyTaxi from '@/public/images/partners/simply-taxi.png';
 import LogoTako from '@/public/images/partners/tako.png';
 import LogoTaxisNantes from '@/public/images/partners/taxis-nantes-appclient.png';
 
@@ -48,14 +47,6 @@ const PARTNERS = [{
   playStoreLink: "https://play.google.com/store/apps/details?id=com.mob1taxi&feature=more_from_developer",
   appStoreLink: "https://apps.apple.com/fr/app/mob1taxi/id576991159?mt=8",
   // websiteLink: "https://www.mob1taxi.com/",
-},
-{
-  title: "Simply Taxi",
-  logo: LogoSimplyTaxi,
-  description: <p>France</p>,
-  playStoreLink: "https://play.google.com/store/apps/details?id=fr.simplytaxi.app&hl=fr",
-  appStoreLink: "https://apps.apple.com/fr/app/simplytaxi-r%C3%A9volution/id1534870637",
-  // websiteLink: "https://www.simply-taxi.com/",
 },
 {
   title: "Taxis-Nantes",
