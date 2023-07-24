@@ -277,7 +277,7 @@ const SECTIONS = [
           },
           {
             q: <>L’API le.taxi permet-elle de réserver un taxi ?</>,
-            a: <>Non, l’API concerne uniquement la maraude électronique, c’est-à-dire un taxi disponible à moins de 500m du client. Afin d’avoir une offre de taxi complète dans votre MaaS, vous pouvez par exemple compléter notre offre de maraude électronique avec un service de réservation de taxis (Karhoo, Tako, G7, etc.).</>,
+            a: <>Non, l’API concerne uniquement la maraude électronique, c’est-à-dire un taxi disponible à moins de 500m du client. Afin d’avoir une offre de taxi complète dans votre MaaS, vous pouvez par exemple compléter notre offre de maraude électronique avec un service de réservation de taxis (Karhoo, G7, etc.).</>,
           },
           {
             q: <>Est-ce que le paiement peut transiter par l’API le.taxi ?</>,
@@ -334,7 +334,7 @@ const SECTIONS = [
           },
           {
             q: <>L’API le.taxi permet-elle de réserver un taxi ?</>,
-            a: <>Non, l’API concerne uniquement la maraude électronique, c’est-à-dire la commande d’un taxi disponible immédiatement à moins de 500m du client. Afin d’avoir une offre de taxi complète dans votre application de mobilité, vous pouvez par exemple compléter notre offre de maraude électronique avec un service de réservation de taxis (Karhoo, Tako, G7, etc.).</>,
+            a: <>Non, l’API concerne uniquement la maraude électronique, c’est-à-dire la commande d’un taxi disponible immédiatement à moins de 500m du client. Afin d’avoir une offre de taxi complète dans votre application de mobilité, vous pouvez par exemple compléter notre offre de maraude électronique avec un service de réservation de taxis (Karhoo, G7, etc.).</>,
           },
         ],
       },

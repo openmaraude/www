@@ -17,7 +17,6 @@ import LogoMob1taxiPro from '@/public/images/partners/mob1taxi-pro.png';
 import LogoMyCloudTaxi from '@/public/images/partners/Logo_myCloudTaxi.png';
 import LogoOpenTaxis from '@/public/images/partners/logo-opentaxis.png';
 import LogoSimplyTaxi from '@/public/images/partners/simply-taxi.png';
-import LogoTakoPro from '@/public/images/partners/tako-pro.png';
 import LogoTaxiMoove from '@/public/images/partners/taximoove.png';
 import LogoTaxisNantes from '@/public/images/partners/taxis-nantes-appclient.png';
 import LogoTessa from '@/public/images/partners/tessa.png';
@@ -74,13 +73,6 @@ const PARTNERS = {
     appStoreLink: "https://apps.apple.com/fr/app/mob1taxi-chauffeurs/id1458521482",
     websiteLink: "https://www.mob1taxi.com/passager",
   },
-  takopro: {
-    title: "Tako Pro",
-    logo: LogoTakoPro,
-    playStoreLink: "https://play.google.com/store/apps/details?id=com.triperz.tako_driver&hl=fr",
-    appStoreLink: "https://apps.apple.com/fr/app/tako-pro/id1473625302",
-    websiteLink: "https://www.tak-o.com/CHAUFFEUR.html",
-  },
   gestav: {
     title: "Gestav",
     logo: LogoGestav,
@@ -127,10 +119,10 @@ const PARTNERS = {
 };
 
 const PROFILES = {
-  artisan: ['mycloudtaxi', 'coursederue', 'appsolu', 'simplytaxi', 'geoway', 'mob1taxi', 'takopro', 'gestav', 'taximoove', 'jolitaxi', 'opentaxis'],
+  artisan: ['mycloudtaxi', 'coursederue', 'appsolu', 'simplytaxi', 'geoway', 'mob1taxi', 'gestav', 'taximoove', 'jolitaxi', 'opentaxis'],
   affilie: ['g7', 'appsolu', 'axygest', 'taximoove', 'geoway', 'gestav', 'tessa', 'taxisnantes'],
   salarie: ['g7', 'appsolu'],
-  lgerant: ['mycloudtaxi', 'coursederue', 'appsolu', 'simplytaxi', 'geoway', 'mob1taxi', 'takopro', 'gestav', 'taximoove', 'jolitaxi', 'opentaxis'],
+  lgerant: ['mycloudtaxi', 'coursederue', 'appsolu', 'simplytaxi', 'geoway', 'mob1taxi', 'gestav', 'taximoove', 'jolitaxi', 'opentaxis'],
 };
 
 function chooseProfile(setChoice) {

@@ -9,7 +9,6 @@ import Tile from '@/components/Tile';
 
 import LogoMob1taxi from '@/public/images/partners/mob1taxi.png';
 import LogoOnlyMoov from '@/public/images/partners/only-moov.png';
-import LogoTako from '@/public/images/partners/tako.png';
 import LogoTaxisNantes from '@/public/images/partners/taxis-nantes-appclient.png';
 
 const API_URL = 'https://api-adresse.data.gouv.fr';
@@ -31,14 +30,6 @@ const PARTNERS = [{
     '69191', '69194', '69202', '69199', '69204', '69205', '69207', '69290', '69233', '69292',
     '69293', '69296', '69244', '69250', '69256', '69259', '69260', '69266',
   ],
-},
-{
-  title: "Tako",
-  logo: LogoTako,
-  description: <p>France</p>,
-  playStoreLink: "https://play.google.com/store/apps/details?id=com.triperz.tako_traveller",
-  appStoreLink: "https://itunes.apple.com/fr/app/id1473625254?mt=8",
-  // websiteLink: "http://www.tak-o.com/",
 },
 {
   title: "Mob1taxi",

@@ -14,7 +14,6 @@ import LogoMyCloudTaxi from '@/public/images/partners/Logo_myCloudTaxi.png';
 import LogoOnlyMoov from '@/public/images/partners/only-moov.png';
 import LogoOpenTaxis from '@/public/images/partners/logo-opentaxis.png';
 import LogoSimplyTaxi from '@/public/images/partners/simply-taxi.png';
-import LogoTako from '@/public/images/partners/tako.png';
 import LogoTaxisJaunes from '@/public/images/partners/taxis-jaunes.png';
 import LogoTaxisLyonnais from '@/public/images/partners/taxis-lyonnais.png';
 import LogoTaxiMoove from '@/public/images/partners/taximoove.png';
@@ -179,7 +178,6 @@ function PartnersSection() {
         <h2>Nos partenaires</h2>
 
         <div className="fr-grid-row fr-grid-row--middle">
-          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoTako} /></div>
           <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoMob1taxi} /></div>
           <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoG7} /></div>
           <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoTaxisLyonnais} /></div>
