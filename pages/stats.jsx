@@ -116,7 +116,7 @@ export default function StatsPage() {
                 </Card>
               </div>
               <div className="fr-col fr-col-lg-3 fr-col-md-6 fr-col-sm-6 fr-col-xs-12">
-                <Card title="Grenoble-Alpes Métropole" img={CarteGrenoble} imgBadge="opérationnel d'ici juin 2023">
+                <Card title="Grenoble-Alpes Métropole" img={CarteGrenoble} imgBadge="opérationnel d'ici octobre">
                   <ul>
                     <li>
                       <p>{Math.round(lastTaxisConnected?.grenoble)}&nbsp;% de taxis connectés</p>
@@ -128,7 +128,7 @@ export default function StatsPage() {
                 </Card>
               </div>
               <div className="fr-col fr-col-lg-3 fr-col-md-6 fr-col-sm-6 fr-col-xs-12">
-                <Card title="Rouen Métropole" img={CarteRouen} imgBadge="opérationnel d'ici sept. 2023">
+                <Card title="Rouen Métropole" img={CarteRouen} imgBadge="opérationnel d'ici janvier 2024">
                   <ul>
                     <li>
                       <p>{Math.round(lastTaxisConnected?.rouen)}&nbsp;% de taxis connectés</p>
