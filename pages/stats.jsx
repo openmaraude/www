@@ -107,10 +107,7 @@ export default function StatsPage() {
                       <p>{Math.round(lastTaxisConnected?.lyon)}&nbsp;% de taxis connectés</p>
                     </li>
                     <li>
-                      <p>
-                        {Math.round(data?.hails_growth.lyon)}&nbsp;%
-                        d'augmentation des courses
-                      </p>
+                      <p><em>% d'augmentation des courses à venir</em></p>
                     </li>
                   </ul>
                 </Card>
