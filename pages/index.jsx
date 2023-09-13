@@ -161,6 +161,7 @@ function APIDescriptionSection() {
 
           <div className={`fr-mt-5w ${stylesAPIDescription.link}`}>
             <span className="fr-fi-information-fill fr-pr-1w" aria-hidden="true" />
+            Voir aussi&nbsp;:&nbsp;
             <Link href="https://api.gouv.fr/guides/api-definition" passHref>
               <a href="https://api.gouv.fr/guides/api-definition">Qu'est-ce qu'une API ?</a>
             </Link>
