@@ -1,101 +1,92 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
-import PresentationLayout, {
-  LandingSection,
-  CardsSection,
-  BoxSection,
-} from '@/layouts/PresentationLayout';
+import BaseLayout from '@/layouts/BaseLayout';
+import { CardsSection } from '@/layouts/PresentationLayout';
 
 import ButtonLink from '@/components/ButtonLink';
 
-import QuestionSection from '@/components/QuestionSection';
-import StyledNumberedList from '@/components/StyledNumberedList';
-
-function HowToSection() {
-  return (
-    <section>
-      <div className="fr-container">
-        <h4 className="fr-mt-3w fr-mb-5w">Comment connecter votre application à le.taxi ?</h4>
-        <StyledNumberedList
-          elements={[
-            <>Inscrivez-vous<br />au registre le.taxi</>,
-            <>Intégrez<br /><strong>l'API</strong></>,
-            <><strong>Testons le service ensemble</strong></>,
-            <>Les taxis disponibles pour<br /><strong>tous vos usagers</strong></>,
-          ]}
-        />
-
-      </div>
-      <div className="fr-container">
-        <div className="fr-grid-row fr-grid-row--center fr-mb-3w">
-          <Link href="https://api.gouv.fr/les-api/le-taxi/demande-acces" passHref>
-            <ButtonLink>S'inscrire</ButtonLink>
-          </Link>
-        </div>
-      </div>
-    </section>
-  );
-}
+import IllustrationCity from '@/public/images/page_aom/illustration-city.svg';
 
 export default function AOMPage() {
-  const pageTitle = (
-    <>
-      Complétez votre offre de services publics avec les taxis
-    </>
-  );
-
-  const presentationBoxContent = (
-    <>
-      Le.taxi permet aux usagers de héler un taxi en un clic partout en France.
-      <br />
-      Vous pouvez l’ajouter à vos services Maas.
-    </>
-  );
-
   return (
-    <PresentationLayout>
-      <LandingSection
-        title={pageTitle}
-        boxContent={presentationBoxContent}
-        backgroundImage="/images/page_aom/illustration-city.svg"
-        subtitle="Les avantages pour les acteurs publics"
-        bulletPoints={[
-          "Vos usagers peuvent trouver des taxis plus facilement",
-          "Un service simple à intégrer dans le MaaS",
-          "Tous les taxis de votre territoire dans vos services",
-        ]}
-      />
+    <BaseLayout title="Acteur public ou privé">
+      <div className="fr-container">
+        <div className="fr-callout fr-callout--blue-ecume">
+          <h1 className="fr-callout__title"><span className="highlight">le.taxi&nbsp;: l'API qui permet d'ajouter l'offre taxis dans les applications de mobilité</span></h1>
+          <div className="fr-grid-row fr-callout__text">
+            <div className="fr-col">
+              <Image src={IllustrationCity} className="fr-responsive-img" layout="responsive" />
+            </div>
+            <div className="fr-col fr-m-auto" style={{ textAlign: 'center' }}>
+              <ButtonLink href="/contact">Je contacte l'équipe le.taxi</ButtonLink>
+              <p className="fr-mt-6w fr-ml-6w">
+                <Link href="/taxi">Je suis un chauffeur taxi</Link>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <CardsSection
         title="L’intérêt de le.taxi pour vos usagers"
         cards={[
           {
             backgroundImage: "/images/page_aom/illustration-client-app.svg",
-            content: <><span className="highlight">Les taxis disponibles à moins de<br />500m</span> dans vos services</>,
-
+            content: <>Une mobilité qui comble <span className="highlight">les points de rupture</span> (territoires non-desservis, horaires spécifiques, grève...)</>,
           },
           {
             backgroundImage: "/images/page_aom/illustration-client-waiting.svg",
-            content: <><span className="highlight">Compléter votre offres de<br />transports</span> avec les taxis</>,
+            content: <>Le taxi <span className="highlight">favorise l'inclusion sociale</span> (personnes en situation de handicap, seniors, femmes enceintes...)</>,
           },
           {
             backgroundImage: "/images/page_aom/illustration-map.svg",
-            content: <>Un meilleur accès aux taxis<br /><span className="highlight">dans votre territoire</span></>,
+            content: <>Un taxi <span className="highlight">à moins de 500&nbsp;m</span> à tout moment de la journée</>,
           },
         ]}
       />
 
-      <BoxSection
-        content={[
-          <>Disponibilité des taxis sur tout le territoire (loi LOM / Open data)</>,
-          <>Accès gratuit</>,
-          <>Service public 100% Taxis</>,
-        ]}
-      />
+      <div className="fr-container">
+        <div className="fr-grid-row fr-callout__text">
+          <div className="fr-col">
+            <div className="fr-callout fr-callout--blue-ecume">
+              <p className="fr-callout__text" style={{ textAlign: 'center' }}>
+                <ButtonLink href="/contact">Je contacte l'équipe le.taxi</ButtonLink>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <HowToSection />
-
-      <QuestionSection />
-    </PresentationLayout>
+      <div className="fr-container fr-background-alt--blue-france">
+        <CardsSection
+          title="Ce que le.taxi apporte à vos services"
+          cards={[
+            {
+              backgroundImage: "/images/homepage/taxis_group.svg",
+              content: (
+                <>
+                  Offre complète avec tous les taxis du territoire,
+                  peu importe leur profil (artisan, salarié, affilié)
+                </>
+              ),
+            },
+            {
+              backgroundImage: "/images/page_taxi/illustration-clock.svg",
+              content: (
+                <>
+                  Intégration technique ultra-simple<br />
+                  Appels à l'API gratuits et illimités
+                </>
+              ),
+            },
+            {
+              backgroundImage: "/images/page_aom/illustration-map.svg",
+              content: <>Un meilleur accès à vos territoires</>,
+            },
+          ]}
+        />
+      </div>
+    </BaseLayout>
   );
 }

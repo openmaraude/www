@@ -11,7 +11,7 @@ export default function DonwloadLinks({ partner, reset }) {
 
   return (
     <div className="fr-container">
-      <h1 className="fr-display-sm">J'utilise l'application en version iOS ou Android</h1>
+      <h1 className="fr-display-sm">Je clique sur le logo pour télécharger l'application en version iOS ou Android</h1>
 
       {!playStoreLink && !appStoreLink && <p>{description}</p>}
 

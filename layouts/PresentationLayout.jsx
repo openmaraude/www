@@ -8,15 +8,10 @@ import PropTypes from 'prop-types';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import BaseLayout from '@/layouts/BaseLayout';
-
 import ButtonLink from '@/components/ButtonLink';
 
-import styles from '@/styles/layouts/Presentation.module.css';
 import stylesLanding from '@/styles/layouts/Presentation.landing.module.css';
 import stylesCards from '@/styles/layouts/Presentation.cards.module.css';
-import stylesBox from '@/styles/layouts/Presentation.box.module.css';
-import stylesTwoSides from '@/styles/layouts/Presentation.two_sides.module.css';
 
 export function LandingSection({
   title,
@@ -129,65 +124,4 @@ export function CardsSection({
 CardsSection.propTypes = {
   title: PropTypes.string.isRequired,
   cards: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
-};
-
-export function BoxSection({ content }) {
-  return (
-    <section className={stylesBox.section}>
-      <div className="fr-container">
-        <ul className="fr-grid-row">
-          {content.map((elem) => (
-            <li className="fr-col-12 fr-mb-5w fr-mb-md-1w fr-col-sm fr-pl-2w fr-pr-2w">{elem}</li>
-          ))}
-        </ul>
-      </div>
-    </section>
-  );
-}
-
-BoxSection.propTypes = {
-  content: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
-};
-
-export function TwoSidesSection({ title, left, right }) {
-  return (
-    <section className={stylesTwoSides.section}>
-      <div className="fr-container">
-        <div className="fr-grid-row">
-          <div className={`fr-col-12 fr-col-md-6 fr-pl-1w fr-pr-1w ${stylesTwoSides.leftSide}`}>
-            <h2 className="fr-mt-3w">{title}</h2>
-            <div className={stylesTwoSides.content}>
-              {left}
-            </div>
-          </div>
-          <div className={`fr-col-12 fr-col-md-6 fr-pl-1w fr-pr-1w ${stylesTwoSides.rightSide}`}>
-            <h2 className="fr-mt-3w">{title}</h2>
-            <div className={stylesTwoSides.content}>
-              {right}
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-TwoSidesSection.propTypes = {
-  title: PropTypes.string.isRequired,
-  left: PropTypes.node.isRequired,
-  right: PropTypes.node.isRequired,
-};
-
-export default function PresentationLayout({ children }) {
-  return (
-    <BaseLayout>
-      <div className={styles.page}>
-        {children}
-      </div>
-    </BaseLayout>
-  );
-}
-
-PresentationLayout.propTypes = {
-  children: PropTypes.node.isRequired,
 };

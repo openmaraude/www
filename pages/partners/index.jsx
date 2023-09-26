@@ -18,7 +18,7 @@ export default function PartnersPage() {
             <Tile
               title="Je recherche un taxi"
               description={<p>Faites appel à un taxi tout de suite</p>}
-              href="/partners/client"
+              href="/client"
               img={Customer}
             />
           </div>

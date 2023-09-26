@@ -6,10 +6,30 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
+function SkipLinks() {
+  return (
+    <div className="fr-skiplinks">
+      <nav className="fr-container" role="navigation" aria-label="Accès rapide">
+        <ul className="fr-skiplinks__list">
+          <li>
+            <a className="fr-link" href="#content">Contenu</a>
+          </li>
+          <li>
+            <a className="fr-link" href="#header-navigation">Menu</a>
+          </li>
+          <li>
+            <a className="fr-link" href="#footer">Pied de page</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  );
+}
+
 function Header() {
   const router = useRouter();
   return (
-    <header role="banner" className="fr-header">
+    <header role="banner" className="fr-header" id="header-navigation">
       <div className="fr-header__body">
         <div className="fr-container">
           <div className="fr-header__body-row">
@@ -30,9 +50,9 @@ function Header() {
               </div>
               <div className="fr-header__service">
                 <a href="/" title="Registre de disponibilité des taxis">
-                  <p className="fr-header__service-title">Registre de disponibilité des taxis</p>
+                  <p className="fr-header__service-title">60&nbsp;000 taxis à portée de main</p>
                 </a>
-                <p className="fr-header__service-tagline">le.taxi</p>
+                <p className="fr-header__service-tagline">le.taxi, registre de disponibilité des taxis</p>
               </div>
             </div>
           </div>
@@ -47,33 +67,23 @@ function Header() {
           <nav className="fr-nav" role="navigation" aria-label="Menu principal" id="header-navigation">
             <ul className="fr-nav__list">
               <li className="fr-nav__item">
-                <Link href="/" passHref>
-                  <a className="fr-nav__link" {...(router.asPath === "/" ? { "aria-current": "page" } : {})}>Comment ça marche&nbsp;?</a>
-                </Link>
-              </li>
-              <li className="fr-nav__item">
-                <Link href="/taxis_group" passHref>
-                  <a className="fr-nav__link" {...(router.asPath === "/taxis_group" ? { "aria-current": "page" } : {})}>Groupement de taxis</a>
+                <Link href="/client" passHref>
+                  <a className="fr-nav__link" {...(router.asPath === "/client" ? { "aria-current": "page" } : {})}>Je recherche un taxi</a>
                 </Link>
               </li>
               <li className="fr-nav__item">
                 <Link href="/taxi" passHref>
-                  <a className="fr-nav__link" {...(router.asPath === "/taxi" ? { "aria-current": "page" } : {})}>Artisan taxi</a>
+                  <a className="fr-nav__link" {...(router.asPath === "/taxi" ? { "aria-current": "page" } : {})}>Je suis un chauffeur taxi</a>
                 </Link>
               </li>
               <li className="fr-nav__item">
                 <Link href="/aom" passHref>
-                  <a className="fr-nav__link" {...(router.asPath === "/aom" ? { "aria-current": "page" } : {})}>Mobilité publique</a>
+                  <a className="fr-nav__link" {...(router.asPath === "/aom" ? { "aria-current": "page" } : {})}>Je suis un acteur public ou privé</a>
                 </Link>
               </li>
               <li className="fr-nav__item">
-                <Link href="/maas" passHref>
-                  <a className="fr-nav__link" {...(router.asPath === "/maas" ? { "aria-current": "page" } : {})}>Application de mobilité</a>
-                </Link>
-              </li>
-              <li className="fr-nav__item">
-                <Link href="/faq" passHref>
-                  <a className="fr-nav__link" {...(router.asPath === "/faq" ? { "aria-current": "page" } : {})}>Foire aux questions</a>
+                <Link href="/contact" passHref>
+                  <a className="fr-nav__link" {...(router.asPath === "/contact" ? { "aria-current": "page" } : {})}>Autres</a>
                 </Link>
               </li>
             </ul>
@@ -185,18 +195,22 @@ function Footer() {
   );
 }
 
-export default function BaseLayout({ children }) {
+export default function BaseLayout({ children, title }) {
   return (
     <div>
       <Head>
-        <title>le.taxi, le registre de disponibilité des taxis</title>
+        <title>{title}</title>
         <meta name="description" content="le.taxi, le service public de la maraude électronique" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <SkipLinks />
+
       <Header />
 
-      {children}
+      <main role="main" id="content" className="fr-pt-md-14v">
+        {children}
+      </main>
 
       <FollowUs />
 
@@ -207,4 +221,5 @@ export default function BaseLayout({ children }) {
 
 BaseLayout.propTypes = {
   children: PropTypes.node.isRequired,
+  title: PropTypes.string.isRequired,
 };

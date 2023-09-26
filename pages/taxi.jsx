@@ -1,114 +1,77 @@
 import Link from 'next/link';
 
-import PresentationLayout, {
-  LandingSection,
-  CardsSection,
-  BoxSection,
-  TwoSidesSection,
-} from '@/layouts/PresentationLayout';
+import TextContentLayout, { Content } from '@/layouts/TextContentLayout';
+import Modal from '@/components/Modal';
 
 import ButtonLink from '@/components/ButtonLink';
-import QuestionSection from '@/components/QuestionSection';
 
-import stylesTwoSides from '@/styles/Taxi.two_sides.module.css';
-
-function TwoSidesLeft() {
+function RadioPopup() {
   return (
     <>
-      <h6 className={stylesTwoSides.subtitle}>
-        Vous êtes membre d’un groupement ou d'une centrale radio
-      </h6>
-
-      <p>
-        Renseignez son nom ainsi que votre email pour être tenu informé de sa connexion au registre
-        le.taxi.
-      </p>
-
-      <Link href="https://4f5c450d.sibforms.com/serve/MUIEAD0z8iCpmGPojLy4HKONuV0_pX7WwN6XXdRD9HC7B8EZVubFYgX0eMHjCdAu4EBd42c0utm9cECGmiQ8Jso2mw1K25YCzedBMSlkFDeJ02y43vgYY_HkkC6sgZ_I7cx23gcrzWORhx_X02g9xYXZKZEw_9EWnoRKCsVN5xTUUKNQLq6PI0sidIzx_ryokIXKTgYBsRPsN2Yn" passHref>
-        <ButtonLink>Recevoir les informations</ButtonLink>
-      </Link>
-    </>
-  );
-}
-
-function TwoSidesRight() {
-  return (
-    <>
-      <h6 className={stylesTwoSides.subtitle}>
-        Vous êtes indépendant
-      </h6>
-
-      <p>Choisissez votre futur partenaire parmi les services agréés.</p>
-
-      <Link href="/partners" passHref>
-        <ButtonLink variant="secondary">Voir la liste</ButtonLink>
-      </Link>
+      <Modal title="Vous êtes membre d'un groupement ou d'une centrale radio&nbsp;?">
+        <p>
+          Vous pouvez renseigner son nom ainsi que votre email
+          pour être tenu informé de sa connexion au registre le.taxi.
+        </p>
+        <ButtonLink href="https://4f5c450d.sibforms.com/serve/MUIEAD0z8iCpmGPojLy4HKONuV0_pX7WwN6XXdRD9HC7B8EZVubFYgX0eMHjCdAu4EBd42c0utm9cECGmiQ8Jso2mw1K25YCzedBMSlkFDeJ02y43vgYY_HkkC6sgZ_I7cx23gcrzWORhx_X02g9xYXZKZEw_9EWnoRKCsVN5xTUUKNQLq6PI0sidIzx_ryokIXKTgYBsRPsN2Yn">Recevoir les informations</ButtonLink>
+      </Modal>
     </>
   );
 }
 
 export default function TaxiPage() {
-  const pageTitle = (
-    <>
-      <span className="highlight">Un lien direct avec vos clients</span> grâce à la maraude électronique
-    </>
-  );
-
-  const presentationBoxContent = (
-    <>
-      le.taxi, un service public numérique qui permet d’accéder à
-      de <strong>nouvelles courses en maraude électronique.</strong>
-    </>
-  );
-
   return (
-    <PresentationLayout>
-      <LandingSection
-        title={pageTitle}
-        boxContent={presentationBoxContent}
-        backgroundImage="/images/page_taxi/illustration-customer.svg"
-        subtitle="Notre ambition pour les artisans taxis"
-        bulletPoints={[
-          "Accompagner la modernisation de l’offre de taxis",
-          "Obtenir plus de courses",
-          "Simplifier votre mise en conformité avec la legislation en quelques clics",
-        ]}
-        enableCTA={false}
-      />
-
-      <CardsSection
-        title="Les avantages de la maraude électronique"
-        cards={[
-          {
-            backgroundImage: "/images/page_taxi/illustration-clock.svg",
-            content: <><span className="highlight">Optimiser le temps</span><br />entre 2 courses</>,
-          },
-          {
-            backgroundImage: "/images/page_taxi/illustration-taxi-on-map.svg",
-            content: <><span className="highlight">Les clients vous localisent</span><br />à moins de 500m</>,
-          },
-          {
-            backgroundImage: "/images/page_taxi/illustration-client-waiting.svg",
-            content: <>Paiement en voiture,<br /><span className="highlight">sans frais d’approche</span></>,
-          },
-        ]}
-      />
-
-      <BoxSection
-        content={[
-          <>Réduisez les temps d’attente aux<br />bornes</>,
-          <>Plus de clients à proximité</>,
-          <>Tous les taxis de France, dans 1<br />service</>,
-        ]}
-      />
-
-      <TwoSidesSection
-        title="Comment utiliser le.taxi ?"
-        left={<TwoSidesLeft />}
-        right={<TwoSidesRight />}
-      />
-
-      <QuestionSection />
-    </PresentationLayout>
+    <>
+      <RadioPopup />
+      <TextContentLayout title="Chauffeur taxi">
+        <Content>
+          <div className="fr-callout fr-callout--blue-ecume">
+            <h1 className="fr-callout__title">Qu'est-ce que le.taxi&nbsp;?</h1>
+            <p className="fr-callout__text">
+              En tant que taxi en France, vous avez
+              l'obligation légale de vous enregistrer sur
+              notre service, conformément au décret
+              relatif au <Link href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000044514743">registre de disponibilité des taxis</Link> et
+              à son <Link href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000044514795">arrêté d'application</Link> publiés au
+              Journal Officiel.
+            </p>
+            <br />
+            <p className="fr-callout__text">
+              Cela va vous permettre de recevoir des
+              courses de clients près de vous ayant
+              besoin d'un taxi immédiatement.
+            </p>
+          </div>
+          <h1>Pour m'inscrire, je dois télécharger une application chauffeur agréée</h1>
+          <p>
+            Pour vous enregistrer, vous devez
+            télécharger une des applications chauffeur
+            agréées le.taxi. Une fois l'application
+            téléchargée, vous aurez besoin de vous munir de votre&nbsp;:
+          </p>
+          <ul>
+            <li>pièce d'identité</li>
+            <li>carte professionnelle</li>
+            <li>numéro d'ADS</li>
+            <li>numéro de plaque d'immatriculation</li>
+          </ul>
+          <p>
+            Ces informations seront demandées lors
+            de la création de compte sur l'application
+            choisie.
+          </p>
+          <p className="fr-ml-14w">
+            <ButtonLink href="/partners/driver/profile" className="fr-btn">Je m'inscris</ButtonLink>
+          </p>
+          <p>
+            <Link href="/assets/documents/22016_TAXI_maraude_flyerA5_BATweb.pdf?20230313">Je télécharge le flyer chauffeur pour plus d'informations</Link>
+          </p>
+          <div className="fr-callout fr-callout--purple-glycine">
+            <h1 className="fr-callout__title">Vous êtes responsable d'un groupement&nbsp;?</h1>
+            <ButtonLink href="/contact">Je contacte l'équipe le.taxi</ButtonLink>
+          </div>
+        </Content>
+      </TextContentLayout>
+    </>
   );
 }

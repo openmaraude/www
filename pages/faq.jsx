@@ -383,7 +383,7 @@ export default function FAQPage() {
   }));
 
   return (
-    <TextContentLayout>
+    <TextContentLayout title="Questions fréquentes">
       <Menu title="Sommaire" items={menu} />
       <Content>
         <h1>Questions fréquentes</h1>

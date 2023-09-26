@@ -1,66 +1,26 @@
 .section {
   background: linear-gradient(180deg, #fff 50%, #ECECFF);
-  padding-top: 4.5rem;
-  padding-bottom: 4.5rem;
 }
 
-.section h4 {
-  color: #00006D;
-  margin-top: 3.5rem;
-}
-
-.goals {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  list-style: none;
-}
-
-.goals li {
-  position: relative;
-  background-size: 22px;
-  padding-left: 40px;
-  padding-right: 10px;
-  margin-bottom: 32px;
-}
-
-.iconDiamond {
-  background: url('/images/icons/icon-diamond.svg') no-repeat left center;
-}
-
-.iconTripleArrows {
-  background: url('/images/icons/icon-triple-arrows.svg') no-repeat left center;
-}
-
-.iconDoubleArrows {
-  background: url('/images/icons/icon-double-arrows.svg') no-repeat left center;
-}
-
-.iconWatch {
-  background: url('/images/icons/icon-watch.svg') no-repeat left center;
-}
-
-@media (min-width: 1024px) {
-  .goals {
-    flex-direction: row;
-    flex-wrap: wrap;
+@media screen and (min-width: 768px) {
+  .section {
+    background-image: url('/images/homepage/illustration-home.svg');
+    background-repeat: no-repeat;
+    background-position: calc(25%) bottom; 
   }
-
-  .goals li {
-    width: 50%;
+  .section h1 {
+    margin-left: -25%;
   }
-
-  .goals li:nth-child(odd) {
-    order: 0;
-  }
-
-  .goals li:nth-child(even) {
-    order: 1;
-  }
-}
+};
 
 .illustrationContainer {
   position: relative;
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .illustrationContainer {
+    display: none;
+  }
 }

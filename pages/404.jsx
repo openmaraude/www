@@ -4,7 +4,7 @@ import styles from '@/styles/Http404.module.css';
 
 export default function NotFoundPage() {
   return (
-    <BaseLayout>
+    <BaseLayout title="Page non trouvée">
       <section className={styles.section}>
         <h1>Page non trouvée</h1>
 

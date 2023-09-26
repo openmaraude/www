@@ -54,9 +54,9 @@ Content.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default function TextContentLayout({ children }) {
+export default function TextContentLayout({ children, title }) {
   return (
-    <BaseLayout>
+    <BaseLayout title={title}>
       <div className="fr-container">
         <div className={`fr-grid-row fr-grid-row--gutters fr-pt-3w fr-pb-3w ${styles.content}`}>
           {children}
@@ -68,4 +68,5 @@ export default function TextContentLayout({ children }) {
 
 TextContentLayout.propTypes = {
   children: PropTypes.node.isRequired,
+  title: PropTypes.string.isRequired,
 };

@@ -3,31 +3,27 @@ import Link from 'next/link';
 
 import BaseLayout from '@/layouts/BaseLayout';
 
+import LogoLyon from '@/public/images/partners/logo-metropole-grand-lyon-1040x364.png';
+import LogoRouen from '@/public/images/partners/logo-rouen-metropole-630x630.jpg';
+import LogoGrenoble from '@/public/images/partners/logo-grenoble-alpes-metropole-630x630.jpg';
 import LogoAppsolu from '@/public/images/partners/appsolu.png';
-import LogoAxygest from '@/public/images/partners/axygest.png';
 import LogoCourseDeRue from '@/public/images/partners/coursederue.png';
 import LogoG7 from '@/public/images/partners/G7.png';
-import LogoGestav from '@/public/images/partners/logo_gestav.svg';
-import LogoJoliTaxi from '@/public/images/partners/logo_jolitaxi.png';
 import LogoMob1taxi from '@/public/images/partners/mob1taxi.png';
-import LogoMyCloudTaxi from '@/public/images/partners/Logo_myCloudTaxi.png';
-import LogoOnlyMoov from '@/public/images/partners/only-moov.png';
-import LogoOpenTaxis from '@/public/images/partners/logo-opentaxis.png';
-import LogoSimplyTaxi from '@/public/images/partners/simply-taxi.png';
-import LogoTaxisJaunes from '@/public/images/partners/taxis-jaunes.png';
-import LogoTaxisLyonnais from '@/public/images/partners/taxis-lyonnais.png';
-import LogoTaxiMoove from '@/public/images/partners/taximoove.png';
-import LogoTaxisNantes from '@/public/images/partners/taxis-nantes-appclient.png';
-import LogoTessa from '@/public/images/partners/tessa.png';
 
-import ButtonLink from '@/components/ButtonLink';
-import QuestionSection from '@/components/QuestionSection';
 import Modal from '@/components/Modal';
+import QuestionSection from '@/components/QuestionSection';
+import Tile from '@/components/Tile';
+
+import TileCity from '@/public/images/page_aom/illustration-city.svg';
+import TileCustomer from '@/public/images/page_partners/customer.svg';
+import TileMarker from '@/public/images/homepage/marker.svg';
+import TileTaxi from '@/public/images/page_partners/taxi.svg';
+import NewsIllustration from '@/public/images/homepage/news.jpg';
 
 import stylesGoals from '@/styles/Homepage.goals.module.css';
 import stylesChallenges from '@/styles/Homepage.challenges.module.css';
 import stylesAPIDescription from '@/styles/Homepage.api_description.module.css';
-import stylesPartners from '@/styles/Homepage.partners.module.css';
 
 function ChampagneSection() {
   return (
@@ -45,26 +41,54 @@ function GoalsSection() {
     <section className={stylesGoals.section}>
       <div className="fr-container">
         <div className="fr-grid-row">
-          <div className="fr-col fr-col-md-7">
-            <h1 className="fr-display-sm">le.taxi accélère <span className="highlight">la rencontre</span> entre usagers et taxis</h1>
-
-            <h4>Nos objectifs</h4>
-
-            <ul className={stylesGoals.goals}>
-              <li className={stylesGoals.iconDiamond}>Accompagner <span className="highlight">la modernisation</span> de l’offre de taxis</li>
-              <li className={stylesGoals.iconTripleArrows}>Mieux <span className="highlight">accéder aux taxis dans toute la France</span></li>
-              <li className={stylesGoals.iconDoubleArrows}>Permettre <span className="highlight">aux usagers</span> et <span className="highlight">aux taxis</span> de se trouver facilement</li>
-              <li className={stylesGoals.iconWatch}>Trouver les taxis dans toutes les <span className="highlight">applications clients</span></li>
-            </ul>
-          </div>
-
-          <div className="fr-col fr-displayed-md">
-            <div className={stylesGoals.illustrationContainer}>
-              <Image src="/images/homepage/illustration-customer.svg" alt="Illustration commande de taxi" layout="fill" />
+          <div className="fr-col fr-col-md-6 fr-col-offset-md-6">
+            <h1 className="highlight">le.taxi&nbsp;: un service de l'État qui facilite<br />la commande immédiate de taxis</h1>
+            <div className="fr-container">
+              <div className="fr-grid-row fr-grid-row--gutters fr-my-3w">
+                <div className="fr-col-12 fr-col-md-6">
+                  <Tile
+                    title="Je suis chauffeur taxi"
+                    description="Inscrivez-vous au registre le.taxi"
+                    href="/taxi/"
+                    img={TileTaxi}
+                    size="sm"
+                    orientation="horizontal"
+                  />
+                </div>
+                <div className="fr-col-12 fr-col-md-6">
+                  <Tile
+                    title="Je recherche un taxi"
+                    description="Faites appel à un taxi tout de suite"
+                    href="/client"
+                    img={TileCustomer}
+                    size="sm"
+                    orientation="horizontal"
+                  />
+                </div>
+                <div className="fr-col-12 fr-col-md-6">
+                  <Tile
+                    title="Je souhaite faciliter l'accès au taxi"
+                    description="Vous développez une app&nbsp;? un site&nbsp;? Contactez l'équipe le.taxi"
+                    href="/aom"
+                    img={TileCity}
+                    size="sm"
+                    orientation="horizontal"
+                  />
+                </div>
+                <div className="fr-col-12 fr-col-md-6">
+                  <Tile
+                    title="J'ai un autre besoin à préciser"
+                    description="Vous présentez un cas spécifique&nbsp;? Contactez l'équipe le.taxi"
+                    href="/contact"
+                    img={TileMarker}
+                    size="sm"
+                    orientation="horizontal"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );
@@ -75,70 +99,22 @@ function ChallengesSection() {
     <section className={stylesChallenges.section}>
 
       <div className="fr-container">
-        <h2>Comment le.taxi répond à vos enjeux ?</h2>
+        <h2>La dernière actualité le.taxi</h2>
 
-        <div className="fr-grid-row fr-grid-row--gutters">
-          <div className="fr-col-12 fr-col-md-3">
-            <div className="fr-card fr-enlarge-link fr-pt-3w">
-              <div className="fr-card__body">
-                <h4 className="fr-card__title">
-                  <Link href="/taxi" passHref>
-                    <a href="/taxi" className="fr-card__link">Artisan taxi</a>
-                  </Link>
-                </h4>
-                <p className="fr-card__desc">Recevez de nouvelles courses lorsque vous êtes en maraude</p>
-              </div>
-              <div className="fr-card__img">
-                <img src="/images/homepage/taxi.svg" className={`fr-responsive-img ${stylesChallenges.img}`} alt="" />
-              </div>
+        <div className="fr-card fr-enlarge-link fr-card--horizontal fr-card--horizontal-half">
+          <div className="fr-card__body">
+            <div className="fr-card__content">
+              <h3 className="fr-card__title">
+                <Link href="?">le.taxi arrive dans l'Appli&nbsp;M de Grenoble&nbsp;!</Link>
+              </h3>
+              <p className="fr-card__desc">C'est une première nationale&nbsp;: l'offre taxis vient s'ajouter aux autres mobilités déjà disponibles (bus, tramway, vélo&hellip;).</p>
+              <p className="fr-card__desc">Il sera maintenant possible de commander un taxi directement depuis l'Appli&nbsp;M.</p>
+              <p className="fr-card__desc">Première métropole à intégrer le service, nous vous dévoilons les coulisses de notre partenariat.</p>
             </div>
           </div>
-
-          <div className="fr-col-12 fr-col-md-3">
-            <div className="fr-card fr-enlarge-link fr-pt-3w">
-              <div className="fr-card__body">
-                <h4 className="fr-card__title">
-                  <Link href="/taxis_group" passHref>
-                    <a href="/taxis_group" className="fr-card__link">Groupement de taxis</a>
-                  </Link>
-                </h4>
-                <p className="fr-card__desc">Connectez vos taxis à tous les usagers</p>
-              </div>
-              <div className="fr-card__img">
-                <img src="/images/homepage/taxis_group.svg" className={`fr-responsive-img ${stylesChallenges.img}`} alt="" />
-              </div>
-            </div>
-          </div>
-
-          <div className="fr-col-12 fr-col-md-3">
-            <div className="fr-card fr-enlarge-link fr-pt-3w">
-              <div className="fr-card__body">
-                <h4 className="fr-card__title">
-                  <Link href="/maas" passHref>
-                    <a href="/maas" className="fr-card__link">Application de mobilité</a>
-                  </Link>
-                </h4>
-                <p className="fr-card__desc">Proposez aussi les taxis dans votre application grand public</p>
-              </div>
-              <div className="fr-card__img">
-                <img src="/images/homepage/trip_planning_application.svg" className={`fr-responsive-img ${stylesChallenges.img}`} alt="" />
-              </div>
-            </div>
-          </div>
-
-          <div className="fr-col-12 fr-col-md-3">
-            <div className="fr-card fr-enlarge-link fr-pt-3w">
-              <div className="fr-card__body">
-                <h4 className="fr-card__title">
-                  <Link href="/aom" passHref>
-                    <a href="/aom" className="fr-card__link">Mobilité publique</a>
-                  </Link>
-                </h4>
-                <p className="fr-card__desc">Intégrez le service public des taxis à votre offre locale</p>
-              </div>
-              <div className="fr-card__img">
-                <img src="/images/homepage/maas.svg" className={`fr-responsive-img ${stylesChallenges.img}`} alt="" />
-              </div>
+          <div className="fr-card__header">
+            <div className="fr-card__img">
+              <Image src={NewsIllustration} alt="" aria-hidden="true" layout="fill" />
             </div>
           </div>
         </div>
@@ -153,10 +129,11 @@ function APIDescriptionSection() {
       <div className="fr-container">
         <div className="fr-grid-row">
           <div className="fr-col-12">
-            <h2>Avec le.taxi : nous roulons ensemble !</h2>
+            <h2><span className="highlight">le.taxi</span>, une API qui facilite la rencontre entre l'usager et le taxi</h2>
           </div>
           <div className="fr-col-12">
-            <img src="/images/homepage/api_schema.svg" alt="Illustration fonctionnement API" className="fr-responsive-img" />
+            <img src="/images/homepage/api_schema.svg" alt="Illustration fonctionnement API" className={`fr-responsive-img ${stylesAPIDescription.schemaHorizontal}`} />
+            <img src="/images/homepage/api_schema_vertical.svg" alt="Illustration fonctionnement API" className={`fr-responsive-img ${stylesAPIDescription.schemaVertical}`} />
           </div>
 
           <div className={`fr-mt-5w ${stylesAPIDescription.link}`}>
@@ -174,34 +151,27 @@ function APIDescriptionSection() {
 
 function PartnersSection() {
   return (
-    <section className={stylesPartners.section}>
+    <section className="fr-pt-9w fr-pb-12w">
       <div className="fr-container">
-        <h2>Nos partenaires</h2>
-
-        <div className="fr-grid-row fr-grid-row--middle">
-          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoMob1taxi} /></div>
-          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoG7} /></div>
-          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoTaxisLyonnais} /></div>
-          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoTaxisJaunes} /></div>
-          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoOnlyMoov} /></div>
-          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoAppsolu} /></div>
-          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoAxygest} /></div>
-          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoSimplyTaxi} /></div>
-          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoTessa} /></div>
-          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoMyCloudTaxi} /></div>
-          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoOpenTaxis} /></div>
-          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoGestav} /></div>
-          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoJoliTaxi} /></div>
-          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoTaxisNantes} /></div>
-          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoTaxiMoove} /></div>
-          <div style={{ textAlign: 'center' }} className="fr-pb-5w fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoCourseDeRue} /></div>
-        </div>
-
         <div className="fr-grid-row fr-grid-row--center">
-          <Link href="/partners" passHref>
-            <ButtonLink>Voir tous les partenaires</ButtonLink>
-          </Link>
+          <h2>Nos partenaires publics et privés</h2>
         </div>
+
+        <div className="fr-grid-row fr-grid-row--middle" style={{ textAlign: 'center' }}>
+          <br />
+          <div className="fr-col-12 fr-col-md-5 fr-col-xl-3 fr-col-offset-1"><Image src={LogoLyon} alt="Métropole Grand Lyon" /></div>
+          <div className="fr-col-12 fr-col-md-5 fr-col-xl-3 fr-col-offset-1"><Image src={LogoRouen} alt="Métropole Rouen Normandie" /></div>
+          <div className="fr-col-12 fr-col-md-4 fr-col-xl-2 fr-col-offset-1"><Image src={LogoGrenoble} alt="Grenoble Alpes Métropole" /></div>
+        </div>
+
+        <div className="fr-grid-row fr-grid-row--middle" style={{ textAlign: 'center' }}>
+          <br />
+          <div className="fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoCourseDeRue} alt="Course de rue" /></div>
+          <div className="fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoMob1taxi} alt="Mob1Taxi" /></div>
+          <div className="fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoG7} alt="G7" /></div>
+          <div className="fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoAppsolu} alt="Appsolu" /></div>
+        </div>
+
       </div>
     </section>
   );
@@ -209,7 +179,7 @@ function PartnersSection() {
 
 export default function HomePage() {
   return (
-    <BaseLayout>
+    <BaseLayout title="le.taxi, le registre de disponibilité des taxis">
       <ChampagneSection />
       <GoalsSection />
       <ChallengesSection />

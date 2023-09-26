@@ -18,3 +18,15 @@
   text-decoration: none;
   color: #000091;
 }
+
+@media screen and (min-width: 768px) {
+  .schemaVertical {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .schemaHorizontal {
+    display: none;
+  }
+}

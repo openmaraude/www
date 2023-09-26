@@ -6,6 +6,7 @@ import Script from 'next/script';
 
 import '@/styles/globals.css';
 import '@gouvfr/dsfr/dist/dsfr/dsfr.min.css';
+import '@gouvfr/dsfr/dist/utility/utility.main.min.css';
 
 function MyApp({ Component, pageProps }) {
   React.useEffect(() => import('@gouvfr/dsfr/src/main'), []);

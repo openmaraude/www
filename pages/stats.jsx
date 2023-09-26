@@ -78,7 +78,7 @@ export default function StatsPage() {
   );
   const lastTaxisConnected = data?.taxis_connected[12][1];
   return (
-    <TextContentLayout>
+    <TextContentLayout title="Statistiques">
       <Content>
         <h1>Quelques statistiques</h1>
         {error && <pre>error={JSON.stringify(error)}</pre>}

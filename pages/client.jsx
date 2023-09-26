@@ -54,7 +54,7 @@ const deptCode = (citycode) => {
 };
 
 export default function PartnersPage() {
-  const [location, setLocation] = React.useState('');
+  const [location, setLocation] = React.useState(null);
   const [searchAddress, setSearchAddress] = React.useState('');
   const [selectedPartner, setSelectedPartner] = React.useState(null);
 
@@ -82,7 +82,7 @@ export default function PartnersPage() {
   );
 
   return (
-    <TextContentLayout>
+    <TextContentLayout title="Rechercher un taxi">
       <Content>
         <div className="fr-container">
           {!location && (
@@ -118,9 +118,9 @@ export default function PartnersPage() {
                                 type="radio"
                                 id={`radio-rich-${r.properties.id}`}
                                 name="radio-rich"
-                                value={r.properties.citycode}
+                                value={JSON.stringify(r.properties)}
                                 autoComplete="address-level2"
-                                onChange={(e) => setLocation(e.target.value)}
+                                onChange={(e) => setLocation(JSON.parse(e.target.value))}
                               />
                               <label className="fr-label" htmlFor={`radio-rich-${r.properties.id}`}>
                                 {r.properties.label} ({deptCode(r.properties.citycode)})
@@ -136,7 +136,7 @@ export default function PartnersPage() {
                   <p>
                     <button
                       type="button"
-                      onClick={() => setLocation('*')}
+                      onClick={() => setLocation({ citycode: '*' })}
                       className="fr-btn fr-btn--secondary"
                     >
                       Je ne suis pas sûr(e) de ma localisation
@@ -148,14 +148,22 @@ export default function PartnersPage() {
           )}
           {location && !selectedPartner && (
             <>
-              <h1>Je choisis un des services disponibles</h1>
-              <p>
-                Choisissez l'une des solutions listées pour commander un taxi
-                tout de suite dans toute <strong>la France</strong>.
-              </p>
+              <h1>Bonne nouvelle&nbsp;!</h1>
+              {location.citycode === '*' && (
+                <p>
+                  Même sans connaître votre localisation,
+                  vous pouvez commander un taxi grâce à&nbsp;:
+                </p>
+              )}
+              {location.citycode !== '*' && (
+                <p>
+                  Sur <strong>{location.label}</strong>,
+                  vous pouvez commander un taxi grâce à&nbsp;:
+                </p>
+              )}
               <div className="fr-grid-row fr-grid-row--gutters">
                 {PARTNERS.filter((partner) => (
-                  partner.locations?.indexOf(location) !== -1
+                  partner.locations?.indexOf(location.citycode) !== -1
                 )).map((partner) => (
                   <div className="fr-col-12 fr-col-md-6" key={partner.title}>
                     <Tile

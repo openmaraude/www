@@ -52,7 +52,7 @@ export default function Modal({
   return (
     <>
       <input type="hidden" className="fr-btn" data-fr-opened="true" aria-controls={modalId} />
-      <dialog id={modalId} className="fr-modal">
+      <dialog id={modalId} className="fr-modal" aria-labelledby={`fr-modal-title-${modalId}`}>
         <div className="fr-container fr-container--fluid fr-container-md">
           <div className="fr-grid-row fr-grid-row--center">
             <div className="fr-col-12 fr-col-md-8 fr-col-lg-6">
@@ -60,7 +60,7 @@ export default function Modal({
                 <div className="fr-modal__header">
                   <button
                     type="button"
-                    className="fr-link--close fr-link"
+                    className="fr-btn--close fr-btn"
                     title="Fermer la fenêtre modale"
                     aria-controls={modalId}
                     onClick={() => setClosed(true)}
@@ -69,7 +69,9 @@ export default function Modal({
                   </button>
                 </div>
                 <div className="fr-modal__content">
-                  <h1 id="fr-modal-title-modal-1" className="fr-modal__title">{title}</h1>
+                  <h1 id={`fr-modal-title-${modalId}`} className="fr-modal__title">
+                    <span aria-hidden="true">➔</span> {title}
+                  </h1>
                   {children}
                 </div>
               </div>

@@ -1,8 +1,0 @@
-.page h2:after {
-  content: '';
-  margin-top: 10px;
-  border-bottom: 3px solid #000091;
-  display: block;
-  width: 150px;
-  height: 3px;
-}
