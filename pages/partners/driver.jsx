@@ -38,7 +38,7 @@ export default function PartnersPage() {
             Ces informations seront demandées lors de la création de compte pour vous
             inscrire au registre le.taxi.
           </p>
-          <ButtonLink href="/partners/driver/profile" className="fr-btn">Je m'inscris</ButtonLink>
+          <ButtonLink href="/partners/driver/profile">Je m'inscris</ButtonLink>
         </div>
       </Content>
     </TextContentLayout>
