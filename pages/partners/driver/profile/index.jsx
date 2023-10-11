@@ -7,7 +7,7 @@ import Tile from '@/components/Tile';
 
 export default function PartnersPage() {
   return (
-    <TextContentLayout>
+    <TextContentLayout title="Mon profil">
       <Content>
         <div className="fr-container">
           <h1>Je sélectionne mon profil</h1>

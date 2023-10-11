@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation'
 
 function SkipLinks() {
   return (
@@ -28,6 +29,7 @@ function SkipLinks() {
 
 function Header() {
   const router = useRouter();
+  const pathname = usePathname();
   return (
     <header role="banner" className="fr-header" id="header-navigation">
       <div className="fr-header__body">
@@ -67,24 +69,16 @@ function Header() {
           <nav className="fr-nav" role="navigation" aria-label="Menu principal" id="header-navigation">
             <ul className="fr-nav__list">
               <li className="fr-nav__item">
-                <Link href="/client" passHref>
-                  <a className="fr-nav__link" {...(router.asPath === "/client" ? { "aria-current": "page" } : {})}>Je recherche un taxi</a>
-                </Link>
+                <Link href="/client" className="fr-nav__link" {...(pathname === "/client" ? { "aria-current": "page" } : {})}>Je recherche un taxi</Link>
               </li>
               <li className="fr-nav__item">
-                <Link href="/taxi" passHref>
-                  <a className="fr-nav__link" {...(router.asPath === "/taxi" ? { "aria-current": "page" } : {})}>Je suis un chauffeur taxi</a>
-                </Link>
+                <Link href="/taxi" className="fr-nav__link" {...(pathname === "/taxi" ? { "aria-current": "page" } : {})}>Je suis un chauffeur taxi</Link>
               </li>
               <li className="fr-nav__item">
-                <Link href="/aom" passHref>
-                  <a className="fr-nav__link" {...(router.asPath === "/aom" ? { "aria-current": "page" } : {})}>Je suis un acteur public ou privé</a>
-                </Link>
+                <Link href="/aom" className="fr-nav__link" {...(pathname === "/aom" ? { "aria-current": "page" } : {})}>Je suis un acteur public ou privé</Link>
               </li>
               <li className="fr-nav__item">
-                <Link href="/contact" passHref>
-                  <a className="fr-nav__link" {...(router.asPath === "/contact" ? { "aria-current": "page" } : {})}>Autres</a>
-                </Link>
+                <Link href="/contact" className="fr-nav__link" {...(pathname === "/contact" ? { "aria-current": "page" } : {})}>Autres</Link>
               </li>
             </ul>
           </nav>
@@ -149,14 +143,12 @@ function Footer() {
       <div className="fr-container">
         <div className="fr-footer__body">
           <div className="fr-footer__brand fr-enlarge-link">
-            <Link href="/" passHref>
-              <a title="Retour à l’accueil">
-                <p className="fr-logo" title="république française">
-                  Ministère
-                  <br />chargé des
-                  <br />transports
-                </p>
-              </a>
+            <Link href="/" title="Retour à l’accueil">
+              <p className="fr-logo" title="république française">
+                Ministère
+                <br />chargé des
+                <br />transports
+              </p>
             </Link>
           </div>
           <div className="fr-footer__content">

@@ -10,7 +10,7 @@ export default function Page() {
   const [selectedPartner, setSelectedPartner] = React.useState(null);
 
   return (
-    <TextContentLayout>
+    <TextContentLayout title="Artisan taxi">
       <Content>
         <div className="fr-container">
           <h1>Liste des applications agréées</h1>

@@ -20,7 +20,7 @@ export default function DonwloadLinks({ partner, reset }) {
           <div className="fr-col-12 fr-col-md-4">
             <div className="fr-card fr-enlarge-link">
               <div className="fr-card__body">
-                <Link href={appStoreLink} passHref> </Link>
+                <Link href={appStoreLink}> </Link>
               </div>
               <div className="fr-card__header">
                 <div className="fr-card__img">
@@ -34,7 +34,7 @@ export default function DonwloadLinks({ partner, reset }) {
           <div className="fr-col-12 fr-col-md-4">
             <div className="fr-card fr-enlarge-link">
               <div className="fr-card__body">
-                <Link href={playStoreLink} passHref> </Link>
+                <Link href={playStoreLink}> </Link>
               </div>
               <div className="fr-card__header">
                 <div className="fr-card__img">

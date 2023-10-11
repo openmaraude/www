@@ -3,42 +3,54 @@ import React from 'react';
 import TextContentLayout, { Content } from '@/layouts/TextContentLayout';
 
 import ButtonLink from '@/components/ButtonLink';
+import Tile from '@/components/Tile';
 
 export default function PartnersPage() {
   return (
-    <TextContentLayout>
+    <TextContentLayout title="Mon profil">
       <Content>
         <div className="fr-container">
-          <h1>Qu'est-ce que le.taxi&nbsp;?</h1>
-          <p>
-            le.taxi est aujourd'hui une base de données qui indique en temps réel le nombre
-            de taxis disponibles et leur géolocalisation (position). Il ne s'agit donc pas
-            d'une application. Ce sont plutôt des applications chauffeur créées par différents
-            acteurs du monde du taxi qui se connectent à cette base de données pour pouvoir
-            ensuite distribuer les courses aux chauffeurs.
-          </p>
-          <p>
-            Quant aux clients, ils utilisent des applications client pour formuler une
-            demande de course immédiate.
-          </p>
-          <h1>Je télécharge une application chauffeur agréée</h1>
-          <p>
-            L'inscription au registre le.taxi s'effectue à travers une des applications
-            chauffeur agréées le.taxi.
+          <h1>Je sélectionne mon profil</h1>
 
-            Une fois l'application téléchargée, vous aurez besoin de vous munir de votre&nbsp;:
-          </p>
-          <ul>
-            <li>pièce d'identité</li>
-            <li>carte professionnelle</li>
-            <li>numéro d'ADS</li>
-            <li>numéro de plaque d'immatriculation</li>
-          </ul>
           <p>
-            Ces informations seront demandées lors de la création de compte pour vous
-            inscrire au registre le.taxi.
+            Afin d’être redirigé vers une application chauffeur compatible avec votre profil,
+            vous devez indiquer celui qui vous correspond.
           </p>
-          <ButtonLink href="/partners/driver/profile">Je m'inscris</ButtonLink>
+
+          <div className="fr-grid-row fr-grid-row--gutters">
+            <div className="fr-col-12 fr-col-md-6">
+              <Tile
+                title="Je suis artisan taxi"
+                description="Travail en totale indépendance"
+                href="/partners/driver/profile/artisan"
+              />
+            </div>
+            <div className="fr-col-12 fr-col-md-6">
+              <Tile
+                title="Je suis affilié à un central radio"
+                description="Groupement, coopérative..."
+                href="/partners/driver/profile/affilie"
+              />
+            </div>
+            <div className="fr-col-12 fr-col-md-6">
+              <Tile
+                title="Je suis salarié"
+                description="Entreprise, association..."
+                href="/partners/driver/profile/salarie"
+              />
+            </div>
+            <div className="fr-col-12 fr-col-md-6">
+              <Tile
+                title="Je suis locataire-gérant"
+                description="Travail en partielle indépendance"
+                href="/partners/driver/profile/lgerant"
+              />
+            </div>
+          </div>
+
+          <p className="fr-mt-3w">
+            <ButtonLink href="/partners/driver" variant="secondary">Retour aux explications le.taxi</ButtonLink>
+          </p>
         </div>
       </Content>
     </TextContentLayout>

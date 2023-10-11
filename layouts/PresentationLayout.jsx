@@ -50,7 +50,7 @@ export function LandingSection({
               <div className="fr-grid-row">
                 {enableCTA && (
                   <div className={stylesLanding.CTA}>
-                    <Link href="https://api.gouv.fr/les-api/le-taxi/demande-acces" passHref>
+                    <Link href="https://api.gouv.fr/les-api/le-taxi/demande-acces">
                       <ButtonLink>S'inscrire</ButtonLink>
                     </Link>
                   </div>
@@ -58,12 +58,12 @@ export function LandingSection({
                 {enableFlyer && (
                   <>
                     <div className="fr-ml-1w fr-mr-1w ">
-                      <Link href="/assets/documents/22016_TAXI_maraude_flyerA5_BATweb.pdf?20230313" passHref>
+                      <Link href="/assets/documents/22016_TAXI_maraude_flyerA5_BATweb.pdf?20230313">
                         <ButtonLink variant="secondary">Télécharger le flyer</ButtonLink>
                       </Link>
                     </div>
                     <div className="fr-mt-1w">
-                      <Link href="/assets/documents/22077_TAXI-livretA5-chauffeur_BATweb.pdf?20230313" passHref>
+                      <Link href="/assets/documents/22077_TAXI-livretA5-chauffeur_BATweb.pdf?20230313">
                         <ButtonLink variant="secondary">Télécharger le livret chauffeur</ButtonLink>
                       </Link>
                     </div>
