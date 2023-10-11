@@ -49,7 +49,7 @@ export default function PartnersPage() {
           </div>
 
           <p className="fr-mt-3w">
-            <ButtonLink href="/partners/driver" variant="secondary">Retour aux explications le.taxi</ButtonLink>
+            <ButtonLink href="/taxi" variant="secondary">Retour aux explications le.taxi</ButtonLink>
           </p>
         </div>
       </Content>

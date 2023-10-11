@@ -1,35 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Link from 'next/link';
 
-const ButtonLink = React.forwardRef(
-  ({
-    children, variant, href, target,
-  }, ref) => {
-    const classes = ['fr-btn'];
+export default function ButtonLink({
+  children, variant, href, target,
+}) {
+  const classes = ['fr-btn'];
 
-    if (variant === 'secondary') {
-      classes.push('fr-btn--secondary');
-    }
+  if (variant === 'secondary') {
+    classes.push('fr-btn--secondary');
+  }
 
-    return (
-      <a href={href} ref={ref} className={classes.join(' ')} target={target} rel={target === '_blank' ? 'noreferrer noopener' : null}>
-        { children }
-      </a>
-    );
-  },
-);
+  return (
+    <Link href={href} className={classes.join(' ')} target={target} rel={target === '_blank' ? 'noreferrer noopener' : null}>
+      { children }
+    </Link>
+  );
+}
 
 ButtonLink.defaultProps = {
   variant: "primary",
-  href: null,
   target: null,
 };
 
 ButtonLink.propTypes = {
   children: PropTypes.node.isRequired,
+  href: PropTypes.string.isRequired,
   variant: PropTypes.string,
-  href: PropTypes.string,
   target: PropTypes.string,
 };
-
-export default ButtonLink;

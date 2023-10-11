@@ -18,13 +18,12 @@ export default function DonwloadLinks({ partner, reset }) {
       <div className="fr-grid-row fr-grid-row--gutters fr-grid-row--center">
         {appStoreLink && (
           <div className="fr-col-12 fr-col-md-4">
-            <div className="fr-card fr-enlarge-link">
+            <div className="fr-card fr-enlarge-link fr-card--download fr-card--shadow">
               <div className="fr-card__body">
-                <Link href={appStoreLink}> </Link>
-              </div>
-              <div className="fr-card__header">
-                <div className="fr-card__img">
-                  <Image layout="responsive" src={DownloadAppStore} className="fr-responsive-img" alt="Lien de téléchargement App Store" />
+                <div className="fr-card__content">
+                  <Link href={appStoreLink}>
+                    <Image src={DownloadAppStore} className="fr-responsive-img" alt="Lien de téléchargement App Store" sizes="1qvw" style={{ width: '100%', height: 'auto' }} />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -32,13 +31,12 @@ export default function DonwloadLinks({ partner, reset }) {
         )}
         {playStoreLink && (
           <div className="fr-col-12 fr-col-md-4">
-            <div className="fr-card fr-enlarge-link">
+            <div className="fr-card fr-enlarge-link fr-card--download fr-card--shadow">
               <div className="fr-card__body">
-                <Link href={playStoreLink}> </Link>
-              </div>
-              <div className="fr-card__header">
-                <div className="fr-card__img">
-                  <Image layout="responsive" src={DownloadPlayStore} className="fr-responsive-img" alt="Lien de téléchargement Play Store" />
+                <div className="fr-card__content">
+                  <Link href={playStoreLink}>
+                    <Image src={DownloadPlayStore} className="fr-responsive-img" alt="Lien de téléchargement Play Store" sizes="1vw" style={{ width: '100%', height: 'auto' }} />
+                  </Link>
                 </div>
               </div>
             </div>

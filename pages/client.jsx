@@ -17,7 +17,7 @@ const API_URL = 'https://api-adresse.data.gouv.fr';
 const PARTNERS = [{
   title: "Onlymoov",
   logo: LogoOnlyMoov,
-  description: <p>La solution officielle du Grand Lyon</p>,
+  description: <>La solution officielle du Grand Lyon</>,
   websiteLink: "https://taxi.onlymoov.com/",
   locations: [
     // Lyon et arrondissements
@@ -34,7 +34,7 @@ const PARTNERS = [{
 {
   title: "Mob1taxi",
   logo: LogoMob1taxi,
-  description: <p>France</p>,
+  description: <>France</>,
   playStoreLink: "https://play.google.com/store/apps/details?id=com.mob1taxi&feature=more_from_developer",
   appStoreLink: "https://apps.apple.com/fr/app/mob1taxi/id576991159?mt=8",
   // websiteLink: "https://www.mob1taxi.com/",

@@ -4,8 +4,7 @@ import PropTypes from 'prop-types';
 
 import Head from 'next/head';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
-import { usePathname } from 'next/navigation'
+import { usePathname } from 'next/navigation';
 
 function SkipLinks() {
   return (
@@ -13,13 +12,13 @@ function SkipLinks() {
       <nav className="fr-container" role="navigation" aria-label="Accès rapide">
         <ul className="fr-skiplinks__list">
           <li>
-            <a className="fr-link" href="#content">Contenu</a>
+            <Link className="fr-link" href="#content">Contenu</Link>
           </li>
           <li>
-            <a className="fr-link" href="#header-navigation">Menu</a>
+            <Link className="fr-link" href="#header-navigation">Menu</Link>
           </li>
           <li>
-            <a className="fr-link" href="#footer">Pied de page</a>
+            <Link className="fr-link" href="#footer">Pied de page</Link>
           </li>
         </ul>
       </nav>
@@ -28,7 +27,6 @@ function SkipLinks() {
 }
 
 function Header() {
-  const router = useRouter();
   const pathname = usePathname();
   return (
     <header role="banner" className="fr-header" id="header-navigation">
@@ -51,9 +49,9 @@ function Header() {
                 </div>
               </div>
               <div className="fr-header__service">
-                <a href="/" title="Registre de disponibilité des taxis">
+                <Link href="/" title="Registre de disponibilité des taxis">
                   <p className="fr-header__service-title">60&nbsp;000 taxis à portée de main</p>
-                </a>
+                </Link>
                 <p className="fr-header__service-tagline">le.taxi, registre de disponibilité des taxis</p>
               </div>
             </div>

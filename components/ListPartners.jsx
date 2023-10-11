@@ -21,7 +21,7 @@ const PARTNERS = {
   mycloudtaxi: {
     title: "myCloudTaxi",
     logo: LogoMyCloudTaxi,
-    description: <p>Application créée par l'équipementier ATA</p>,
+    description: <>Application créée par l'équipementier ATA</>,
     websiteLink: "https://www.ata-electronics.com/fr/nos-solutions/mycloudtaxi/",
     playStoreLink: "https://play.google.com/store/apps/details?id=com.kaiman.ata.app.prod",
     appStoreLink: "https://apps.apple.com/us/app/mycloudtaxi-pour-chauffeur/id1621260312",
@@ -29,14 +29,14 @@ const PARTNERS = {
   coursederue: {
     title: "Course de rue",
     logo: LogoCourseDeRue,
-    description: <p>Application créée par la GESCOP/Alpha Taxis</p>,
+    description: <>Application créée par la GESCOP/Alpha Taxis</>,
     websiteLink: "https://www.coursederue.fr/",
     playStoreLink: "https://play.google.com/store/apps/details?id=com.gescop.course_de_rue",
   },
   g7: {
     title: "G7",
     logo: LogoG7,
-    description: <p>Bientôt disponible sur les stores</p>,
+    description: <>Bientôt disponible sur les stores</>,
     appStoreLink: "",
     playStoreLink: "",
     websiteLink: "https://chauffeur.g7.fr/",

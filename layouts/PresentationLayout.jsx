@@ -6,7 +6,6 @@
 import PropTypes from 'prop-types';
 
 import Image from 'next/image';
-import Link from 'next/link';
 
 import ButtonLink from '@/components/ButtonLink';
 
@@ -36,7 +35,7 @@ export function LandingSection({
           <div className="fr-col-12 fr-col-md-6 fr-pl-3w fr-mb-3w">
             <div className={stylesLanding.illustration}>
               <div className={stylesLanding.illustrationContainer}>
-                <Image src={backgroundImage} alt="Illustration" layout="fill" />
+                <Image src={backgroundImage} alt="Illustration" fill />
               </div>
             </div>
 
@@ -50,22 +49,16 @@ export function LandingSection({
               <div className="fr-grid-row">
                 {enableCTA && (
                   <div className={stylesLanding.CTA}>
-                    <Link href="https://api.gouv.fr/les-api/le-taxi/demande-acces">
-                      <ButtonLink>S'inscrire</ButtonLink>
-                    </Link>
+                    <ButtonLink href="https://api.gouv.fr/les-api/le-taxi/demande-acces">S'inscrire</ButtonLink>
                   </div>
                 )}
                 {enableFlyer && (
                   <>
                     <div className="fr-ml-1w fr-mr-1w ">
-                      <Link href="/assets/documents/22016_TAXI_maraude_flyerA5_BATweb.pdf?20230313">
-                        <ButtonLink variant="secondary">Télécharger le flyer</ButtonLink>
-                      </Link>
+                      <ButtonLink href="/assets/documents/22016_TAXI_maraude_flyerA5_BATweb.pdf?20230313" variant="secondary">Télécharger le flyer</ButtonLink>
                     </div>
                     <div className="fr-mt-1w">
-                      <Link href="/assets/documents/22077_TAXI-livretA5-chauffeur_BATweb.pdf?20230313">
-                        <ButtonLink variant="secondary">Télécharger le livret chauffeur</ButtonLink>
-                      </Link>
+                      <ButtonLink href="/assets/documents/22077_TAXI-livretA5-chauffeur_BATweb.pdf?20230313" variant="secondary">Télécharger le livret chauffeur</ButtonLink>
                     </div>
                   </>
                 )}
@@ -107,7 +100,7 @@ export function CardsSection({
             <div key={card.backgroundImage} className="fr-col-12 fr-col-md-4 fr-mb-5w">
               <div className={stylesCards.illustration}>
                 <div className={stylesCards.illustrationContainer}>
-                  <Image src={card.backgroundImage} layout="fill" />
+                  <Image src={card.backgroundImage} fill />
                 </div>
               </div>
               <div className={stylesCards.text}>

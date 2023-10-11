@@ -27,7 +27,7 @@ export default function Tile({
       {img && (
         <div className="fr-tile__header">
           <div className="fr-tile__pictogram">
-            <Image src={img} className="fr-artwork" alt="" aria-hidden="true" />
+            <Image src={img} className="fr-artwork" alt="" aria-hidden="true" sizes="50vw" style={{ width: '100%', height: 'auto' }} />
           </div>
         </div>
       )}
