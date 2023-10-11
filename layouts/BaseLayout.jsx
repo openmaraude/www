@@ -198,7 +198,7 @@ export default function BaseLayout({ children, title }) {
 
       <Header />
 
-      <main role="main" id="content" className="fr-pt-md-14v">
+      <main role="main" id="content" className="fr-py-md-14v">
         {children}
       </main>
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 import useSWR from 'swr';
 
-import TextContentLayout, { Content } from '@/layouts/TextContentLayout';
+import BaseLayout from '@/layouts/BaseLayout';
 
 import DonwloadLinks from '@/components/DownloadLinks';
 import Tile from '@/components/Tile';
@@ -82,112 +82,110 @@ export default function PartnersPage() {
   );
 
   return (
-    <TextContentLayout title="Rechercher un taxi">
-      <Content>
-        <div className="fr-container">
-          {!location && (
-            <>
-              <h1>J'indique la ville où je suis actuellement</h1>
+    <BaseLayout title="Rechercher un taxi">
+      <div className="fr-container">
+        {!location && (
+          <>
+            <h1>J'indique la ville où je suis actuellement</h1>
 
-              <div className="fr-grid-row fr-grid-row--gutters fr-grid-row--center">
-                <div className="fr-col-12 fr-mt-3w">
-                  <div className="fr-input-group">
-                    <div className="fr-search-bar" id="header-search" role="search">
-                      <input
-                        className="fr-input"
-                        placeholder="Lyon, Grenoble, Paris..."
-                        type="search"
-                        id="search-1-input"
-                        name="search-1-input"
-                        value={searchAddress}
-                        onChange={(e) => setSearchAddress(e.target.value)}
-                      />
-                      <button type="button" className="fr-btn" title="Rechercher">
-                        Rechercher
-                      </button>
-                    </div>
-                  </div>
-                  {data && (
-                    <div className="fr-form-group">
-                      <fieldset>
-                        <legend className="fr-fieldset__legend fr-text--regular" id="radio-legend" />
-                        <div className="fr-fieldset__content" role="listbox">
-                          {data.map((r) => (
-                            <div className="fr-radio-group" role="listitem" key={r.properties.id}>
-                              <input
-                                type="radio"
-                                id={`radio-rich-${r.properties.id}`}
-                                name="radio-rich"
-                                value={JSON.stringify(r.properties)}
-                                autoComplete="address-level2"
-                                onChange={(e) => setLocation(JSON.parse(e.target.value))}
-                              />
-                              <label className="fr-label" htmlFor={`radio-rich-${r.properties.id}`}>
-                                {r.properties.label} ({deptCode(r.properties.citycode)})
-                              </label>
-                            </div>
-                          ))}
-                        </div>
-                      </fieldset>
-                    </div>
-                  )}
-                </div>
-                <div className="fr-col-12 fr-mt-6w">
-                  <p>
-                    <button
-                      type="button"
-                      onClick={() => setLocation({ citycode: '*' })}
-                      className="fr-btn fr-btn--secondary"
-                    >
-                      Je ne suis pas sûr(e) de ma localisation
-                    </button>
-                  </p>
-                </div>
-              </div>
-            </>
-          )}
-          {location && !selectedPartner && (
-            <>
-              <h1>Bonne nouvelle&nbsp;!</h1>
-              {location.citycode === '*' && (
-                <p>
-                  Même sans connaître votre localisation,
-                  vous pouvez commander un taxi grâce à&nbsp;:
-                </p>
-              )}
-              {location.citycode !== '*' && (
-                <p>
-                  Sur <strong>{location.label}</strong>,
-                  vous pouvez commander un taxi grâce à&nbsp;:
-                </p>
-              )}
-              <div className="fr-grid-row fr-grid-row--gutters">
-                {PARTNERS.filter((partner) => (
-                  partner.locations?.indexOf(location.citycode) !== -1
-                )).map((partner) => (
-                  <div className="fr-col-12 fr-col-md-6" key={partner.title}>
-                    <Tile
-                      title={partner.title}
-                      description={partner.description}
-                      img={partner.logo}
-                      href={partner.websiteLink}
-                      onClick={() => (!partner.websiteLink ? setSelectedPartner(partner) : null)}
+            <div className="fr-grid-row fr-grid-row--gutters fr-grid-row--center">
+              <div className="fr-col-12 fr-mt-3w">
+                <div className="fr-input-group">
+                  <div className="fr-search-bar" id="header-search" role="search">
+                    <input
+                      className="fr-input"
+                      placeholder="Lyon, Grenoble, Paris..."
+                      type="search"
+                      id="search-1-input"
+                      name="search-1-input"
+                      value={searchAddress}
+                      onChange={(e) => setSearchAddress(e.target.value)}
                     />
+                    <button type="button" className="fr-btn" title="Rechercher">
+                      Rechercher
+                    </button>
                   </div>
-                ))}
+                </div>
+                {data && (
+                  <div className="fr-form-group">
+                    <fieldset>
+                      <legend className="fr-fieldset__legend fr-text--regular" id="radio-legend" />
+                      <div className="fr-fieldset__content" role="listbox">
+                        {data.map((r) => (
+                          <div className="fr-radio-group" role="listitem" key={r.properties.id}>
+                            <input
+                              type="radio"
+                              id={`radio-rich-${r.properties.id}`}
+                              name="radio-rich"
+                              value={JSON.stringify(r.properties)}
+                              autoComplete="address-level2"
+                              onChange={(e) => setLocation(JSON.parse(e.target.value))}
+                            />
+                            <label className="fr-label" htmlFor={`radio-rich-${r.properties.id}`}>
+                              {r.properties.label} ({deptCode(r.properties.citycode)})
+                            </label>
+                          </div>
+                        ))}
+                      </div>
+                    </fieldset>
+                  </div>
+                )}
               </div>
-
-              <p className="fr-mt-3w">
-                <button type="button" onClick={() => setLocation(null)} className="fr-btn fr-btn--secondary">Retour au choix de la ville</button>
-              </p>
-            </>
-          )}
-        </div>
-
-        {selectedPartner && (
-          <DonwloadLinks partner={selectedPartner} reset={() => setSelectedPartner(null)} />
+              <div className="fr-col-12 fr-mt-6w">
+                <p>
+                  <button
+                    type="button"
+                    onClick={() => setLocation({ citycode: '*' })}
+                    className="fr-btn fr-btn--secondary"
+                  >
+                    Je ne suis pas sûr(e) de ma localisation
+                  </button>
+                </p>
+              </div>
+            </div>
+          </>
         )}
-      </Content>
-    </TextContentLayout>
+        {location && !selectedPartner && (
+          <>
+            <h1>Bonne nouvelle&nbsp;!</h1>
+            {location.citycode === '*' && (
+              <p>
+                Même sans connaître votre localisation,
+                vous pouvez commander un taxi grâce à&nbsp;:
+              </p>
+            )}
+            {location.citycode !== '*' && (
+              <p>
+                Sur <strong>{location.label}</strong>,
+                vous pouvez commander un taxi grâce à&nbsp;:
+              </p>
+            )}
+            <div className="fr-grid-row fr-grid-row--gutters">
+              {PARTNERS.filter((partner) => (
+                partner.locations?.indexOf(location.citycode) !== -1
+              )).map((partner) => (
+                <div className="fr-col-12 fr-col-md-6" key={partner.title}>
+                  <Tile
+                    title={partner.title}
+                    description={partner.description}
+                    img={partner.logo}
+                    href={partner.websiteLink}
+                    onClick={() => (!partner.websiteLink ? setSelectedPartner(partner) : null)}
+                  />
+                </div>
+              ))}
+            </div>
+
+            <p className="fr-mt-3w">
+              <button type="button" onClick={() => setLocation(null)} className="fr-btn fr-btn--secondary">Retour au choix de la ville</button>
+            </p>
+          </>
+        )}
+      </div>
+
+      {selectedPartner && (
+        <DonwloadLinks partner={selectedPartner} reset={() => setSelectedPartner(null)} />
+      )}
+    </BaseLayout>
   );
 }

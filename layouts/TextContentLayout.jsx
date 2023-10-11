@@ -58,7 +58,7 @@ export default function TextContentLayout({ children, title }) {
   return (
     <BaseLayout title={title}>
       <div className="fr-container">
-        <div className={`fr-grid-row fr-grid-row--gutters fr-pt-3w fr-pb-3w ${styles.content}`}>
+        <div className={`fr-grid-row fr-grid-row--gutters ${styles.content}`}>
           {children}
         </div>
       </div>

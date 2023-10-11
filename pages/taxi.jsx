@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import TextContentLayout, { Content } from '@/layouts/TextContentLayout';
+import BaseLayout from '@/layouts/BaseLayout';
 import Modal from '@/components/Modal';
 
 import ButtonLink from '@/components/ButtonLink';
@@ -23,8 +23,8 @@ export default function TaxiPage() {
   return (
     <>
       <RadioPopup />
-      <TextContentLayout title="Chauffeur taxi">
-        <Content>
+      <BaseLayout title="Chauffeur taxi">
+        <div className="fr-container">
           <div className="fr-callout fr-callout--blue-ecume">
             <h1 className="fr-callout__title">Qu'est-ce que le.taxi&nbsp;?</h1>
             <p className="fr-callout__text">
@@ -42,7 +42,7 @@ export default function TaxiPage() {
               besoin d'un taxi immédiatement.
             </p>
           </div>
-          <h1>Pour m'inscrire, je dois télécharger une application chauffeur agréée</h1>
+          <h1>Pour m'inscrire, je dois télécharger<br />  une application chauffeur agréée</h1>
           <p>
             Pour vous enregistrer, vous devez
             télécharger une des applications chauffeur
@@ -70,8 +70,8 @@ export default function TaxiPage() {
             <h1 className="fr-callout__title">Vous êtes responsable d'un groupement&nbsp;?</h1>
             <ButtonLink href="/contact">Je contacte l'équipe le.taxi</ButtonLink>
           </div>
-        </Content>
-      </TextContentLayout>
+        </div>
+      </BaseLayout>
     </>
   );
 }
