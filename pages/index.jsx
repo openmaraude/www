@@ -96,7 +96,7 @@ function GoalsSection() {
 
 function ChallengesSection() {
   return (
-    <section className={stylesChallenges.section}>
+    <section className={`${stylesChallenges.section} fr-py-8w fr-background-action-high--blue-ecume`}>
 
       <div className="fr-container">
         <h2>La dernière actualité le.taxi</h2>
@@ -125,7 +125,7 @@ function ChallengesSection() {
 
 function APIDescriptionSection() {
   return (
-    <section className={stylesAPIDescription.section}>
+    <section className={`${stylesAPIDescription.section} fr-py-8w fr-background-alt--blue-ecume`}>
       <div className="fr-container">
         <div className="fr-grid-row">
           <div className="fr-col-12">
