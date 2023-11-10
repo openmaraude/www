@@ -10,6 +10,7 @@ import LogoAppsolu from '@/public/images/partners/appsolu.png';
 import LogoCourseDeRue from '@/public/images/partners/coursederue.png';
 import LogoG7 from '@/public/images/partners/G7.png';
 import LogoMob1taxi from '@/public/images/partners/mob1taxi.png';
+import LogoMyCloudTaxi from '@/public/images/partners/Logo_myCloudTaxi.png';
 
 import Modal from '@/components/Modal';
 import QuestionSection from '@/components/QuestionSection';
@@ -156,18 +157,20 @@ function PartnersSection() {
         </div>
 
         <div className="fr-grid-row fr-grid-row--middle" style={{ textAlign: 'center' }}>
-          <br />
           <div className="fr-col-12 fr-col-md-5 fr-col-xl-3 fr-col-offset-1"><Image src={LogoLyon} alt="Métropole Grand Lyon" sizes="50vw" style={{ width: '100%', height: 'auto' }} /></div>
           <div className="fr-col-12 fr-col-md-5 fr-col-xl-3 fr-col-offset-1"><Image src={LogoRouen} alt="Métropole Rouen Normandie" sizes="50vw" style={{ width: '100%', height: 'auto' }} /></div>
           <div className="fr-col-12 fr-col-md-4 fr-col-xl-2 fr-col-offset-1"><Image src={LogoGrenoble} alt="Grenoble Alpes Métropole" sizes="50vw" style={{ width: '100%', height: 'auto' }} /></div>
         </div>
 
         <div className="fr-grid-row fr-grid-row--middle" style={{ textAlign: 'center' }}>
-          <br />
-          <div className="fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoCourseDeRue} alt="Course de rue" sizes="50vw" style={{ width: '100%', height: 'auto' }} /></div>
-          <div className="fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoMob1taxi} alt="Mob1Taxi" sizes="50vw" style={{ width: '50%', height: 'auto' }} /></div>
-          <div className="fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoG7} alt="G7" sizes="50vw" style={{ width: '50%', height: 'auto' }} /></div>
-          <div className="fr-col-12 fr-col-md-6 fr-col-xl-3"><Image src={LogoAppsolu} alt="Appsolu" sizes="50vw" style={{ width: '100%', height: 'auto' }} /></div>
+          <div className="fr-col-12 fr-col-md-6 fr-col-xl-3 fr-col-offset-1"><Image src={LogoCourseDeRue} alt="Course de rue" sizes="50vw" style={{ width: '100%', height: 'auto' }} /></div>
+          <div className="fr-col-12 fr-col-md-6 fr-col-xl-3 fr-col-offset-1"><Image src={LogoMob1taxi} alt="Mob1Taxi" sizes="50vw" style={{ width: '50%', height: 'auto' }} /></div>
+          <div className="fr-col-12 fr-col-md-6 fr-col-xl-3 fr-col-offset-1"><Image src={LogoG7} alt="G7" sizes="50vw" style={{ width: '50%', height: 'auto' }} /></div>
+        </div>
+
+        <div className="fr-grid-row fr-grid-row--middle" style={{ textAlign: 'center' }}>
+          <div className="fr-col-12 fr-col-md-6 fr-col-xl-3 fr-col-offset-3"><Image src={LogoAppsolu} alt="Appsolu" sizes="50vw" style={{ width: '100%', height: 'auto' }} /></div>
+          <div className="fr-col-12 fr-col-md-6 fr-col-xl-3 fr-col-offset-1"><Image src={LogoMyCloudTaxi} alt="MyCloudTaxi" sizes="50vw" style={{ width: '100%', height: 'auto' }} /></div>
         </div>
 
       </div>
