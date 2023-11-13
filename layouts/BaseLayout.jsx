@@ -172,6 +172,9 @@ function Footer() {
         <div className="fr-footer__bottom">
           <ul className="fr-footer__bottom-list">
             <li className="fr-footer__bottom-item">
+              <a className="fr-footer__bottom-link" href="/accessibilite">Accessibilité : non conforme</a>
+            </li>
+            <li className="fr-footer__bottom-item">
               <a className="fr-footer__bottom-link" href="/assets/documents/CGU.pdf?20220614">Conditions générales d'utilisation de l'API</a>
             </li>
           </ul>
