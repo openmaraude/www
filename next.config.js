@@ -10,6 +10,15 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  async redirects() {
+    return [
+      {
+        source: '/partners',
+        destination: '/partners/driver/profile',
+        permanent: false,
+      },
+    ]
+  },
 }
 
 module.exports = nextConfig
