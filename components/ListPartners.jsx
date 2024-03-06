@@ -115,10 +115,10 @@ const PARTNERS = {
 };
 
 const PROFILES = {
-  artisan: ['mycloudtaxi', 'mob1taxi', 'coursederue', 'appsolu', 'simplytaxi', 'geoway', 'gestav', 'taximoove', 'jolitaxi', 'opentaxis'],
+  artisan: ['mycloudtaxi', 'mob1taxi', 'coursederue', 'simplytaxi', 'geoway', 'gestav', 'taximoove', 'jolitaxi', 'opentaxis'],
   affilie: ['g7', 'appsolu', 'axygest', 'taximoove', 'geoway', 'gestav', 'tessa', 'taxisnantes'],
-  salarie: ['g7', 'appsolu'],
-  lgerant: ['mycloudtaxi', 'mob1taxi', 'coursederue', 'appsolu', 'simplytaxi', 'geoway', 'gestav', 'taximoove', 'jolitaxi', 'opentaxis'],
+  salarie: ['g7'],
+  lgerant: ['mycloudtaxi', 'mob1taxi', 'coursederue', 'simplytaxi', 'geoway', 'gestav', 'taximoove', 'jolitaxi', 'opentaxis'],
 };
 
 export default function ListPartners({ profile, callback }) {
