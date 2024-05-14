@@ -13,6 +13,8 @@ import styles from "@/styles/Stats.module.css";
 import CarteLyon from '@/public/images/page_stats/lyon.png';
 import CarteGrenoble from '@/public/images/page_stats/grenoble.png';
 import CarteRouen from '@/public/images/page_stats/rouen.png';
+import CarteToulouse from '@/public/images/page_stats/toulouse.png';
+import CarteStEtienne from '@/public/images/page_stats/stetienne.png';
 
 function toMonth(date) {
   const month = Number.parseInt(date.substr(5, 2), 10);
@@ -100,7 +102,7 @@ export default function StatsPage() {
                   applications de MaaS opérationnelles d'ici fin 2024
                 </Card>
               </div>
-              <div className="fr-col fr-col-lg-3 fr-col-md-6 fr-col-sm-6 fr-col-xs-12">
+              <div className="fr-col fr-col-lg-4 fr-col-md-6 fr-col-sm-6 fr-col-xs-12">
                 <Card title="Lyon Métropole" img={CarteLyon} imgBadge="opérationnel">
                   <ul>
                     <li>
@@ -112,7 +114,7 @@ export default function StatsPage() {
                   </ul>
                 </Card>
               </div>
-              <div className="fr-col fr-col-lg-3 fr-col-md-6 fr-col-sm-6 fr-col-xs-12">
+              <div className="fr-col fr-col-lg-4 fr-col-md-6 fr-col-sm-6 fr-col-xs-12">
                 <Card title="Grenoble-Alpes Métropole" img={CarteGrenoble} imgBadge="opérationnel">
                   <ul>
                     <li>
@@ -124,11 +126,35 @@ export default function StatsPage() {
                   </ul>
                 </Card>
               </div>
-              <div className="fr-col fr-col-lg-3 fr-col-md-6 fr-col-sm-6 fr-col-xs-12">
+              <div className="fr-col fr-col-lg-4 fr-col-md-6 fr-col-sm-6 fr-col-xs-12">
+                <Card title="Toulouse Métropole" img={CarteToulouse} imgBadge="opérationnel d'ici avril 2024">
+                  <ul>
+                    <li>
+                      <p>{Math.round(lastTaxisConnected?.toulouse)}&nbsp;% de taxis connectés</p>
+                    </li>
+                    <li>
+                      <p><em>% d'augmentation des courses à venir</em></p>
+                    </li>
+                  </ul>
+                </Card>
+              </div>
+              <div className="fr-col fr-col-lg-4 fr-col-md-6 fr-col-sm-6 fr-col-xs-12">
                 <Card title="Rouen Métropole" img={CarteRouen} imgBadge="opérationnel d'ici fin 2024">
                   <ul>
                     <li>
                       <p>{Math.round(lastTaxisConnected?.rouen)}&nbsp;% de taxis connectés</p>
+                    </li>
+                    <li>
+                      <p><em>% d'augmentation des courses à venir</em></p>
+                    </li>
+                  </ul>
+                </Card>
+              </div>
+              <div className="fr-col fr-col-lg-4 fr-col-md-6 fr-col-sm-6 fr-col-xs-12">
+                <Card title="Saint-Étienne Métropole" img={CarteStEtienne} imgBadge="opérationnel d'ici fin 2024">
+                  <ul>
+                    <li>
+                      <p>{Math.round(lastTaxisConnected?.stetienne)}&nbsp;% de taxis connectés</p>
                     </li>
                     <li>
                       <p><em>% d'augmentation des courses à venir</em></p>
