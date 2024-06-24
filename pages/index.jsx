@@ -33,7 +33,8 @@ function ChampagneSection() {
       <Modal title="Notre mission">
         <p>
           le.taxi est un service du Ministère des Transports à destination
-          des chauffeurs de taxis et des éditeurs de logiciel.
+          des chauffeurs de taxis en activité, des éditeurs de logiciel
+          et des collectivités en charge des transports.
         </p>
         <p>Nous ne nous adressons pas aux particuliers.</p>
       </Modal>
