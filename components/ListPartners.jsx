@@ -16,6 +16,7 @@ import LogoSimplyTaxi from '@/public/images/partners/simply-taxi.png';
 import LogoTaxiMoove from '@/public/images/partners/taximoove.png';
 import LogoTaxisNantes from '@/public/images/partners/taxis-nantes-appclient.png';
 import LogoTessa from '@/public/images/partners/tessa.png';
+import LogoSavoiesDriver from '@/public/images/partners/LOGO-SAVOIES DRIVER ROUGE-INTEGRAL-TRANSPARENT.png';
 
 const PARTNERS = {
   mycloudtaxi: {
@@ -112,11 +113,18 @@ const PARTNERS = {
     playStoreLink: "https://play.google.com/store/apps/details?id=com.lanoosphere.tessa.taxi_nantes&hl=fr",
     appStoreLink: "https://apps.apple.com/fr/app/taxi-nantes/id924386923",
   },
+  savoiesdriver: {
+    title: "Savoies Driver",
+    logo: LogoSavoiesDriver,
+    websiteLink: "https://savoies-driver.com/",
+    playStoreLink: "https://play.google.com/store/apps/details?id=com.monapplivtc.b86c5e50&hl=fr",
+    appStoreLink: "https://apps.apple.com/fr/app/savoies-driver/id1510539601",
+  },
 };
 
 const PROFILES = {
   artisan: ['mycloudtaxi', 'mob1taxi', 'coursederue', 'simplytaxi', 'geoway', 'gestav', 'taximoove', 'jolitaxi', 'opentaxis'],
-  affilie: ['g7', 'appsolu', 'axygest', 'taximoove', 'geoway', 'gestav', 'tessa', 'taxisnantes'],
+  affilie: ['g7', 'appsolu', 'axygest', 'taximoove', 'geoway', 'gestav', 'tessa', 'taxisnantes', 'savoiesdriver'],
   salarie: ['g7'],
   lgerant: ['mycloudtaxi', 'mob1taxi', 'coursederue', 'simplytaxi', 'geoway', 'gestav', 'taximoove', 'jolitaxi', 'opentaxis'],
 };
