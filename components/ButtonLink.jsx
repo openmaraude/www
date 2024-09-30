@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Link from 'next/link';
 
 export default function ButtonLink({
-  children, variant, href, target,
+  children, variant = "primary", href, target = null,
 }) {
   const classes = ['fr-btn'];
 
@@ -17,11 +17,6 @@ export default function ButtonLink({
     </Link>
   );
 }
-
-ButtonLink.defaultProps = {
-  variant: "primary",
-  target: null,
-};
 
 ButtonLink.propTypes = {
   children: PropTypes.node.isRequired,

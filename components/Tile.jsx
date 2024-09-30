@@ -5,12 +5,12 @@ import Link from 'next/link';
 
 export default function Tile({
   title,
-  href,
-  description,
-  img,
-  onClick,
-  size,
-  orientation,
+  href = "#",
+  description = null,
+  img = null,
+  onClick = null,
+  size = 'md',
+  orientation = 'vertical',
 }) {
   return (
     <div className={`fr-tile fr-enlarge-link fr-tile--${size} fr-tile--${orientation} fr-tile--horizontal@md`}>
@@ -43,13 +43,4 @@ Tile.propTypes = {
   onClick: PropTypes.func,
   size: PropTypes.oneOf(['sm', 'md']),
   orientation: PropTypes.oneOf(['vertical', 'horizontal']),
-};
-
-Tile.defaultProps = {
-  href: "#",
-  description: null,
-  img: null,
-  onClick: null,
-  size: 'md',
-  orientation: 'vertical',
 };

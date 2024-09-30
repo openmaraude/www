@@ -18,8 +18,8 @@ export function LandingSection({
   backgroundImage,
   subtitle,
   bulletPoints,
-  enableCTA,
-  enableFlyer,
+  enableCTA = true,
+  enableFlyer = false,
 }) {
   return (
     <section className={stylesLanding.section}>
@@ -70,11 +70,6 @@ export function LandingSection({
     </section>
   );
 }
-
-LandingSection.defaultProps = {
-  enableCTA: true,
-  enableFlyer: false,
-};
 
 LandingSection.propTypes = {
   title: PropTypes.node.isRequired,

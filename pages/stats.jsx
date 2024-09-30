@@ -22,7 +22,12 @@ function toMonth(date) {
 }
 
 function Card({
-  title, horizontal, img, imgBadge, size, children,
+  title,
+  horizontal = false,
+  img = null,
+  imgBadge = null,
+  size = 'md',
+  children,
 }) {
   return (
     <div className={`fr-card fr-card--${size} ${horizontal ? 'fr-card--horizontal' : ''}`}>
@@ -55,13 +60,6 @@ Card.propTypes = {
   imgBadge: PropTypes.string,
   size: PropTypes.oneOf(['sm', 'md', 'lg', 'xl']),
   children: PropTypes.node.isRequired,
-};
-
-Card.defaultProps = {
-  horizontal: false,
-  img: null,
-  imgBadge: null,
-  size: 'md',
 };
 
 export default function StatsPage() {

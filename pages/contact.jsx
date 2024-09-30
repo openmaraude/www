@@ -19,7 +19,7 @@ export default function FAQPage() {
                           <h2>Joindre l'équipe le.taxi</h2>
                         </legend>
                         <div className="fr-fieldset__element">
-                          <p className="fr-text--sm">Vous présentez un cas spécifique&nbsp;? Contactez l'équipe le.taxi.</p>
+                          <p className="fr-text--sm">Vous êtes professionnel et présentez un cas spécifique&nbsp;? Contactez l'équipe le.taxi.</p>
                         </div>
                         <div className="fr-fieldset__element">
                           <ul className="fr-btns-group">

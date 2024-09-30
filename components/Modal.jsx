@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
  * Default mode as seen in the DSFR documentation.
  * This component can be placed anywhere.
  */
-export function ModalButton({ title, modalId }) {
+export function ModalButton({ title, modalId = "fr-modal-1" }) {
   return (
     <button type="button" className="fr-btn" data-fr-opened="false" aria-controls={modalId}>
       {title}
@@ -18,15 +18,11 @@ ModalButton.propTypes = {
   modalId: PropTypes.string,
 };
 
-ModalButton.defaultProps = {
-  modalId: "fr-modal-1",
-};
-
 /**
  * The modal dialog itself. As advised in the documentation, it must be a direct child of <body>.
  */
 export default function Modal({
-  title, children, modalId,
+  title, children, modalId = "fr-modal-1",
 }) {
   const [closed, setClosed] = React.useState(false);
 
@@ -87,8 +83,4 @@ Modal.propTypes = {
   title: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
   modalId: PropTypes.string,
-};
-
-Modal.defaultProps = {
-  modalId: "fr-modal-1",
 };

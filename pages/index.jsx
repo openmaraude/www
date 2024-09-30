@@ -84,7 +84,7 @@ function GoalsSection() {
                 <div className="fr-col-12 fr-col-md-6">
                   <Tile
                     title="J'ai un autre besoin à préciser"
-                    description="Vous présentez un cas spécifique&nbsp;? Contactez l'équipe le.taxi"
+                    description="Vous êtes professionnel et présentez un cas spécifique&nbsp;? Contactez l'équipe le.taxi"
                     href="/contact"
                     img={TileMarker}
                     size="sm"
