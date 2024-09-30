@@ -34,3 +34,8 @@ rules:
   react/no-unescaped-entities: off
   react/jsx-one-expression-per-line: off
   import/prefer-default-export: off
+  # https://stackoverflow.com/a/73487586
+  react/require-default-props:
+    - error
+    - forbidDefaultForRequired: true
+      functions: defaultArguments #Here
