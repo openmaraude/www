@@ -9,7 +9,7 @@ import '@gouvfr/dsfr/dist/utility/utility.main.min.css';
 import '@/styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
-  React.useEffect(() => import('@gouvfr/dsfr/src/main'), []);
+  React.useEffect(() => import('@gouvfr/dsfr/src/dsfr/main'), []);
 
   return (
     <>
