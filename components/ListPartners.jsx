@@ -124,8 +124,8 @@ const PARTNERS = {
 
 const PROFILES = {
   artisan: ['mycloudtaxi', 'mob1taxi', 'coursederue', 'simplytaxi', 'geoway', 'gestav', 'taximoove', 'jolitaxi', 'opentaxis'],
-  affilie: ['g7', 'appsolu', 'axygest', 'taximoove', 'geoway', 'gestav', 'tessa', 'taxisnantes', 'savoiesdriver'],
-  salarie: ['g7'],
+  affilie: ['mycloudtaxi', 'g7', 'appsolu', 'axygest', 'taximoove', 'geoway', 'gestav', 'tessa', 'taxisnantes', 'savoiesdriver'],
+  salarie: ['mycloudtaxi', 'g7'],
   lgerant: ['mycloudtaxi', 'mob1taxi', 'coursederue', 'simplytaxi', 'geoway', 'gestav', 'taximoove', 'jolitaxi', 'opentaxis'],
 };
 
